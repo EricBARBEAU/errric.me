@@ -346,13 +346,12 @@ body {
   padding-left: 50px;
   padding-right: 50px;
 }
-
-/* line 19, ../sass/views/home.scss */
+/* line 16, ../sass/views/home.scss */
 .introduction h1 {
   color: #262427;
   margin-bottom: 20px;
 }
-/* line 25, ../sass/views/home.scss */
+/* line 22, ../sass/views/home.scss */
 .introduction p {
   color: #4d4850;
   font-size: 2.4rem;
@@ -360,7 +359,7 @@ body {
   display: block;
   position: relative;
 }
-/* line 34, ../sass/views/home.scss */
+/* line 31, ../sass/views/home.scss */
 .introduction ul {
   font-size: 2.4rem;
   line-height: 4.0rem;
@@ -372,24 +371,24 @@ body {
   height: 42px;
   overflow: hidden;
 }
-/* line 49, ../sass/views/home.scss */
+/* line 43, ../sass/views/home.scss */
 .introduction ul li {
   font-weight: 600;
   display: block;
 }
-/* line 54, ../sass/views/home.scss */
+/* line 48, ../sass/views/home.scss */
 .introduction ul .comp_ui {
   color: #6faa94;
 }
-/* line 58, ../sass/views/home.scss */
+/* line 52, ../sass/views/home.scss */
 .introduction ul .comp_brand {
   color: #8e77a7;
 }
-/* line 62, ../sass/views/home.scss */
+/* line 56, ../sass/views/home.scss */
 .introduction ul .comp_illu {
   color: #d8836c;
 }
-/* line 68, ../sass/views/home.scss */
+/* line 62, ../sass/views/home.scss */
 .introduction .pt-trigger {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -409,7 +408,7 @@ body {
   background-position: 94% 50%;
   transition: background-color 0.2s ease;
 }
-/* line 87, ../sass/views/home.scss */
+/* line 80, ../sass/views/home.scss */
 .introduction .pt-trigger:hover {
   color: #f8f6f5;
   background: url(../img/right-arrow-light.svg) no-repeat;
@@ -419,14 +418,14 @@ body {
   background-color: #4d4850;
 }
 
-/* line 101, ../sass/views/home.scss */
+/* line 94, ../sass/views/home.scss */
 .tooltip {
   display: inline;
   position: relative;
   z-index: 999;
 }
 
-/* line 108, ../sass/views/home.scss */
+/* line 101, ../sass/views/home.scss */
 .tooltip-item {
   background-color: #ddd;
   padding: 4px 8px;
@@ -441,7 +440,7 @@ body {
 }
 
 /* Tooltip */
-/* line 122, ../sass/views/home.scss */
+/* line 115, ../sass/views/home.scss */
 .tooltip-content {
   position: absolute;
   z-index: 1000;
@@ -455,7 +454,7 @@ body {
   pointer-events: none;
 }
 
-/* line 136, ../sass/views/home.scss */
+/* line 129, ../sass/views/home.scss */
 .tooltip-effect-4 .tooltip-content {
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
@@ -465,7 +464,7 @@ body {
   transition: opacity 0.2s, transform 0.2s;
 }
 
-/* line 145, ../sass/views/home.scss */
+/* line 138, ../sass/views/home.scss */
 .tooltip:hover .tooltip-content {
   pointer-events: auto;
   opacity: 1;
@@ -474,7 +473,7 @@ body {
 }
 
 /* Arrow */
-/* line 156, ../sass/views/home.scss */
+/* line 149, ../sass/views/home.scss */
 .tooltip-content::after {
   content: '';
   top: 100%;
@@ -491,7 +490,7 @@ body {
 }
 
 /* Tooltip content*/
-/* line 173, ../sass/views/home.scss */
+/* line 166, ../sass/views/home.scss */
 .tooltip-content img {
   position: relative;
   height: 170px;
@@ -500,7 +499,7 @@ body {
   margin-right: 10px;
 }
 
-/* line 181, ../sass/views/home.scss */
+/* line 174, ../sass/views/home.scss */
 .tooltip-text {
   text-align: left;
   font-size: 1.6rem;
@@ -510,7 +509,7 @@ body {
   color: #fff;
 }
 
-/* line 190, ../sass/views/home.scss */
+/* line 183, ../sass/views/home.scss */
 .tooltip-smallText {
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -655,88 +654,88 @@ body {
 .projects-1 .project-content .button:hover {
   background-color: #2d5759;
 }
-/* line 152, ../sass/views/projects.scss */
+/* line 153, ../sass/views/projects.scss */
 .projects-1 .project-content a {
   color: #2d5759;
 }
 
-/* line 159, ../sass/views/projects.scss */
+/* line 160, ../sass/views/projects.scss */
 .projects-2 {
   background-color: #56a1cc;
 }
-/* line 164, ../sass/views/projects.scss */
+/* line 165, ../sass/views/projects.scss */
 .projects-2 .project-visual {
   background: url(../img/2degrees.png) no-repeat;
   background-position: top-left;
 }
-/* line 171, ../sass/views/projects.scss */
+/* line 172, ../sass/views/projects.scss */
 .projects-2 .project-content span {
   border-left: 1px solid #085a94;
   color: #085a94;
 }
-/* line 176, ../sass/views/projects.scss */
+/* line 177, ../sass/views/projects.scss */
 .projects-2 .project-content .button {
   background-color: #085a94;
 }
-/* line 180, ../sass/views/projects.scss */
+/* line 181, ../sass/views/projects.scss */
 .projects-2 .project-content .button:hover {
   background-color: #1970ae;
 }
-/* line 184, ../sass/views/projects.scss */
+/* line 186, ../sass/views/projects.scss */
 .projects-2 .project-content a {
   color: #1970ae;
 }
 
-/* line 192, ../sass/views/projects.scss */
+/* line 194, ../sass/views/projects.scss */
 .projects-3 {
   background-color: #eb833f;
 }
-/* line 197, ../sass/views/projects.scss */
+/* line 199, ../sass/views/projects.scss */
 .projects-3 .project-visual {
   background: url(../img/unitec.png) no-repeat;
   background-position: top-left;
 }
-/* line 204, ../sass/views/projects.scss */
+/* line 206, ../sass/views/projects.scss */
 .projects-3 .project-content span {
   border-left: 1px solid #cf330d;
   color: #cf330d;
 }
-/* line 209, ../sass/views/projects.scss */
+/* line 211, ../sass/views/projects.scss */
 .projects-3 .project-content .button {
   background-color: #cf330d;
 }
-/* line 213, ../sass/views/projects.scss */
+/* line 215, ../sass/views/projects.scss */
 .projects-3 .project-content .button:hover {
   background-color: #df5706;
 }
-/* line 217, ../sass/views/projects.scss */
+/* line 220, ../sass/views/projects.scss */
 .projects-3 .project-content a {
   color: #df5706;
 }
 
-/* line 224, ../sass/views/projects.scss */
+/* line 227, ../sass/views/projects.scss */
 .projects-4 {
   background-color: #272120;
 }
-/* line 229, ../sass/views/projects.scss */
+/* line 232, ../sass/views/projects.scss */
 .projects-4 .project-visual {
   background: url(../img/btx.png) no-repeat;
   background-position: top-left;
 }
-/* line 236, ../sass/views/projects.scss */
+/* line 239, ../sass/views/projects.scss */
 .projects-4 .project-content span {
   border-left: 1px solid #f5a109;
   color: #f5a109;
 }
-/* line 241, ../sass/views/projects.scss */
+/* line 244, ../sass/views/projects.scss */
 .projects-4 .project-content .button {
   background-color: #f5a109;
 }
-/* line 245, ../sass/views/projects.scss */
+/* line 248, ../sass/views/projects.scss */
 .projects-4 .project-content .button:hover {
   background-color: #ffb400;
 }
-/* line 249, ../sass/views/projects.scss */
+/* line 253, ../sass/views/projects.scss */
 .projects-4 .project-content a {
   color: #ffb400;
 }
@@ -751,7 +750,7 @@ body {
   width: 60%;
   height: 60%;
   margin: auto;
-  z-index: 200;
+  z-index: 202;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -789,7 +788,7 @@ body {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
-/* line 48, ../sass/views/contact.scss */
+/* line 46, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button {
   height: 25px;
   width: 25px;
@@ -809,7 +808,7 @@ body {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 65, ../sass/views/contact.scss */
+/* line 63, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button:hover {
   opacity: 1;
 }
@@ -834,7 +833,7 @@ body {
   line-height: 2.4rem;
   border: none;
 }
-/* line 95, ../sass/views/contact.scss */
+/* line 93, ../sass/views/contact.scss */
 #Contact .contact-content p a {
   font-weight: 400;
   display: inline-block;
@@ -842,7 +841,7 @@ body {
   color: #6faa94;
   text-decoration: none;
 }
-/* line 104, ../sass/views/contact.scss */
+/* line 103, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn {
   display: inline-block;
   font-size: 1.2rem;
@@ -859,11 +858,11 @@ body {
   margin-right: 10px;
   margin-top: 30px;
 }
-/* line 119, ../sass/views/contact.scss */
+/* line 118, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1 {
   background-color: #8e77a7;
 }
-/* line 123, ../sass/views/contact.scss */
+/* line 122, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1:hover {
   background-color: #795f96;
 }
@@ -876,7 +875,7 @@ body {
   background-color: #c56a51;
 }
 
-/* line 138, ../sass/views/contact.scss */
+/* line 139, ../sass/views/contact.scss */
 .contactOverlay {
   position: absolute;
   top: 0px;

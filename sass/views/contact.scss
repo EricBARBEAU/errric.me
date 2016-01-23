@@ -10,10 +10,7 @@
 	margin: auto;
 	z-index: 200;
 	-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
-}
 
-#Contact
-{
 	.contact-top
 	{
 		display: block;
@@ -21,9 +18,7 @@
 		width: 100%;
 		height: 35%;
 		margin-bottom: 5px;
-	}
-	.contact-top
-	{
+
 		img
 		{
 			display: block;
@@ -73,6 +68,7 @@
 			}
 		}
 	}
+
 	.contact-content
 	{
 		color: $color-font-copy-dark;
@@ -80,9 +76,7 @@
 		padding: 10px 30px 10px 30px;
 		font-size: 1.4rem;
 		line-height: 2.2rem;
-	}
-	.contact-content
-	{
+
 		p
 		{
 			padding-bottom:15px;

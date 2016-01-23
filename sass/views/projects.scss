@@ -144,10 +144,11 @@
 		.button
 		{
 			background-color: $color-color1-project1;
-		}
-		.button:hover
-		{
-			background-color: $color-color2-project1;
+
+			&:hover
+			{
+				background-color: $color-color2-project1;
+			}
 		}
 		a
 		{
@@ -176,10 +177,11 @@
 		.button
 		{
 			background-color: $color-color1-project2;
-		}
-		.button:hover
-		{
-			background-color: $color-color2-project2;
+
+			&:hover
+			{
+				background-color: $color-color2-project2;
+			}
 		}
 		a
 		{
@@ -209,10 +211,11 @@
 		.button
 		{
 			background-color: $color-color1-project3;
-		}
-		.button:hover
-		{
-			background-color: $color-color2-project3;
+
+			&:hover
+			{
+				background-color: $color-color2-project3;
+			}
 		}
 		a
 		{
@@ -241,10 +244,11 @@
 		.button
 		{
 			background-color: $color-color1-project4;
-		}
-		.button:hover
-		{
-			background-color: $color-color2-project4;
+
+			&:hover
+			{
+				background-color: $color-color2-project4;
+			}
 		}
 		a
 		{

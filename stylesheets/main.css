@@ -304,8 +304,7 @@ body {
   height: 60px;
   transition: transform 0.2s ease;
 }
-
-/* line 14, ../sass/views/header.scss */
+/* line 11, ../sass/views/header.scss */
 #TopBar .logo {
   display: block;
   width: 60px;
@@ -314,17 +313,17 @@ body {
   background-size: 60px 60px;
   float: left;
 }
-/* line 23, ../sass/views/header.scss */
+/* line 20, ../sass/views/header.scss */
 #TopBar .SubNav {
   font-size: 1.5rem;
   text-transform: uppercase;
   float: right;
 }
-/* line 31, ../sass/views/header.scss */
+/* line 26, ../sass/views/header.scss */
 #TopBar .SubNav li {
   display: inline-block;
 }
-/* line 37, ../sass/views/header.scss */
+/* line 32, ../sass/views/header.scss */
 #TopBar .SubNav li a {
   display: block;
   color: #262427;
@@ -757,8 +756,7 @@ body {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-
-/* line 17, ../sass/views/contact.scss */
+/* line 14, ../sass/views/contact.scss */
 #Contact .contact-top {
   display: block;
   position: relative;
@@ -766,7 +764,7 @@ body {
   height: 35%;
   margin-bottom: 5px;
 }
-/* line 27, ../sass/views/contact.scss */
+/* line 22, ../sass/views/contact.scss */
 #Contact .contact-top img {
   display: block;
   position: absolute;
@@ -777,7 +775,7 @@ body {
   height: 150px;
   z-index: 10;
 }
-/* line 37, ../sass/views/contact.scss */
+/* line 32, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg {
   display: block;
   position: relative;
@@ -791,7 +789,7 @@ body {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
-/* line 53, ../sass/views/contact.scss */
+/* line 48, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button {
   height: 25px;
   width: 25px;
@@ -811,11 +809,11 @@ body {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 70, ../sass/views/contact.scss */
+/* line 65, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button:hover {
   opacity: 1;
 }
-/* line 76, ../sass/views/contact.scss */
+/* line 72, ../sass/views/contact.scss */
 #Contact .contact-content {
   color: #4d4850;
   text-align: center;
@@ -823,20 +821,20 @@ body {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
-/* line 86, ../sass/views/contact.scss */
+/* line 80, ../sass/views/contact.scss */
 #Contact .contact-content p {
   padding-bottom: 15px;
   padding-top: 15px;
   border-top: 1px solid #ccc;
 }
-/* line 92, ../sass/views/contact.scss */
+/* line 86, ../sass/views/contact.scss */
 #Contact .contact-content p:first-child {
   color: #262427;
   font-size: 1.6rem;
   line-height: 2.4rem;
   border: none;
 }
-/* line 101, ../sass/views/contact.scss */
+/* line 95, ../sass/views/contact.scss */
 #Contact .contact-content p a {
   font-weight: 400;
   display: inline-block;
@@ -844,7 +842,7 @@ body {
   color: #6faa94;
   text-decoration: none;
 }
-/* line 110, ../sass/views/contact.scss */
+/* line 104, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn {
   display: inline-block;
   font-size: 1.2rem;
@@ -861,24 +859,24 @@ body {
   margin-right: 10px;
   margin-top: 30px;
 }
-/* line 125, ../sass/views/contact.scss */
+/* line 119, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1 {
   background-color: #8e77a7;
 }
-/* line 129, ../sass/views/contact.scss */
+/* line 123, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1:hover {
   background-color: #795f96;
 }
-/* line 133, ../sass/views/contact.scss */
+/* line 127, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-2 {
   background-color: #d8836c;
 }
-/* line 137, ../sass/views/contact.scss */
+/* line 131, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-2:hover {
   background-color: #c56a51;
 }
 
-/* line 144, ../sass/views/contact.scss */
+/* line 138, ../sass/views/contact.scss */
 .contactOverlay {
   position: absolute;
   top: 0px;

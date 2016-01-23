@@ -12,10 +12,7 @@
 	margin-top: 280px;
 	padding-left: 50px;
 	padding-right: 50px;
-}
 
-.introduction
-{
 	h1
 	{
 		color:$color-font-title-dark;
@@ -42,10 +39,7 @@
 		width: 200px;
 		height: 42px;
 		overflow: hidden;
-	}
 
-	ul
-	{
 		li
 		{
 			font-weight: 600;
@@ -82,19 +76,18 @@
     	position: relative;
     	background-position: 94% 50%;
     	transition: background-color 0.2s ease;
-	}
 
-	.pt-trigger:hover
-	{
-		color: $color-background-light;
-		background: url(../img/right-arrow-light.svg) no-repeat;
-		background-size: 12px 9px;
-    	position: relative;
-    	background-position: 94% 50%;
-    	background-color: $color-font-copy-dark;
+    	&:hover
+    	{
+    		color: $color-background-light;
+			background: url(../img/right-arrow-light.svg) no-repeat;
+			background-size: 12px 9px;
+	    	position: relative;
+	    	background-position: 94% 50%;
+	    	background-color: $color-font-copy-dark;
+    	}
 	}
 }
-
 
 // ToolTip
 

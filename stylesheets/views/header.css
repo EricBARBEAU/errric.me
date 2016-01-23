@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-font-title-dark".
-        on line 40 of /media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss
+        on line 35 of /media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss
 
-35: 		li
-36: 		{
-37: 			a
-38: 			{
-39: 				display: block;
-40: 				color: $color-font-title-dark;
-41: 				text-decoration: none;
-42: 				line-height: 6.0rem;
-43: 				margin-left: 30px;
-44: 				transition: color 0.6s ease;
-45: 			}
+30: 		li
+31: 		{
+32: 			a
+33: 			{
+34: 				display: block;
+35: 				color: $color-font-title-dark;
+36: 				text-decoration: none;
+37: 				line-height: 6.0rem;
+38: 				margin-left: 30px;
+39: 				transition: color 0.6s ease;
+40: 			}
 
 Backtrace:
-/media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss:40
+/media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss:35
 /home/eric/.rvm/gems/ruby-2.1.1/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/eric/.rvm/gems/ruby-2.1.1/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /home/eric/.rvm/gems/ruby-2.1.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -103,4 +103,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-font-title-dark\".\A         on line 40 of /media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss\A \A 35: 		li\A 36: 		{\A 37: 			a\A 38: 			{\A 39: 				display: block;\A 40: 				color: $color-font-title-dark;\A 41: 				text-decoration: none;\A 42: 				line-height: 6.0rem;\A 43: 				margin-left: 30px;\A 44: 				transition: color 0.6s ease;\A 45: 			}"; }
+  content: "Error: Undefined variable: \"$color-font-title-dark\".\A         on line 35 of /media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass/sass/views/header.scss\A \A 30: 		li\A 31: 		{\A 32: 			a\A 33: 			{\A 34: 				display: block;\A 35: 				color: $color-font-title-dark;\A 36: 				text-decoration: none;\A 37: 				line-height: 6.0rem;\A 38: 				margin-left: 30px;\A 39: 				transition: color 0.6s ease;\A 40: 			}"; }

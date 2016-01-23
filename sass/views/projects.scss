@@ -12,10 +12,7 @@
 	height: 100%;
 	background-color: $color-background-light;
 	float: left;
-}
 
-#SideBar
-{
 	a
 	{
 		position: relative;
@@ -30,12 +27,14 @@
 		background-size: 50px 50px;
 		opacity: 0.6;
 		cursor: pointer;
-	}
-	a:hover
-	{
-		opacity: 1;
+
+		&:hover
+		{
+			opacity: 1;
+		}
 	}
 }
+
 
 #ProjectsWrapper
 {
@@ -51,10 +50,7 @@
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-}
 
-.projects
-{
 	.project-content
 	{
 		display: block;
@@ -63,9 +59,7 @@
 		left:8%;
 		width: 50%; 
 		z-index: 100;
-	}
-	.project-content
-	{
+
 		span
 		{
 			text-transform: uppercase;
@@ -73,14 +67,13 @@
 			line-height: 3.2rem;
 			opacity: 0.6;
 			padding-left: 10px;
-		}
-		span
-		{
+
 			b
 			{
 				color: #fff;
 			}
 		}
+
 		h2
 		{
 			margin-top: 30px;
@@ -115,6 +108,7 @@
 	    	transition: background-color 0.2s ease;
 		}
 	}
+
 	.project-visual
 	{
 		display: block;
@@ -129,13 +123,11 @@
 
 
 
-.projects-1
-{
-	background-color: $color-color3-project1;
-}
 
 .projects-1
 {
+	background-color: $color-color3-project1;
+
 	.project-visual
 	{
 		background: url(../img/phixl.png) no-repeat;
@@ -166,11 +158,9 @@
 
 .projects-2
 {
-	background-color: $color-color3-project2;
-}	
 
-.projects-2
-{
+	background-color: $color-color3-project2;
+
 	.project-visual
 	{
 		background: url(../img/2degrees.png) no-repeat;
@@ -198,13 +188,12 @@
 	}
 }
 
-.projects-3
-{
-	background-color: $color-color3-project3;
-}	
 
 .projects-3
 {
+
+	background-color: $color-color3-project3;
+
 	.project-visual
 	{
 		background: url(../img/unitec.png) no-repeat;
@@ -234,11 +223,9 @@
 
 .projects-4
 {
-	background-color: $color-color3-project4;
-}	
 
-.projects-4
-{
+	background-color: $color-color3-project4;
+
 	.project-visual
 	{
 		background: url(../img/btx.png) no-repeat;

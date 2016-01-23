@@ -134,20 +134,19 @@ body
 	}
 
 
-	/* Mobile */
+	/* Mobile Landscape */
 	@media #{$mobileLand} 
     {
     	.introduction
     	{
     		margin-top: 180px;
-    	}
-    	.introduction
-    	{
+
     		ul
     		{
     			top:312px;
     		}
     	}
+    	
     	#SideBar
     	{
     		width: 20%;
@@ -161,9 +160,7 @@ body
 			.project-content
 			{
 				width: 90%;
-			}
-			.project-content
-			{
+
 				span
 				{
 					font-size:1.4rem;
@@ -224,4 +221,17 @@ body
 				}
 			}
 		}
+	}
+
+	/* Mobile Portrait */
+	@media #{$mobileLand} 
+	{
+		.project-content
+		{
+			width: 100%;
+		}
+		.project-visual
+		{
+	   		display: none;
+		}	
 	}

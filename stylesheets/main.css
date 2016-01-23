@@ -201,52 +201,51 @@ body {
     margin-top: 15px;
   }
 }
-/* Mobile */
+/* Mobile Landscape */
 @media (max-width: 767px) {
   /* line 140, ../sass/layout.scss */
   .introduction {
     margin-top: 180px;
   }
-
-  /* line 146, ../sass/layout.scss */
+  /* line 144, ../sass/layout.scss */
   .introduction ul {
     top: 312px;
   }
 
-  /* line 151, ../sass/layout.scss */
+  /* line 150, ../sass/layout.scss */
   #SideBar {
     width: 20%;
   }
 
-  /* line 155, ../sass/layout.scss */
+  /* line 154, ../sass/layout.scss */
   #ProjectsWrapper {
     width: 80%;
   }
 
-  /* line 161, ../sass/layout.scss */
+  /* line 160, ../sass/layout.scss */
   .projects .project-content {
     width: 90%;
   }
-  /* line 167, ../sass/layout.scss */
+  /* line 164, ../sass/layout.scss */
   .projects .project-content span {
     font-size: 1.4rem;
     line-height: 2.8rem;
   }
-  /* line 172, ../sass/layout.scss */
+  /* line 169, ../sass/layout.scss */
   .projects .project-content h2 {
     font-size: 5.2rem;
     margin-top: 20px;
   }
-  /* line 177, ../sass/layout.scss */
+  /* line 174, ../sass/layout.scss */
   .projects .project-content .button {
     margin-top: 20px;
   }
-  /* line 182, ../sass/layout.scss */
+  /* line 179, ../sass/layout.scss */
   .projects .project-visual {
     visibility: hidden;
   }
 
-  /* line 187, ../sass/layout.scss */
+  /* line 184, ../sass/layout.scss */
   #Contact {
     position: fixed;
     top: -1200px;
@@ -255,30 +254,42 @@ body {
     width: 90%;
   }
 
-  /* line 195, ../sass/layout.scss */
+  /* line 192, ../sass/layout.scss */
   #Contact .contact-top {
     height: 25%;
   }
-  /* line 201, ../sass/layout.scss */
+  /* line 198, ../sass/layout.scss */
   #Contact .contact-top img {
     margin-left: -50px;
     width: 100px;
     height: 100px;
   }
-  /* line 208, ../sass/layout.scss */
+  /* line 205, ../sass/layout.scss */
   #Contact .contact-content {
     padding: 6px 12px 6px 12px;
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
-  /* line 216, ../sass/layout.scss */
+  /* line 213, ../sass/layout.scss */
   #Contact .contact-content p {
     padding-bottom: 8px;
     padding-top: 8px;
   }
-  /* line 221, ../sass/layout.scss */
+  /* line 218, ../sass/layout.scss */
   #Contact .contact-content .contact-btn {
     margin-top: 12px;
+  }
+}
+/* Mobile Portrait */
+@media (max-width: 767px) {
+  /* line 229, ../sass/layout.scss */
+  .project-content {
+    width: 100%;
+  }
+
+  /* line 233, ../sass/layout.scss */
+  .project-visual {
+    display: none;
   }
 }
 		/* #Views
@@ -520,8 +531,7 @@ body {
   background-color: #f8f6f5;
   float: left;
 }
-
-/* line 19, ../sass/views/projects.scss */
+/* line 16, ../sass/views/projects.scss */
 #SideBar a {
   position: relative;
   top: 50%;
@@ -536,12 +546,12 @@ body {
   opacity: 0.6;
   cursor: pointer;
 }
-/* line 34, ../sass/views/projects.scss */
+/* line 31, ../sass/views/projects.scss */
 #SideBar a:hover {
   opacity: 1;
 }
 
-/* line 40, ../sass/views/projects.scss */
+/* line 39, ../sass/views/projects.scss */
 #ProjectsWrapper {
   display: block;
   width: 90%;
@@ -549,15 +559,14 @@ body {
   overflow-y: scroll;
 }
 
-/* line 48, ../sass/views/projects.scss */
+/* line 47, ../sass/views/projects.scss */
 .projects {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-
-/* line 58, ../sass/views/projects.scss */
+/* line 54, ../sass/views/projects.scss */
 .projects .project-content {
   display: block;
   position: absolute;
@@ -566,7 +575,7 @@ body {
   width: 50%;
   z-index: 100;
 }
-/* line 69, ../sass/views/projects.scss */
+/* line 63, ../sass/views/projects.scss */
 .projects .project-content span {
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -574,16 +583,16 @@ body {
   opacity: 0.6;
   padding-left: 10px;
 }
-/* line 79, ../sass/views/projects.scss */
+/* line 71, ../sass/views/projects.scss */
 .projects .project-content span b {
   color: #fff;
 }
-/* line 84, ../sass/views/projects.scss */
+/* line 77, ../sass/views/projects.scss */
 .projects .project-content h2 {
   margin-top: 30px;
   color: #fff;
 }
-/* line 89, ../sass/views/projects.scss */
+/* line 82, ../sass/views/projects.scss */
 .projects .project-content p {
   margin-top: 20px;
   font-size: 1.8rem;
@@ -592,12 +601,12 @@ body {
   color: #f8f6f5;
   width: 80%;
 }
-/* line 98, ../sass/views/projects.scss */
+/* line 91, ../sass/views/projects.scss */
 .projects .project-content a {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 103, ../sass/views/projects.scss */
+/* line 96, ../sass/views/projects.scss */
 .projects .project-content .button {
   display: inline-block;
   font-size: 1.4rem;
@@ -613,7 +622,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-/* line 118, ../sass/views/projects.scss */
+/* line 112, ../sass/views/projects.scss */
 .projects .project-visual {
   display: block;
   position: absolute;
@@ -625,114 +634,110 @@ body {
   opacity: 0.4;
 }
 
-/* line 132, ../sass/views/projects.scss */
+/* line 127, ../sass/views/projects.scss */
 .projects-1 {
   background-color: #428689;
 }
-
-/* line 139, ../sass/views/projects.scss */
+/* line 131, ../sass/views/projects.scss */
 .projects-1 .project-visual {
   background: url(../img/phixl.png) no-repeat;
   background-position: top-left;
 }
-/* line 147, ../sass/views/projects.scss */
+/* line 139, ../sass/views/projects.scss */
 .projects-1 .project-content span {
   border-left: 1px solid #1b3e3f;
   color: #1b3e3f;
 }
-/* line 152, ../sass/views/projects.scss */
+/* line 144, ../sass/views/projects.scss */
 .projects-1 .project-content .button {
   background-color: #1b3e3f;
 }
-/* line 156, ../sass/views/projects.scss */
+/* line 148, ../sass/views/projects.scss */
 .projects-1 .project-content .button:hover {
   background-color: #2d5759;
 }
-/* line 160, ../sass/views/projects.scss */
+/* line 152, ../sass/views/projects.scss */
 .projects-1 .project-content a {
   color: #2d5759;
 }
 
-/* line 167, ../sass/views/projects.scss */
+/* line 159, ../sass/views/projects.scss */
 .projects-2 {
   background-color: #56a1cc;
 }
-
-/* line 174, ../sass/views/projects.scss */
+/* line 164, ../sass/views/projects.scss */
 .projects-2 .project-visual {
   background: url(../img/2degrees.png) no-repeat;
   background-position: top-left;
 }
-/* line 181, ../sass/views/projects.scss */
+/* line 171, ../sass/views/projects.scss */
 .projects-2 .project-content span {
   border-left: 1px solid #085a94;
   color: #085a94;
 }
-/* line 186, ../sass/views/projects.scss */
+/* line 176, ../sass/views/projects.scss */
 .projects-2 .project-content .button {
   background-color: #085a94;
 }
-/* line 190, ../sass/views/projects.scss */
+/* line 180, ../sass/views/projects.scss */
 .projects-2 .project-content .button:hover {
   background-color: #1970ae;
 }
-/* line 194, ../sass/views/projects.scss */
+/* line 184, ../sass/views/projects.scss */
 .projects-2 .project-content a {
   color: #1970ae;
 }
 
-/* line 201, ../sass/views/projects.scss */
+/* line 192, ../sass/views/projects.scss */
 .projects-3 {
   background-color: #eb833f;
 }
-
-/* line 208, ../sass/views/projects.scss */
+/* line 197, ../sass/views/projects.scss */
 .projects-3 .project-visual {
   background: url(../img/unitec.png) no-repeat;
   background-position: top-left;
 }
-/* line 215, ../sass/views/projects.scss */
+/* line 204, ../sass/views/projects.scss */
 .projects-3 .project-content span {
   border-left: 1px solid #cf330d;
   color: #cf330d;
 }
-/* line 220, ../sass/views/projects.scss */
+/* line 209, ../sass/views/projects.scss */
 .projects-3 .project-content .button {
   background-color: #cf330d;
 }
-/* line 224, ../sass/views/projects.scss */
+/* line 213, ../sass/views/projects.scss */
 .projects-3 .project-content .button:hover {
   background-color: #df5706;
 }
-/* line 228, ../sass/views/projects.scss */
+/* line 217, ../sass/views/projects.scss */
 .projects-3 .project-content a {
   color: #df5706;
 }
 
-/* line 235, ../sass/views/projects.scss */
+/* line 224, ../sass/views/projects.scss */
 .projects-4 {
   background-color: #272120;
 }
-
-/* line 242, ../sass/views/projects.scss */
+/* line 229, ../sass/views/projects.scss */
 .projects-4 .project-visual {
   background: url(../img/btx.png) no-repeat;
   background-position: top-left;
 }
-/* line 249, ../sass/views/projects.scss */
+/* line 236, ../sass/views/projects.scss */
 .projects-4 .project-content span {
   border-left: 1px solid #f5a109;
   color: #f5a109;
 }
-/* line 254, ../sass/views/projects.scss */
+/* line 241, ../sass/views/projects.scss */
 .projects-4 .project-content .button {
   background-color: #f5a109;
 }
-/* line 258, ../sass/views/projects.scss */
+/* line 245, ../sass/views/projects.scss */
 .projects-4 .project-content .button:hover {
   background-color: #ffb400;
 }
-/* line 262, ../sass/views/projects.scss */
+/* line 249, ../sass/views/projects.scss */
 .projects-4 .project-content a {
   color: #ffb400;
 }

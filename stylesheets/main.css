@@ -1,0 +1,902 @@
+/*
+* Eric BARBEAU
+* Copyright 2015, Eric BARBEAU
+* www.errric.me
+* 20/09/2015
+*/
+/* Table of Content
+==================================================
+	
+	#Reset & Basics
+	#Set Styles
+	#Global Layout
+
+==================================================
+
+	#Header
+	#Home
+	#Projects Page
+	#Contact
+
+==================================================	*/
+		/* #Reset & Basics
+================================================== */
+/* line 1, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+}
+
+/* line 10, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 12, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 14, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 16, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 18, ../sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 22, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+		/* #Set Styles
+================================================== */
+/* line 40, ../sass/main.scss */
+html {
+  font-size: 62.5%;
+  line-height: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+}
+
+/* line 49, ../sass/main.scss */
+h1, h2 {
+  font-size: 7.0rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* line 56, ../sass/main.scss */
+b {
+  font-weight: 800;
+}
+
+		/* #Global Layout
+================================================== */
+/* line 107, ../sass/main.scss */
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  background-color: #262427;
+}
+
+/* line 117, ../sass/main.scss */
+.pt-page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* line 129, ../sass/main.scss */
+.pt-page-current {
+  visibility: visible;
+  z-index: 1;
+}
+
+/* line 134, ../sass/main.scss */
+.pt-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 141, ../sass/main.scss */
+.InsideWrapper {
+  position: relative;
+  display: block;
+  width: 960px;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+		/* #Header
+================================================== */
+/* line 162, ../sass/main.scss */
+#TopBar {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  z-index: 10;
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+/* line 173, ../sass/main.scss */
+#TopBar .logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/logo.svg);
+  background-size: 60px 60px;
+  float: left;
+}
+/* line 182, ../sass/main.scss */
+#TopBar .SubNav {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  float: right;
+}
+/* line 190, ../sass/main.scss */
+#TopBar .SubNav li {
+  display: inline-block;
+}
+/* line 196, ../sass/main.scss */
+#TopBar .SubNav li a {
+  display: block;
+  color: #262427;
+  text-decoration: none;
+  line-height: 6.0rem;
+  margin-left: 30px;
+  transition: color 0.6s ease;
+}
+
+		/* #Home
+================================================== */
+/* line 213, ../sass/main.scss */
+.pt-page-1 {
+  background-color: #f8f6f5;
+}
+
+/* line 218, ../sass/main.scss */
+.introduction {
+  display: block;
+  width: 100%;
+  margin-top: 280px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 229, ../sass/main.scss */
+.introduction h1 {
+  color: #262427;
+  margin-bottom: 20px;
+}
+/* line 235, ../sass/main.scss */
+.introduction p {
+  color: #4d4850;
+  font-size: 2.4rem;
+  line-height: 4.0rem;
+  display: block;
+  position: relative;
+}
+/* line 244, ../sass/main.scss */
+.introduction ul {
+  font-size: 2.4rem;
+  line-height: 4.0rem;
+  display: inline-block;
+  position: absolute;
+  top: 412px;
+  left: 99px;
+  width: 200px;
+  height: 42px;
+  overflow: hidden;
+}
+/* line 259, ../sass/main.scss */
+.introduction ul li {
+  font-weight: 600;
+  display: block;
+}
+/* line 264, ../sass/main.scss */
+.introduction ul .comp_ui {
+  color: #6faa94;
+}
+/* line 268, ../sass/main.scss */
+.introduction ul .comp_brand {
+  color: #8e77a7;
+}
+/* line 272, ../sass/main.scss */
+.introduction ul .comp_illu {
+  color: #d8836c;
+}
+/* line 278, ../sass/main.scss */
+.introduction .pt-trigger {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background: none;
+  font-weight: 600;
+  color: #4d4850;
+  border: 2px solid #4d4850;
+  cursor: pointer;
+  padding: 12px 32px 11px 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 20px;
+  background: url(../img/right-arrow-dark.svg) no-repeat;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
+  transition: background-color 0.2s ease;
+}
+/* line 297, ../sass/main.scss */
+.introduction .pt-trigger:hover {
+  color: #f8f6f5;
+  background: url(../img/right-arrow-light.svg) no-repeat;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
+  background-color: #4d4850;
+}
+
+/* line 311, ../sass/main.scss */
+.tooltip {
+  display: inline;
+  position: relative;
+  z-index: 999;
+}
+
+/* line 318, ../sass/main.scss */
+.tooltip-item {
+  background-color: #ddd;
+  padding: 4px 8px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+/* Tooltip */
+/* line 332, ../sass/main.scss */
+.tooltip-content {
+  position: absolute;
+  z-index: 1000;
+  width: 310px;
+  left: 50%;
+  margin: 0 0 20px -150px;
+  bottom: 100%;
+  background: #262427;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* line 346, ../sass/main.scss */
+.tooltip-effect-4 .tooltip-content {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scale3d(0.7, 0.3, 1);
+  transform: scale3d(0.7, 0.3, 1);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+/* line 355, ../sass/main.scss */
+.tooltip:hover .tooltip-content {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+}
+
+/* Arrow */
+/* line 366, ../sass/main.scss */
+.tooltip-content::after {
+  content: '';
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #2a3035;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+/* Tooltip content*/
+/* line 383, ../sass/main.scss */
+.tooltip-content img {
+  position: relative;
+  height: 170px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 391, ../sass/main.scss */
+.tooltip-text {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* line 400, ../sass/main.scss */
+.tooltip-smallText {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #999;
+}
+
+		/* #Projects Page
+================================================== */
+/* line 411, ../sass/main.scss */
+.pt-page-2 {
+  background-color: #262427;
+}
+
+/* line 416, ../sass/main.scss */
+#SideBar {
+  display: block;
+  width: 10%;
+  height: 100%;
+  background-color: #f8f6f5;
+  float: left;
+}
+
+/* line 427, ../sass/main.scss */
+#SideBar a {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  display: block;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  background: url(../img/back.svg) no-repeat;
+  background-size: 50px 50px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* line 442, ../sass/main.scss */
+#SideBar a:hover {
+  opacity: 1;
+}
+
+/* line 448, ../sass/main.scss */
+#ProjectsWrapper {
+  display: block;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 456, ../sass/main.scss */
+.projects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 466, ../sass/main.scss */
+.projects .project-content {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  width: 50%;
+  z-index: 100;
+}
+/* line 477, ../sass/main.scss */
+.projects .project-content span {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+/* line 487, ../sass/main.scss */
+.projects .project-content span b {
+  color: #fff;
+}
+/* line 492, ../sass/main.scss */
+.projects .project-content h2 {
+  margin-top: 30px;
+  color: #fff;
+}
+/* line 497, ../sass/main.scss */
+.projects .project-content p {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 200;
+  color: #f8f6f5;
+  width: 80%;
+}
+/* line 506, ../sass/main.scss */
+.projects .project-content a {
+  text-decoration: none;
+  font-weight: 600;
+}
+/* line 511, ../sass/main.scss */
+.projects .project-content .button {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f8f6f5;
+  padding: 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+/* line 526, ../sass/main.scss */
+.projects .project-visual {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: -800px;
+  height: 70%;
+  width: 50%;
+  z-index: 10;
+  opacity: 0.4;
+}
+
+/* line 540, ../sass/main.scss */
+.projects-1 {
+  background-color: #428689;
+}
+
+/* line 547, ../sass/main.scss */
+.projects-1 .project-visual {
+  background: url(../img/phixl.png) no-repeat;
+  background-position: top-left;
+}
+/* line 555, ../sass/main.scss */
+.projects-1 .project-content span {
+  border-left: 1px solid #1b3e3f;
+  color: #1b3e3f;
+}
+/* line 560, ../sass/main.scss */
+.projects-1 .project-content .button {
+  background-color: #1b3e3f;
+}
+/* line 564, ../sass/main.scss */
+.projects-1 .project-content .button:hover {
+  background-color: #2d5759;
+}
+/* line 568, ../sass/main.scss */
+.projects-1 .project-content a {
+  color: #2d5759;
+}
+
+/* line 575, ../sass/main.scss */
+.projects-2 {
+  background-color: #56a1cc;
+}
+
+/* line 582, ../sass/main.scss */
+.projects-2 .project-visual {
+  background: url(../img/2degrees.png) no-repeat;
+  background-position: top-left;
+}
+/* line 589, ../sass/main.scss */
+.projects-2 .project-content span {
+  border-left: 1px solid #085a94;
+  color: #085a94;
+}
+/* line 594, ../sass/main.scss */
+.projects-2 .project-content .button {
+  background-color: #085a94;
+}
+/* line 598, ../sass/main.scss */
+.projects-2 .project-content .button:hover {
+  background-color: #1970ae;
+}
+/* line 602, ../sass/main.scss */
+.projects-2 .project-content a {
+  color: #1970ae;
+}
+
+/* line 609, ../sass/main.scss */
+.projects-3 {
+  background-color: #eb833f;
+}
+
+/* line 616, ../sass/main.scss */
+.projects-3 .project-visual {
+  background: url(../img/unitec.png) no-repeat;
+  background-position: top-left;
+}
+/* line 623, ../sass/main.scss */
+.projects-3 .project-content span {
+  border-left: 1px solid #cf330d;
+  color: #cf330d;
+}
+/* line 628, ../sass/main.scss */
+.projects-3 .project-content .button {
+  background-color: #cf330d;
+}
+/* line 632, ../sass/main.scss */
+.projects-3 .project-content .button:hover {
+  background-color: #df5706;
+}
+/* line 636, ../sass/main.scss */
+.projects-3 .project-content a {
+  color: #df5706;
+}
+
+/* line 643, ../sass/main.scss */
+.projects-4 {
+  background-color: #272120;
+}
+
+/* line 650, ../sass/main.scss */
+.projects-4 .project-visual {
+  background: url(../img/btx.png) no-repeat;
+  background-position: top-left;
+}
+/* line 657, ../sass/main.scss */
+.projects-4 .project-content span {
+  border-left: 1px solid #f5a109;
+  color: #f5a109;
+}
+/* line 662, ../sass/main.scss */
+.projects-4 .project-content .button {
+  background-color: #f5a109;
+}
+/* line 666, ../sass/main.scss */
+.projects-4 .project-content .button:hover {
+  background-color: #ffb400;
+}
+/* line 670, ../sass/main.scss */
+.projects-4 .project-content a {
+  color: #ffb400;
+}
+
+		/* #Contact
+================================================== */
+/* line 682, ../sass/main.scss */
+#Contact {
+  position: fixed;
+  top: -1200px;
+  left: 20%;
+  right: 20%;
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  z-index: 200;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 696, ../sass/main.scss */
+#Contact .contact-top {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 5px;
+}
+/* line 706, ../sass/main.scss */
+#Contact .contact-top img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+}
+/* line 716, ../sass/main.scss */
+#Contact .contact-top .coloredBg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 75%;
+  background-color: #6faa94;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/* line 732, ../sass/main.scss */
+#Contact .contact-top .coloredBg button {
+  height: 25px;
+  width: 25px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  background: url(../img/close2.svg) no-repeat;
+  background-size: 50%;
+  background-position: center;
+  border: 1px solid #fff;
+  opacity: 0.8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 749, ../sass/main.scss */
+#Contact .contact-top .coloredBg button:hover {
+  opacity: 1;
+}
+/* line 755, ../sass/main.scss */
+#Contact .contact-content {
+  color: #4d4850;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+/* line 765, ../sass/main.scss */
+#Contact .contact-content p {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+/* line 771, ../sass/main.scss */
+#Contact .contact-content p:first-child {
+  color: #262427;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: none;
+}
+/* line 780, ../sass/main.scss */
+#Contact .contact-content p a {
+  font-weight: 400;
+  display: inline-block;
+  padding: 5px;
+  color: #6faa94;
+  text-decoration: none;
+}
+/* line 789, ../sass/main.scss */
+#Contact .contact-content .contact-btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+/* line 804, ../sass/main.scss */
+#Contact .contact-content .contact-btn-1 {
+  background-color: #8e77a7;
+}
+/* line 808, ../sass/main.scss */
+#Contact .contact-content .contact-btn-1:hover {
+  background-color: #795f96;
+}
+/* line 812, ../sass/main.scss */
+#Contact .contact-content .contact-btn-2 {
+  background-color: #d8836c;
+}
+/* line 816, ../sass/main.scss */
+#Contact .contact-content .contact-btn-2:hover {
+  background-color: #c56a51;
+}
+
+/* line 823, ../sass/main.scss */
+.contactOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #262427;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  visibility: hidden;
+}
+
+		/* Media Queries
+================================================== */
+/* Tablet */
+@media (max-width: 1200px) {
+  /* line 846, ../sass/main.scss */
+  .introduction {
+    margin-top: 210px;
+  }
+
+  /* line 852, ../sass/main.scss */
+  .introduction ul {
+    top: 342px;
+  }
+
+  /* line 861, ../sass/main.scss */
+  .projects .project-content span {
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+  }
+  /* line 866, ../sass/main.scss */
+  .projects .project-content h2 {
+    margin-top: 24px;
+  }
+  /* line 870, ../sass/main.scss */
+  .projects .project-content p {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    width: 100%;
+  }
+  /* line 877, ../sass/main.scss */
+  .projects .project-content .button {
+    margin-top: 24px;
+  }
+  /* line 882, ../sass/main.scss */
+  .projects .project-visual {
+    width: 40%;
+  }
+
+  /* line 887, ../sass/main.scss */
+  #Contact {
+    position: fixed;
+    top: -1200px;
+    left: 8%;
+    right: 8%;
+    width: 84%;
+    height: 65%;
+  }
+
+  /* line 896, ../sass/main.scss */
+  #Contact .contact-top {
+    height: 30%;
+  }
+  /* line 902, ../sass/main.scss */
+  #Contact .contact-top img {
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
+  }
+  /* line 909, ../sass/main.scss */
+  #Contact .contact-content {
+    padding: 8px 16px 8px 16px;
+  }
+  /* line 915, ../sass/main.scss */
+  #Contact .contact-content p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  /* line 920, ../sass/main.scss */
+  #Contact .contact-content .contact-btn {
+    margin-top: 15px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  /* line 934, ../sass/main.scss */
+  .introduction {
+    margin-top: 180px;
+  }
+
+  /* line 940, ../sass/main.scss */
+  .introduction ul {
+    top: 312px;
+  }
+
+  /* line 945, ../sass/main.scss */
+  #SideBar {
+    width: 20%;
+  }
+
+  /* line 949, ../sass/main.scss */
+  #ProjectsWrapper {
+    width: 80%;
+  }
+
+  /* line 955, ../sass/main.scss */
+  .projects .project-content {
+    width: 90%;
+  }
+  /* line 961, ../sass/main.scss */
+  .projects .project-content span {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  /* line 966, ../sass/main.scss */
+  .projects .project-content h2 {
+    font-size: 5.2rem;
+    margin-top: 20px;
+  }
+  /* line 971, ../sass/main.scss */
+  .projects .project-content .button {
+    margin-top: 20px;
+  }
+  /* line 976, ../sass/main.scss */
+  .projects .project-visual {
+    visibility: hidden;
+  }
+
+  /* line 981, ../sass/main.scss */
+  #Contact {
+    position: fixed;
+    top: -1200px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+  }
+
+  /* line 989, ../sass/main.scss */
+  #Contact .contact-top {
+    height: 25%;
+  }
+  /* line 995, ../sass/main.scss */
+  #Contact .contact-top img {
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+  }
+  /* line 1002, ../sass/main.scss */
+  #Contact .contact-content {
+    padding: 6px 12px 6px 12px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  /* line 1010, ../sass/main.scss */
+  #Contact .contact-content p {
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  /* line 1015, ../sass/main.scss */
+  #Contact .contact-content .contact-btn {
+    margin-top: 12px;
+  }
+}

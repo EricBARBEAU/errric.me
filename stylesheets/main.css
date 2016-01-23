@@ -10,13 +10,7 @@
 	#Reset & Basics
 	#Set Styles
 	#Global Layout
-
-==================================================
-
-	#Header
-	#Home
-	#Projects Page
-	#Contact
+	#Views
 
 ==================================================	*/
 		/* #Reset & Basics
@@ -68,7 +62,7 @@ table {
 
 		/* #Set Styles
 ================================================== */
-/* line 41, ../sass/main.scss */
+/* line 50, ../sass/variables.scss */
 html {
   font-size: 62.5%;
   line-height: 62.5%;
@@ -77,21 +71,21 @@ html {
   font-weight: 400;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 59, ../sass/variables.scss */
 h1, h2 {
   font-size: 7.0rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 66, ../sass/variables.scss */
 b {
   font-weight: 800;
 }
 
-		/* #Global Layout
+		/* #Layout
 ================================================== */
-/* line 69, ../sass/main.scss */
+/* line 5, ../sass/layout.scss */
 body {
   height: 100%;
   padding: 0;
@@ -101,7 +95,7 @@ body {
   background-color: #262427;
 }
 
-/* line 79, ../sass/main.scss */
+/* line 15, ../sass/layout.scss */
 .pt-page {
   height: 100%;
   width: 100%;
@@ -113,20 +107,20 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 27, ../sass/layout.scss */
 .pt-page-current {
   visibility: visible;
   z-index: 1;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 32, ../sass/layout.scss */
 .pt-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 39, ../sass/layout.scss */
 .InsideWrapper {
   position: relative;
   display: block;
@@ -136,9 +130,160 @@ body {
   margin: auto;
 }
 
-		/* #Header
+/* Tablet */
+@media (max-width: 1200px) {
+  /* line 54, ../sass/layout.scss */
+  .introduction {
+    margin-top: 210px;
+  }
+
+  /* line 60, ../sass/layout.scss */
+  .introduction ul {
+    top: 342px;
+  }
+
+  /* line 69, ../sass/layout.scss */
+  .projects .project-content span {
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+  }
+  /* line 74, ../sass/layout.scss */
+  .projects .project-content h2 {
+    margin-top: 24px;
+  }
+  /* line 78, ../sass/layout.scss */
+  .projects .project-content p {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    width: 100%;
+  }
+  /* line 85, ../sass/layout.scss */
+  .projects .project-content .button {
+    margin-top: 24px;
+  }
+  /* line 90, ../sass/layout.scss */
+  .projects .project-visual {
+    width: 40%;
+  }
+
+  /* line 95, ../sass/layout.scss */
+  #Contact {
+    position: fixed;
+    top: -1200px;
+    left: 8%;
+    right: 8%;
+    width: 84%;
+    height: 65%;
+  }
+
+  /* line 104, ../sass/layout.scss */
+  #Contact .contact-top {
+    height: 30%;
+  }
+  /* line 110, ../sass/layout.scss */
+  #Contact .contact-top img {
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
+  }
+  /* line 117, ../sass/layout.scss */
+  #Contact .contact-content {
+    padding: 8px 16px 8px 16px;
+  }
+  /* line 123, ../sass/layout.scss */
+  #Contact .contact-content p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  /* line 128, ../sass/layout.scss */
+  #Contact .contact-content .contact-btn {
+    margin-top: 15px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  /* line 140, ../sass/layout.scss */
+  .introduction {
+    margin-top: 180px;
+  }
+
+  /* line 146, ../sass/layout.scss */
+  .introduction ul {
+    top: 312px;
+  }
+
+  /* line 151, ../sass/layout.scss */
+  #SideBar {
+    width: 20%;
+  }
+
+  /* line 155, ../sass/layout.scss */
+  #ProjectsWrapper {
+    width: 80%;
+  }
+
+  /* line 161, ../sass/layout.scss */
+  .projects .project-content {
+    width: 90%;
+  }
+  /* line 167, ../sass/layout.scss */
+  .projects .project-content span {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  /* line 172, ../sass/layout.scss */
+  .projects .project-content h2 {
+    font-size: 5.2rem;
+    margin-top: 20px;
+  }
+  /* line 177, ../sass/layout.scss */
+  .projects .project-content .button {
+    margin-top: 20px;
+  }
+  /* line 182, ../sass/layout.scss */
+  .projects .project-visual {
+    visibility: hidden;
+  }
+
+  /* line 187, ../sass/layout.scss */
+  #Contact {
+    position: fixed;
+    top: -1200px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+  }
+
+  /* line 195, ../sass/layout.scss */
+  #Contact .contact-top {
+    height: 25%;
+  }
+  /* line 201, ../sass/layout.scss */
+  #Contact .contact-top img {
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+  }
+  /* line 208, ../sass/layout.scss */
+  #Contact .contact-content {
+    padding: 6px 12px 6px 12px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  /* line 216, ../sass/layout.scss */
+  #Contact .contact-content p {
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  /* line 221, ../sass/layout.scss */
+  #Contact .contact-content .contact-btn {
+    margin-top: 12px;
+  }
+}
+		/* #Views
 ================================================== */
-/* line 124, ../sass/main.scss */
+/* line 3, ../sass/views/header.scss */
 #TopBar {
   position: fixed;
   top: 50px;
@@ -149,7 +294,7 @@ body {
   transition: transform 0.2s ease;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 14, ../sass/views/header.scss */
 #TopBar .logo {
   display: block;
   width: 60px;
@@ -158,17 +303,17 @@ body {
   background-size: 60px 60px;
   float: left;
 }
-/* line 144, ../sass/main.scss */
+/* line 23, ../sass/views/header.scss */
 #TopBar .SubNav {
   font-size: 1.5rem;
   text-transform: uppercase;
   float: right;
 }
-/* line 152, ../sass/main.scss */
+/* line 31, ../sass/views/header.scss */
 #TopBar .SubNav li {
   display: inline-block;
 }
-/* line 158, ../sass/main.scss */
+/* line 37, ../sass/views/header.scss */
 #TopBar .SubNav li a {
   display: block;
   color: #262427;
@@ -178,14 +323,12 @@ body {
   transition: color 0.6s ease;
 }
 
-		/* #Home
-================================================== */
-/* line 175, ../sass/main.scss */
+/* line 3, ../sass/views/home.scss */
 .pt-page-1 {
   background-color: #f8f6f5;
 }
 
-/* line 180, ../sass/main.scss */
+/* line 8, ../sass/views/home.scss */
 .introduction {
   display: block;
   width: 100%;
@@ -194,12 +337,12 @@ body {
   padding-right: 50px;
 }
 
-/* line 191, ../sass/main.scss */
+/* line 19, ../sass/views/home.scss */
 .introduction h1 {
   color: #262427;
   margin-bottom: 20px;
 }
-/* line 197, ../sass/main.scss */
+/* line 25, ../sass/views/home.scss */
 .introduction p {
   color: #4d4850;
   font-size: 2.4rem;
@@ -207,7 +350,7 @@ body {
   display: block;
   position: relative;
 }
-/* line 206, ../sass/main.scss */
+/* line 34, ../sass/views/home.scss */
 .introduction ul {
   font-size: 2.4rem;
   line-height: 4.0rem;
@@ -219,24 +362,24 @@ body {
   height: 42px;
   overflow: hidden;
 }
-/* line 221, ../sass/main.scss */
+/* line 49, ../sass/views/home.scss */
 .introduction ul li {
   font-weight: 600;
   display: block;
 }
-/* line 226, ../sass/main.scss */
+/* line 54, ../sass/views/home.scss */
 .introduction ul .comp_ui {
   color: #6faa94;
 }
-/* line 230, ../sass/main.scss */
+/* line 58, ../sass/views/home.scss */
 .introduction ul .comp_brand {
   color: #8e77a7;
 }
-/* line 234, ../sass/main.scss */
+/* line 62, ../sass/views/home.scss */
 .introduction ul .comp_illu {
   color: #d8836c;
 }
-/* line 240, ../sass/main.scss */
+/* line 68, ../sass/views/home.scss */
 .introduction .pt-trigger {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -256,7 +399,7 @@ body {
   background-position: 94% 50%;
   transition: background-color 0.2s ease;
 }
-/* line 259, ../sass/main.scss */
+/* line 87, ../sass/views/home.scss */
 .introduction .pt-trigger:hover {
   color: #f8f6f5;
   background: url(../img/right-arrow-light.svg) no-repeat;
@@ -266,14 +409,14 @@ body {
   background-color: #4d4850;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 101, ../sass/views/home.scss */
 .tooltip {
   display: inline;
   position: relative;
   z-index: 999;
 }
 
-/* line 280, ../sass/main.scss */
+/* line 108, ../sass/views/home.scss */
 .tooltip-item {
   background-color: #ddd;
   padding: 4px 8px;
@@ -288,7 +431,7 @@ body {
 }
 
 /* Tooltip */
-/* line 294, ../sass/main.scss */
+/* line 122, ../sass/views/home.scss */
 .tooltip-content {
   position: absolute;
   z-index: 1000;
@@ -302,7 +445,7 @@ body {
   pointer-events: none;
 }
 
-/* line 308, ../sass/main.scss */
+/* line 136, ../sass/views/home.scss */
 .tooltip-effect-4 .tooltip-content {
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
@@ -312,7 +455,7 @@ body {
   transition: opacity 0.2s, transform 0.2s;
 }
 
-/* line 317, ../sass/main.scss */
+/* line 145, ../sass/views/home.scss */
 .tooltip:hover .tooltip-content {
   pointer-events: auto;
   opacity: 1;
@@ -321,7 +464,7 @@ body {
 }
 
 /* Arrow */
-/* line 328, ../sass/main.scss */
+/* line 156, ../sass/views/home.scss */
 .tooltip-content::after {
   content: '';
   top: 100%;
@@ -338,7 +481,7 @@ body {
 }
 
 /* Tooltip content*/
-/* line 345, ../sass/main.scss */
+/* line 173, ../sass/views/home.scss */
 .tooltip-content img {
   position: relative;
   height: 170px;
@@ -347,7 +490,7 @@ body {
   margin-right: 10px;
 }
 
-/* line 353, ../sass/main.scss */
+/* line 181, ../sass/views/home.scss */
 .tooltip-text {
   text-align: left;
   font-size: 1.6rem;
@@ -357,21 +500,19 @@ body {
   color: #fff;
 }
 
-/* line 362, ../sass/main.scss */
+/* line 190, ../sass/views/home.scss */
 .tooltip-smallText {
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #999;
 }
 
-		/* #Projects Page
-================================================== */
-/* line 373, ../sass/main.scss */
+/* line 3, ../sass/views/projects.scss */
 .pt-page-2 {
   background-color: #262427;
 }
 
-/* line 378, ../sass/main.scss */
+/* line 8, ../sass/views/projects.scss */
 #SideBar {
   display: block;
   width: 10%;
@@ -380,7 +521,7 @@ body {
   float: left;
 }
 
-/* line 389, ../sass/main.scss */
+/* line 19, ../sass/views/projects.scss */
 #SideBar a {
   position: relative;
   top: 50%;
@@ -395,12 +536,12 @@ body {
   opacity: 0.6;
   cursor: pointer;
 }
-/* line 404, ../sass/main.scss */
+/* line 34, ../sass/views/projects.scss */
 #SideBar a:hover {
   opacity: 1;
 }
 
-/* line 410, ../sass/main.scss */
+/* line 40, ../sass/views/projects.scss */
 #ProjectsWrapper {
   display: block;
   width: 90%;
@@ -408,7 +549,7 @@ body {
   overflow-y: scroll;
 }
 
-/* line 418, ../sass/main.scss */
+/* line 48, ../sass/views/projects.scss */
 .projects {
   width: 100%;
   height: 100%;
@@ -416,7 +557,7 @@ body {
   overflow: hidden;
 }
 
-/* line 428, ../sass/main.scss */
+/* line 58, ../sass/views/projects.scss */
 .projects .project-content {
   display: block;
   position: absolute;
@@ -425,7 +566,7 @@ body {
   width: 50%;
   z-index: 100;
 }
-/* line 439, ../sass/main.scss */
+/* line 69, ../sass/views/projects.scss */
 .projects .project-content span {
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -433,16 +574,16 @@ body {
   opacity: 0.6;
   padding-left: 10px;
 }
-/* line 449, ../sass/main.scss */
+/* line 79, ../sass/views/projects.scss */
 .projects .project-content span b {
   color: #fff;
 }
-/* line 454, ../sass/main.scss */
+/* line 84, ../sass/views/projects.scss */
 .projects .project-content h2 {
   margin-top: 30px;
   color: #fff;
 }
-/* line 459, ../sass/main.scss */
+/* line 89, ../sass/views/projects.scss */
 .projects .project-content p {
   margin-top: 20px;
   font-size: 1.8rem;
@@ -451,12 +592,12 @@ body {
   color: #f8f6f5;
   width: 80%;
 }
-/* line 468, ../sass/main.scss */
+/* line 98, ../sass/views/projects.scss */
 .projects .project-content a {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 473, ../sass/main.scss */
+/* line 103, ../sass/views/projects.scss */
 .projects .project-content .button {
   display: inline-block;
   font-size: 1.4rem;
@@ -472,7 +613,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-/* line 488, ../sass/main.scss */
+/* line 118, ../sass/views/projects.scss */
 .projects .project-visual {
   display: block;
   position: absolute;
@@ -484,121 +625,119 @@ body {
   opacity: 0.4;
 }
 
-/* line 502, ../sass/main.scss */
+/* line 132, ../sass/views/projects.scss */
 .projects-1 {
   background-color: #428689;
 }
 
-/* line 509, ../sass/main.scss */
+/* line 139, ../sass/views/projects.scss */
 .projects-1 .project-visual {
   background: url(../img/phixl.png) no-repeat;
   background-position: top-left;
 }
-/* line 517, ../sass/main.scss */
+/* line 147, ../sass/views/projects.scss */
 .projects-1 .project-content span {
   border-left: 1px solid #1b3e3f;
   color: #1b3e3f;
 }
-/* line 522, ../sass/main.scss */
+/* line 152, ../sass/views/projects.scss */
 .projects-1 .project-content .button {
   background-color: #1b3e3f;
 }
-/* line 526, ../sass/main.scss */
+/* line 156, ../sass/views/projects.scss */
 .projects-1 .project-content .button:hover {
   background-color: #2d5759;
 }
-/* line 530, ../sass/main.scss */
+/* line 160, ../sass/views/projects.scss */
 .projects-1 .project-content a {
   color: #2d5759;
 }
 
-/* line 537, ../sass/main.scss */
+/* line 167, ../sass/views/projects.scss */
 .projects-2 {
   background-color: #56a1cc;
 }
 
-/* line 544, ../sass/main.scss */
+/* line 174, ../sass/views/projects.scss */
 .projects-2 .project-visual {
   background: url(../img/2degrees.png) no-repeat;
   background-position: top-left;
 }
-/* line 551, ../sass/main.scss */
+/* line 181, ../sass/views/projects.scss */
 .projects-2 .project-content span {
   border-left: 1px solid #085a94;
   color: #085a94;
 }
-/* line 556, ../sass/main.scss */
+/* line 186, ../sass/views/projects.scss */
 .projects-2 .project-content .button {
   background-color: #085a94;
 }
-/* line 560, ../sass/main.scss */
+/* line 190, ../sass/views/projects.scss */
 .projects-2 .project-content .button:hover {
   background-color: #1970ae;
 }
-/* line 564, ../sass/main.scss */
+/* line 194, ../sass/views/projects.scss */
 .projects-2 .project-content a {
   color: #1970ae;
 }
 
-/* line 571, ../sass/main.scss */
+/* line 201, ../sass/views/projects.scss */
 .projects-3 {
   background-color: #eb833f;
 }
 
-/* line 578, ../sass/main.scss */
+/* line 208, ../sass/views/projects.scss */
 .projects-3 .project-visual {
   background: url(../img/unitec.png) no-repeat;
   background-position: top-left;
 }
-/* line 585, ../sass/main.scss */
+/* line 215, ../sass/views/projects.scss */
 .projects-3 .project-content span {
   border-left: 1px solid #cf330d;
   color: #cf330d;
 }
-/* line 590, ../sass/main.scss */
+/* line 220, ../sass/views/projects.scss */
 .projects-3 .project-content .button {
   background-color: #cf330d;
 }
-/* line 594, ../sass/main.scss */
+/* line 224, ../sass/views/projects.scss */
 .projects-3 .project-content .button:hover {
   background-color: #df5706;
 }
-/* line 598, ../sass/main.scss */
+/* line 228, ../sass/views/projects.scss */
 .projects-3 .project-content a {
   color: #df5706;
 }
 
-/* line 605, ../sass/main.scss */
+/* line 235, ../sass/views/projects.scss */
 .projects-4 {
   background-color: #272120;
 }
 
-/* line 612, ../sass/main.scss */
+/* line 242, ../sass/views/projects.scss */
 .projects-4 .project-visual {
   background: url(../img/btx.png) no-repeat;
   background-position: top-left;
 }
-/* line 619, ../sass/main.scss */
+/* line 249, ../sass/views/projects.scss */
 .projects-4 .project-content span {
   border-left: 1px solid #f5a109;
   color: #f5a109;
 }
-/* line 624, ../sass/main.scss */
+/* line 254, ../sass/views/projects.scss */
 .projects-4 .project-content .button {
   background-color: #f5a109;
 }
-/* line 628, ../sass/main.scss */
+/* line 258, ../sass/views/projects.scss */
 .projects-4 .project-content .button:hover {
   background-color: #ffb400;
 }
-/* line 632, ../sass/main.scss */
+/* line 262, ../sass/views/projects.scss */
 .projects-4 .project-content a {
   color: #ffb400;
 }
 
-		/* #Contact
-================================================== */
-/* line 644, ../sass/main.scss */
+/* line 3, ../sass/views/contact.scss */
 #Contact {
   position: fixed;
   top: -1200px;
@@ -614,7 +753,7 @@ body {
   border-radius: 8px;
 }
 
-/* line 658, ../sass/main.scss */
+/* line 17, ../sass/views/contact.scss */
 #Contact .contact-top {
   display: block;
   position: relative;
@@ -622,7 +761,7 @@ body {
   height: 35%;
   margin-bottom: 5px;
 }
-/* line 668, ../sass/main.scss */
+/* line 27, ../sass/views/contact.scss */
 #Contact .contact-top img {
   display: block;
   position: absolute;
@@ -633,7 +772,7 @@ body {
   height: 150px;
   z-index: 10;
 }
-/* line 678, ../sass/main.scss */
+/* line 37, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg {
   display: block;
   position: relative;
@@ -647,7 +786,7 @@ body {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
-/* line 694, ../sass/main.scss */
+/* line 53, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button {
   height: 25px;
   width: 25px;
@@ -667,11 +806,11 @@ body {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 711, ../sass/main.scss */
+/* line 70, ../sass/views/contact.scss */
 #Contact .contact-top .coloredBg button:hover {
   opacity: 1;
 }
-/* line 717, ../sass/main.scss */
+/* line 76, ../sass/views/contact.scss */
 #Contact .contact-content {
   color: #4d4850;
   text-align: center;
@@ -679,20 +818,20 @@ body {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
-/* line 727, ../sass/main.scss */
+/* line 86, ../sass/views/contact.scss */
 #Contact .contact-content p {
   padding-bottom: 15px;
   padding-top: 15px;
   border-top: 1px solid #ccc;
 }
-/* line 733, ../sass/main.scss */
+/* line 92, ../sass/views/contact.scss */
 #Contact .contact-content p:first-child {
   color: #262427;
   font-size: 1.6rem;
   line-height: 2.4rem;
   border: none;
 }
-/* line 742, ../sass/main.scss */
+/* line 101, ../sass/views/contact.scss */
 #Contact .contact-content p a {
   font-weight: 400;
   display: inline-block;
@@ -700,7 +839,7 @@ body {
   color: #6faa94;
   text-decoration: none;
 }
-/* line 751, ../sass/main.scss */
+/* line 110, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn {
   display: inline-block;
   font-size: 1.2rem;
@@ -717,24 +856,24 @@ body {
   margin-right: 10px;
   margin-top: 30px;
 }
-/* line 766, ../sass/main.scss */
+/* line 125, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1 {
   background-color: #8e77a7;
 }
-/* line 770, ../sass/main.scss */
+/* line 129, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-1:hover {
   background-color: #795f96;
 }
-/* line 774, ../sass/main.scss */
+/* line 133, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-2 {
   background-color: #d8836c;
 }
-/* line 778, ../sass/main.scss */
+/* line 137, ../sass/views/contact.scss */
 #Contact .contact-content .contact-btn-2:hover {
   background-color: #c56a51;
 }
 
-/* line 785, ../sass/main.scss */
+/* line 144, ../sass/views/contact.scss */
 .contactOverlay {
   position: absolute;
   top: 0px;
@@ -745,158 +884,4 @@ body {
   width: 100%;
   z-index: 100;
   visibility: hidden;
-}
-
-		/* Media Queries
-================================================== */
-/* Tablet */
-@media (max-width: 1200px) {
-  /* line 808, ../sass/main.scss */
-  .introduction {
-    margin-top: 210px;
-  }
-
-  /* line 814, ../sass/main.scss */
-  .introduction ul {
-    top: 342px;
-  }
-
-  /* line 823, ../sass/main.scss */
-  .projects .project-content span {
-    font-size: 1.6rem;
-    line-height: 3.0rem;
-  }
-  /* line 828, ../sass/main.scss */
-  .projects .project-content h2 {
-    margin-top: 24px;
-  }
-  /* line 832, ../sass/main.scss */
-  .projects .project-content p {
-    margin-top: 18px;
-    font-size: 1.6rem;
-    line-height: 2.0rem;
-    width: 100%;
-  }
-  /* line 839, ../sass/main.scss */
-  .projects .project-content .button {
-    margin-top: 24px;
-  }
-  /* line 844, ../sass/main.scss */
-  .projects .project-visual {
-    width: 40%;
-  }
-
-  /* line 849, ../sass/main.scss */
-  #Contact {
-    position: fixed;
-    top: -1200px;
-    left: 8%;
-    right: 8%;
-    width: 84%;
-    height: 65%;
-  }
-
-  /* line 858, ../sass/main.scss */
-  #Contact .contact-top {
-    height: 30%;
-  }
-  /* line 864, ../sass/main.scss */
-  #Contact .contact-top img {
-    margin-left: -60px;
-    width: 120px;
-    height: 120px;
-  }
-  /* line 871, ../sass/main.scss */
-  #Contact .contact-content {
-    padding: 8px 16px 8px 16px;
-  }
-  /* line 877, ../sass/main.scss */
-  #Contact .contact-content p {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  /* line 882, ../sass/main.scss */
-  #Contact .contact-content .contact-btn {
-    margin-top: 15px;
-  }
-}
-/* Mobile */
-@media (max-width: 767px) {
-  /* line 896, ../sass/main.scss */
-  .introduction {
-    margin-top: 180px;
-  }
-
-  /* line 902, ../sass/main.scss */
-  .introduction ul {
-    top: 312px;
-  }
-
-  /* line 907, ../sass/main.scss */
-  #SideBar {
-    width: 20%;
-  }
-
-  /* line 911, ../sass/main.scss */
-  #ProjectsWrapper {
-    width: 80%;
-  }
-
-  /* line 917, ../sass/main.scss */
-  .projects .project-content {
-    width: 90%;
-  }
-  /* line 923, ../sass/main.scss */
-  .projects .project-content span {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-  }
-  /* line 928, ../sass/main.scss */
-  .projects .project-content h2 {
-    font-size: 5.2rem;
-    margin-top: 20px;
-  }
-  /* line 933, ../sass/main.scss */
-  .projects .project-content .button {
-    margin-top: 20px;
-  }
-  /* line 938, ../sass/main.scss */
-  .projects .project-visual {
-    visibility: hidden;
-  }
-
-  /* line 943, ../sass/main.scss */
-  #Contact {
-    position: fixed;
-    top: -1200px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-  }
-
-  /* line 951, ../sass/main.scss */
-  #Contact .contact-top {
-    height: 25%;
-  }
-  /* line 957, ../sass/main.scss */
-  #Contact .contact-top img {
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-  }
-  /* line 964, ../sass/main.scss */
-  #Contact .contact-content {
-    padding: 6px 12px 6px 12px;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-  }
-  /* line 972, ../sass/main.scss */
-  #Contact .contact-content p {
-    padding-bottom: 8px;
-    padding-top: 8px;
-  }
-  /* line 977, ../sass/main.scss */
-  #Contact .contact-content .contact-btn {
-    margin-top: 12px;
-  }
 }

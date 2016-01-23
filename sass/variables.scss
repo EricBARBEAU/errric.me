@@ -39,3 +39,41 @@
 	$color-branding-hover: #795f96;
 	$color-illustration: #d8836c;
 	$color-illustration-hover: #c56a51;
+
+
+// 02 - Typography
+
+	// 01 - Typography
+
+	$font-copy:    'Open Sans', sans-serif;
+
+	html
+	{
+		font-size: 62.5%; 
+		line-height: 62.5%;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-size-adjust: 100%;
+		font-weight: 400;
+	}
+
+	h1, h2
+	{
+		font-size: 7.0rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+	}
+
+	b
+	{
+		font-weight: 800;
+	}
+
+
+// 03 - Media Queries
+
+	//Media Queries Variables 
+
+	$mobilePort: "(max-width: 545px)";
+	$mobileLand: "(max-width: 767px)";
+	$tablet: "(max-width: 1200px)";
+	$desktop: "(min-width: 1201px)";	

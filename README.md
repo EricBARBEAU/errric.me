@@ -1,3 +1,3 @@
 # Website 2016
 
-Where I work and edit my personal website.
+This repository is the place where I'm working and updating my website

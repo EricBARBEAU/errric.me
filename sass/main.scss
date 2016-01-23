@@ -28,6 +28,7 @@
 ================================================== */
 
 @import 'reset';
+@import 'variables';
 
 
 		/* #Set Styles
@@ -58,47 +59,8 @@ b
 	font-weight: 800;
 }
 
-	// 02 - Colors
 
-// 02-1 - Background Colors
-
-$color-background-light: #f8f6f5;
-$color-background-dark: #262427;
-$color-background-separator: #ccc;
-
-// 02-2 - Font Colors
-
-$color-font-title-dark: #262427;
-$color-font-copy-dark: #4d4850;
-$color-font-span: #857e88;
-
-// 02-3 - Projects Colors
-
-$color-color1-project1: #1b3e3f;
-$color-color2-project1: #2d5759;
-$color-color3-project1: #428689;
-
-$color-color1-project2: #085a94;
-$color-color2-project2: #1970ae;
-$color-color3-project2: #56a1cc;
-
-$color-color1-project3: #cf330d;
-$color-color2-project3: #df5706;
-$color-color3-project3: #eb833f;
-
-$color-color1-project4: #f5a109;
-$color-color2-project4: #ffb400;
-$color-color3-project4: #272120;
-
-// 02-4 - Competences Colors
-
-$color-userinterface: #6faa94;
-$color-branding: #8e77a7;
-$color-branding-hover: #795f96;
-$color-illustration: #d8836c;
-$color-illustration-hover: #c56a51;
-
-	// 03 - Links
+	// 0 - Links
 
 
 		/* #Global Layout

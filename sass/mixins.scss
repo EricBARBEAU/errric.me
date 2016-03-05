@@ -1,0 +1,104 @@
+// Mixins used for the website
+
+// 01 - Colors
+
+	// 01-2 - Project colors set
+
+	@mixin project-color($color1, $color2, $color3)
+	{
+    	background-color:$color3;
+
+    	.project-content
+    	{
+	    	span
+	    	{
+	    		border-left: 1px solid $color1;
+				color: $color1;
+	    	}
+	    	.button
+	    	{
+	    		background-color: $color1;
+	    		&:hover
+				{
+					background-color: $color2;
+				}
+	    	}
+	    	a
+	    	{
+	    		color: $color2;
+	    	}
+    	} 
+	}
+
+// 02 - Media Queries
+
+	@mixin media-queries($point) 
+	{
+
+	  @if $point == sm-mobile {
+	    @media (max-width: $screen-xxs-max) { @content; } // Less than 479px
+	  }
+
+	  @if $point == all-mobile {
+	    @media (max-width: $screen-xs-max) { @content; } // Less than 767px
+	  }
+
+	  @if $point == lg-mobile {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == sm-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == all-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-sm-max) { @content; } // 480px to 991px
+	  }
+
+	  @if $point == lg-tablet {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == sm-desktop {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == md-desktop {
+	    @media (min-width: $screen-desktop) and (max-width: $screen-md-max) { @content; } // 992px to 1199px
+	  }
+
+	  @if $point == lg-desktop {
+	    @media (min-width: $screen-lg-desktop) { @content; } // More than 1200px
+	  }
+
+	  @if $point == not-mobile {
+	    @media (min-width: $screen-tablet) { @content; } // More than 768px
+	  }
+
+	  @if $point == not-tablet {
+	    @media (min-width: $screen-desktop) { @content; } // More than 992px
+	  }
+
+	  @if $point == not-desktop {
+	    @media (max-width: $screen-sm-max) { @content; } // Less than 991px
+	  }
+
+	  @if $point == retina {
+	    @media
+	      only screen and (-webkit-min-device-pixel-ratio: 2),
+	      only screen and (min--moz-device-pixel-ratio: 2),
+	      only screen and (-o-min-device-pixel-ratio: 2/1),
+	      only screen and (min-device-pixel-ratio: 2),
+	      only screen and (min-resolution: 192dpi),
+	      only screen and (min-resolution: 2dppx) {
+	      @content;
+	    }
+	  }
+
+	}
+
+	@mixin mq($point) {
+	  @include media-queries($point) {
+	    @content;
+	  }
+	}

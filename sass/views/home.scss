@@ -61,7 +61,7 @@
 
 	.pt-trigger
 	{
-		font-size: 1.6rem;
+		font-size: $font-size-16;
 		text-transform: uppercase;
 		background: none;
 		font-weight: 600;
@@ -103,7 +103,7 @@
 	background-color: #ddd;
 	padding: 4px 8px;
 	-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
-	font-size: 1.8rem;
+	font-size: $font-size-18;
 	text-transform: uppercase;
 	cursor: pointer;
 	font-weight: 600;
@@ -173,7 +173,7 @@
 
 .tooltip-text {
 	text-align: left;
-	font-size: 1.6rem;
+	font-size: $font-size-16;
 	line-height: 2.4rem;
 	display: block;
 	padding: 10px;
@@ -183,6 +183,6 @@
 .tooltip-smallText
 {
 	font-size: 1.2rem;
-	line-height: 1.8rem;
+	line-height: $font-size-18;
 	color: #999;
 }

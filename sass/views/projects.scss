@@ -63,7 +63,7 @@
 		span
 		{
 			text-transform: uppercase;
-			font-size:1.8rem;
+			font-size:$font-size-18;
 			line-height: 3.2rem;
 			opacity: 0.6;
 			padding-left: 10px;
@@ -82,7 +82,7 @@
 		p
 		{
 			margin-top: 20px;
-			font-size:1.8rem;
+			font-size:$font-size-18;
 			line-height: 2.2rem;
 			font-weight: 200;
 			color: $color-background-light;
@@ -118,141 +118,47 @@
    		width: 50%;
    		z-index: 10;
    		opacity: 0.4;
+   		background-position: top-left;
 	}
 }
 
-
-
-
 .projects-1
 {
-	background-color: $color-color3-project1;
+	@include project-color($color-c1-p1, $color-c2-p1, $color-c3-p1);
 
 	.project-visual
 	{
 		background: url(../img/phixl.png) no-repeat;
-		background-position: top-left;
-	}
-	.project-content
-	{
-		
-		span
-		{
-			border-left: 1px solid $color-color1-project1;
-			color: $color-color1-project1;
-		}
-		.button
-		{
-			background-color: $color-color1-project1;
-
-			&:hover
-			{
-				background-color: $color-color2-project1;
-			}
-		}
-		a
-		{
-			color: $color-color2-project1;
-		}
 	}
 }
 
 .projects-2
 {
-
-	background-color: $color-color3-project2;
+	@include project-color($color-c1-p2, $color-c2-p2, $color-c3-p2);
 
 	.project-visual
 	{
 		background: url(../img/2degrees.png) no-repeat;
-		background-position: top-left;
-	}
-	.project-content
-	{
-		span
-		{
-			border-left: 1px solid $color-color1-project2;
-			color: $color-color1-project2;
-		}
-		.button
-		{
-			background-color: $color-color1-project2;
-
-			&:hover
-			{
-				background-color: $color-color2-project2;
-			}
-		}
-		a
-		{
-			color: $color-color2-project2;
-		}
 	}
 }
 
 
 .projects-3
 {
-
-	background-color: $color-color3-project3;
+	@include project-color($color-c1-p3, $color-c2-p3, $color-c3-p3);
 
 	.project-visual
 	{
 		background: url(../img/unitec.png) no-repeat;
-		background-position: top-left;
-	}
-	.project-content
-	{
-		span
-		{
-			border-left: 1px solid $color-color1-project3;
-			color: $color-color1-project3;
-		}
-		.button
-		{
-			background-color: $color-color1-project3;
-
-			&:hover
-			{
-				background-color: $color-color2-project3;
-			}
-		}
-		a
-		{
-			color: $color-color2-project3;
-		}
 	}
 }
 
 .projects-4
 {
-
-	background-color: $color-color3-project4;
+	@include project-color($color-c1-p4, $color-c2-p4, $color-c3-p4);
 
 	.project-visual
 	{
 		background: url(../img/btx.png) no-repeat;
-		background-position: top-left;
-	}
-	.project-content
-	{
-		span
-		{
-			border-left: 1px solid $color-color1-project4;
-			color: $color-color1-project4;
-		}
-		.button
-		{
-			background-color: $color-color1-project4;
-
-			&:hover
-			{
-				background-color: $color-color2-project4;
-			}
-		}
-		a
-		{
-			color: $color-color2-project4;
-		}
 	}
 }

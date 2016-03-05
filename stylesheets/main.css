@@ -15,87 +15,63 @@
 ==================================================	*/
 		/* #Reset & Basics
 ================================================== */
-/* line 1, ../sass/reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  vertical-align: baseline;
-}
-
-/* line 10, ../sass/reset.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 12, ../sass/reset.scss */
-body {
-  line-height: 1;
-}
-
-/* line 14, ../sass/reset.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 16, ../sass/reset.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 18, ../sass/reset.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* line 22, ../sass/reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-		/* #Set Styles
-================================================== */
-/* line 50, ../sass/variables.scss */
-html {
   font-size: 62.5%;
   line-height: 62.5%;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
-}
+  font: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline; }
 
-/* line 59, ../sass/variables.scss */
-h1, h2 {
-  font-size: 7.0rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-/* line 66, ../sass/variables.scss */
-b {
-  font-weight: 800;
-}
+body {
+  line-height: 1; }
 
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+		/* #Set Styles
+================================================== */
 		/* #Layout
 ================================================== */
-/* line 5, ../sass/layout.scss */
 body {
   height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
   overflow: hidden;
-  background-color: #262427;
-}
+  background-color: #262427; }
+  body h1 {
+    font-size: 7rem; }
+  body h2 {
+    font-size: 6rem; }
+  body h1, body h2 {
+    font-weight: 800;
+    letter-spacing: -0.02em; }
+  body b {
+    font-weight: 800; }
 
-/* line 15, ../sass/layout.scss */
 .pt-page {
   height: 100%;
   width: 100%;
@@ -104,197 +80,126 @@ body {
   left: 0;
   visibility: hidden;
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
+  transition: transform 0.3s ease; }
 
-/* line 27, ../sass/layout.scss */
 .pt-page-current {
   visibility: visible;
-  z-index: 1;
-}
+  z-index: 1; }
 
-/* line 32, ../sass/layout.scss */
 .pt-wrapper {
   position: absolute;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 39, ../sass/layout.scss */
 .InsideWrapper {
   position: relative;
   display: block;
   width: 960px;
   height: 100%;
   overflow: hidden;
-  margin: auto;
-}
+  margin: auto; }
 
 /* Tablet */
 @media (max-width: 1200px) {
-  /* line 54, ../sass/layout.scss */
   .introduction {
-    margin-top: 210px;
-  }
+    margin-top: 210px; }
 
-  /* line 60, ../sass/layout.scss */
   .introduction ul {
-    top: 342px;
-  }
+    top: 342px; }
 
-  /* line 69, ../sass/layout.scss */
   .projects .project-content span {
     font-size: 1.6rem;
-    line-height: 3.0rem;
-  }
-  /* line 74, ../sass/layout.scss */
+    line-height: 3.0rem; }
   .projects .project-content h2 {
-    margin-top: 24px;
-  }
-  /* line 78, ../sass/layout.scss */
+    margin-top: 24px; }
   .projects .project-content p {
     margin-top: 18px;
     font-size: 1.6rem;
     line-height: 2.0rem;
-    width: 100%;
-  }
-  /* line 85, ../sass/layout.scss */
+    width: 100%; }
   .projects .project-content .button {
-    margin-top: 24px;
-  }
-  /* line 90, ../sass/layout.scss */
+    margin-top: 24px; }
   .projects .project-visual {
-    width: 40%;
-  }
+    width: 40%; }
 
-  /* line 95, ../sass/layout.scss */
   #Contact {
     position: fixed;
     top: -1200px;
     left: 8%;
     right: 8%;
     width: 84%;
-    height: 65%;
-  }
+    height: 65%; }
 
-  /* line 104, ../sass/layout.scss */
   #Contact .contact-top {
-    height: 30%;
-  }
-  /* line 110, ../sass/layout.scss */
+    height: 30%; }
   #Contact .contact-top img {
     margin-left: -60px;
     width: 120px;
-    height: 120px;
-  }
-  /* line 117, ../sass/layout.scss */
+    height: 120px; }
   #Contact .contact-content {
-    padding: 8px 16px 8px 16px;
-  }
-  /* line 123, ../sass/layout.scss */
+    padding: 8px 16px 8px 16px; }
   #Contact .contact-content p {
     padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  /* line 128, ../sass/layout.scss */
+    padding-top: 10px; }
   #Contact .contact-content .contact-btn {
-    margin-top: 15px;
-  }
-}
+    margin-top: 15px; } }
 /* Mobile Landscape */
 @media (max-width: 767px) {
-  /* line 140, ../sass/layout.scss */
   .introduction {
-    margin-top: 180px;
-  }
-  /* line 144, ../sass/layout.scss */
-  .introduction ul {
-    top: 312px;
-  }
+    margin-top: 180px; }
+    .introduction ul {
+      top: 312px; }
 
-  /* line 150, ../sass/layout.scss */
   #SideBar {
-    width: 20%;
-  }
+    width: 20%; }
 
-  /* line 154, ../sass/layout.scss */
   #ProjectsWrapper {
-    width: 80%;
-  }
+    width: 80%; }
 
-  /* line 160, ../sass/layout.scss */
   .projects .project-content {
-    width: 90%;
-  }
-  /* line 164, ../sass/layout.scss */
-  .projects .project-content span {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-  }
-  /* line 169, ../sass/layout.scss */
-  .projects .project-content h2 {
-    font-size: 5.2rem;
-    margin-top: 20px;
-  }
-  /* line 174, ../sass/layout.scss */
-  .projects .project-content .button {
-    margin-top: 20px;
-  }
-  /* line 179, ../sass/layout.scss */
+    width: 90%; }
+    .projects .project-content span {
+      font-size: 1.4rem;
+      line-height: 2.8rem; }
+    .projects .project-content h2 {
+      font-size: 5.2rem;
+      margin-top: 20px; }
+    .projects .project-content .button {
+      margin-top: 20px; }
   .projects .project-visual {
-    visibility: hidden;
-  }
+    visibility: hidden; }
 
-  /* line 184, ../sass/layout.scss */
   #Contact {
     position: fixed;
     top: -1200px;
     left: 5%;
     right: 5%;
-    width: 90%;
-  }
+    width: 90%; }
 
-  /* line 192, ../sass/layout.scss */
   #Contact .contact-top {
-    height: 25%;
-  }
-  /* line 198, ../sass/layout.scss */
+    height: 25%; }
   #Contact .contact-top img {
     margin-left: -50px;
     width: 100px;
-    height: 100px;
-  }
-  /* line 205, ../sass/layout.scss */
+    height: 100px; }
   #Contact .contact-content {
     padding: 6px 12px 6px 12px;
     font-size: 1.2rem;
-    line-height: 1.8rem;
-  }
-  /* line 213, ../sass/layout.scss */
+    line-height: 1.8rem; }
   #Contact .contact-content p {
     padding-bottom: 8px;
-    padding-top: 8px;
-  }
-  /* line 218, ../sass/layout.scss */
+    padding-top: 8px; }
   #Contact .contact-content .contact-btn {
-    margin-top: 12px;
-  }
-}
+    margin-top: 12px; } }
 /* Mobile Portrait */
 @media (max-width: 767px) {
-  /* line 229, ../sass/layout.scss */
   .project-content {
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 233, ../sass/layout.scss */
   .project-visual {
-    display: none;
-  }
-}
+    display: none; } }
 		/* #Views
 ================================================== */
-/* line 3, ../sass/views/header.scss */
 #TopBar {
   position: fixed;
   top: 50px;
@@ -302,130 +207,96 @@ body {
   right: 50px;
   z-index: 10;
   height: 60px;
-  transition: transform 0.2s ease;
-}
-/* line 11, ../sass/views/header.scss */
-#TopBar .logo {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background: url(../img/logo.svg);
-  background-size: 60px 60px;
-  float: left;
-}
-/* line 20, ../sass/views/header.scss */
-#TopBar .SubNav {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  float: right;
-}
-/* line 26, ../sass/views/header.scss */
-#TopBar .SubNav li {
-  display: inline-block;
-}
-/* line 32, ../sass/views/header.scss */
-#TopBar .SubNav li a {
-  display: block;
-  color: #262427;
-  text-decoration: none;
-  line-height: 6.0rem;
-  margin-left: 30px;
-  transition: color 0.6s ease;
-}
+  transition: transform 0.2s ease; }
+  #TopBar .logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../img/logo.svg);
+    background-size: 60px 60px;
+    float: left; }
+  #TopBar .SubNav {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    float: right; }
+    #TopBar .SubNav li {
+      display: inline-block; }
+    #TopBar .SubNav li a {
+      display: block;
+      color: #262427;
+      text-decoration: none;
+      line-height: 6.0rem;
+      margin-left: 30px;
+      transition: color 0.6s ease; }
 
-/* line 3, ../sass/views/home.scss */
 .pt-page-1 {
-  background-color: #f8f6f5;
-}
+  background-color: #f8f6f5; }
 
-/* line 8, ../sass/views/home.scss */
 .introduction {
   display: block;
   width: 100%;
   margin-top: 280px;
   padding-left: 50px;
-  padding-right: 50px;
-}
-/* line 16, ../sass/views/home.scss */
-.introduction h1 {
-  color: #262427;
-  margin-bottom: 20px;
-}
-/* line 22, ../sass/views/home.scss */
-.introduction p {
-  color: #4d4850;
-  font-size: 2.4rem;
-  line-height: 4.0rem;
-  display: block;
-  position: relative;
-}
-/* line 31, ../sass/views/home.scss */
-.introduction ul {
-  font-size: 2.4rem;
-  line-height: 4.0rem;
-  display: inline-block;
-  position: absolute;
-  top: 412px;
-  left: 99px;
-  width: 200px;
-  height: 42px;
-  overflow: hidden;
-}
-/* line 43, ../sass/views/home.scss */
-.introduction ul li {
-  font-weight: 600;
-  display: block;
-}
-/* line 48, ../sass/views/home.scss */
-.introduction ul .comp_ui {
-  color: #6faa94;
-}
-/* line 52, ../sass/views/home.scss */
-.introduction ul .comp_brand {
-  color: #8e77a7;
-}
-/* line 56, ../sass/views/home.scss */
-.introduction ul .comp_illu {
-  color: #d8836c;
-}
-/* line 62, ../sass/views/home.scss */
-.introduction .pt-trigger {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  background: none;
-  font-weight: 600;
-  color: #4d4850;
-  border: 2px solid #4d4850;
-  cursor: pointer;
-  padding: 12px 32px 11px 12px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-top: 20px;
-  background: url(../img/right-arrow-dark.svg) no-repeat;
-  background-size: 12px 9px;
-  position: relative;
-  background-position: 94% 50%;
-  transition: background-color 0.2s ease;
-}
-/* line 80, ../sass/views/home.scss */
-.introduction .pt-trigger:hover {
-  color: #f8f6f5;
-  background: url(../img/right-arrow-light.svg) no-repeat;
-  background-size: 12px 9px;
-  position: relative;
-  background-position: 94% 50%;
-  background-color: #4d4850;
-}
+  padding-right: 50px; }
+  .introduction h1 {
+    color: #262427;
+    margin-bottom: 20px; }
+  .introduction p {
+    color: #4d4850;
+    font-size: 2.4rem;
+    line-height: 4.0rem;
+    display: block;
+    position: relative; }
+  .introduction ul {
+    font-size: 2.4rem;
+    line-height: 4.0rem;
+    display: inline-block;
+    position: absolute;
+    top: 412px;
+    left: 99px;
+    width: 200px;
+    height: 42px;
+    overflow: hidden; }
+    .introduction ul li {
+      font-weight: 600;
+      display: block; }
+    .introduction ul .comp_ui {
+      color: #6faa94; }
+    .introduction ul .comp_brand {
+      color: #8e77a7; }
+    .introduction ul .comp_illu {
+      color: #d8836c; }
+  .introduction .pt-trigger {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background: none;
+    font-weight: 600;
+    color: #4d4850;
+    border: 2px solid #4d4850;
+    cursor: pointer;
+    padding: 12px 32px 11px 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: url(../img/right-arrow-dark.svg) no-repeat;
+    background-size: 12px 9px;
+    position: relative;
+    background-position: 94% 50%;
+    transition: background-color 0.2s ease; }
+    .introduction .pt-trigger:hover {
+      color: #f8f6f5;
+      background: url(../img/right-arrow-light.svg) no-repeat;
+      background-size: 12px 9px;
+      position: relative;
+      background-position: 94% 50%;
+      background-color: #4d4850; }
 
-/* line 94, ../sass/views/home.scss */
 .tooltip {
   display: inline;
   position: relative;
-  z-index: 999;
-}
+  z-index: 999; }
 
-/* line 101, ../sass/views/home.scss */
 .tooltip-item {
   background-color: #ddd;
   padding: 4px 8px;
@@ -436,11 +307,9 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 600;
-  opacity: 0.7;
-}
+  opacity: 0.7; }
 
 /* Tooltip */
-/* line 115, ../sass/views/home.scss */
 .tooltip-content {
   position: absolute;
   z-index: 1000;
@@ -451,29 +320,23 @@ body {
   background: #262427;
   opacity: 0;
   cursor: default;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
-/* line 129, ../sass/views/home.scss */
 .tooltip-effect-4 .tooltip-content {
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   -webkit-transform: scale3d(0.7, 0.3, 1);
   transform: scale3d(0.7, 0.3, 1);
   -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, transform 0.2s;
-}
+  transition: opacity 0.2s, transform 0.2s; }
 
-/* line 138, ../sass/views/home.scss */
 .tooltip:hover .tooltip-content {
   pointer-events: auto;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
-}
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0); }
 
 /* Arrow */
-/* line 149, ../sass/views/home.scss */
 .tooltip-content::after {
   content: '';
   top: 100%;
@@ -486,261 +349,174 @@ body {
   border-color: transparent;
   border-top-color: #2a3035;
   border-width: 10px;
-  margin-left: -10px;
-}
+  margin-left: -10px; }
 
 /* Tooltip content*/
-/* line 166, ../sass/views/home.scss */
 .tooltip-content img {
   position: relative;
   height: 170px;
   display: block;
   float: left;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
 
-/* line 174, ../sass/views/home.scss */
 .tooltip-text {
   text-align: left;
   font-size: 1.6rem;
   line-height: 2.4rem;
   display: block;
   padding: 10px;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 183, ../sass/views/home.scss */
 .tooltip-smallText {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #999;
-}
+  color: #999; }
 
-/* line 3, ../sass/views/projects.scss */
 .pt-page-2 {
-  background-color: #262427;
-}
+  background-color: #262427; }
 
-/* line 8, ../sass/views/projects.scss */
 #SideBar {
   display: block;
   width: 10%;
   height: 100%;
   background-color: #f8f6f5;
-  float: left;
-}
-/* line 16, ../sass/views/projects.scss */
-#SideBar a {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: auto;
-  display: block;
-  height: 50px;
-  width: 50px;
-  text-decoration: none;
-  background: url(../img/back.svg) no-repeat;
-  background-size: 50px 50px;
-  opacity: 0.6;
-  cursor: pointer;
-}
-/* line 31, ../sass/views/projects.scss */
-#SideBar a:hover {
-  opacity: 1;
-}
+  float: left; }
+  #SideBar a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    background: url(../img/back.svg) no-repeat;
+    background-size: 50px 50px;
+    opacity: 0.6;
+    cursor: pointer; }
+    #SideBar a:hover {
+      opacity: 1; }
 
-/* line 39, ../sass/views/projects.scss */
 #ProjectsWrapper {
   display: block;
   width: 90%;
   height: 100%;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; }
 
-/* line 47, ../sass/views/projects.scss */
 .projects {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
-}
-/* line 54, ../sass/views/projects.scss */
-.projects .project-content {
-  display: block;
-  position: absolute;
-  top: 35%;
-  left: 8%;
-  width: 50%;
-  z-index: 100;
-}
-/* line 63, ../sass/views/projects.scss */
-.projects .project-content span {
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  opacity: 0.6;
-  padding-left: 10px;
-}
-/* line 71, ../sass/views/projects.scss */
-.projects .project-content span b {
-  color: #fff;
-}
-/* line 77, ../sass/views/projects.scss */
-.projects .project-content h2 {
-  margin-top: 30px;
-  color: #fff;
-}
-/* line 82, ../sass/views/projects.scss */
-.projects .project-content p {
-  margin-top: 20px;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  font-weight: 200;
-  color: #f8f6f5;
-  width: 80%;
-}
-/* line 91, ../sass/views/projects.scss */
-.projects .project-content a {
-  text-decoration: none;
-  font-weight: 600;
-}
-/* line 96, ../sass/views/projects.scss */
-.projects .project-content .button {
-  display: inline-block;
-  font-size: 1.4rem;
-  margin-top: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #f8f6f5;
-  padding: 12px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-/* line 112, ../sass/views/projects.scss */
-.projects .project-visual {
-  display: block;
-  position: absolute;
-  right: 0px;
-  bottom: -800px;
-  height: 70%;
-  width: 50%;
-  z-index: 10;
-  opacity: 0.4;
-}
+  overflow: hidden; }
+  .projects .project-content {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    width: 50%;
+    z-index: 100; }
+    .projects .project-content span {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      opacity: 0.6;
+      padding-left: 10px; }
+      .projects .project-content span b {
+        color: #fff; }
+    .projects .project-content h2 {
+      margin-top: 30px;
+      color: #fff; }
+    .projects .project-content p {
+      margin-top: 20px;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-weight: 200;
+      color: #f8f6f5;
+      width: 80%; }
+    .projects .project-content a {
+      text-decoration: none;
+      font-weight: 600; }
+    .projects .project-content .button {
+      display: inline-block;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f8f6f5;
+      padding: 12px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease; }
+  .projects .project-visual {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: -800px;
+    height: 70%;
+    width: 50%;
+    z-index: 10;
+    opacity: 0.4;
+    background-position: top-left; }
 
-/* line 127, ../sass/views/projects.scss */
 .projects-1 {
-  background-color: #428689;
-}
-/* line 131, ../sass/views/projects.scss */
-.projects-1 .project-visual {
-  background: url(../img/phixl.png) no-repeat;
-  background-position: top-left;
-}
-/* line 139, ../sass/views/projects.scss */
-.projects-1 .project-content span {
-  border-left: 1px solid #1b3e3f;
-  color: #1b3e3f;
-}
-/* line 144, ../sass/views/projects.scss */
-.projects-1 .project-content .button {
-  background-color: #1b3e3f;
-}
-/* line 148, ../sass/views/projects.scss */
-.projects-1 .project-content .button:hover {
-  background-color: #2d5759;
-}
-/* line 153, ../sass/views/projects.scss */
-.projects-1 .project-content a {
-  color: #2d5759;
-}
+  background-color: #428689; }
+  .projects-1 .project-content span {
+    border-left: 1px solid #1b3e3f;
+    color: #1b3e3f; }
+  .projects-1 .project-content .button {
+    background-color: #1b3e3f; }
+    .projects-1 .project-content .button:hover {
+      background-color: #2d5759; }
+  .projects-1 .project-content a {
+    color: #2d5759; }
+  .projects-1 .project-visual {
+    background: url(../img/phixl.png) no-repeat; }
 
-/* line 160, ../sass/views/projects.scss */
 .projects-2 {
-  background-color: #56a1cc;
-}
-/* line 165, ../sass/views/projects.scss */
-.projects-2 .project-visual {
-  background: url(../img/2degrees.png) no-repeat;
-  background-position: top-left;
-}
-/* line 172, ../sass/views/projects.scss */
-.projects-2 .project-content span {
-  border-left: 1px solid #085a94;
-  color: #085a94;
-}
-/* line 177, ../sass/views/projects.scss */
-.projects-2 .project-content .button {
-  background-color: #085a94;
-}
-/* line 181, ../sass/views/projects.scss */
-.projects-2 .project-content .button:hover {
-  background-color: #1970ae;
-}
-/* line 186, ../sass/views/projects.scss */
-.projects-2 .project-content a {
-  color: #1970ae;
-}
+  background-color: #56a1cc; }
+  .projects-2 .project-content span {
+    border-left: 1px solid #085a94;
+    color: #085a94; }
+  .projects-2 .project-content .button {
+    background-color: #085a94; }
+    .projects-2 .project-content .button:hover {
+      background-color: #1970ae; }
+  .projects-2 .project-content a {
+    color: #1970ae; }
+  .projects-2 .project-visual {
+    background: url(../img/2degrees.png) no-repeat; }
 
-/* line 194, ../sass/views/projects.scss */
 .projects-3 {
-  background-color: #eb833f;
-}
-/* line 199, ../sass/views/projects.scss */
-.projects-3 .project-visual {
-  background: url(../img/unitec.png) no-repeat;
-  background-position: top-left;
-}
-/* line 206, ../sass/views/projects.scss */
-.projects-3 .project-content span {
-  border-left: 1px solid #cf330d;
-  color: #cf330d;
-}
-/* line 211, ../sass/views/projects.scss */
-.projects-3 .project-content .button {
-  background-color: #cf330d;
-}
-/* line 215, ../sass/views/projects.scss */
-.projects-3 .project-content .button:hover {
-  background-color: #df5706;
-}
-/* line 220, ../sass/views/projects.scss */
-.projects-3 .project-content a {
-  color: #df5706;
-}
+  background-color: #eb833f; }
+  .projects-3 .project-content span {
+    border-left: 1px solid #cf330d;
+    color: #cf330d; }
+  .projects-3 .project-content .button {
+    background-color: #cf330d; }
+    .projects-3 .project-content .button:hover {
+      background-color: #df5706; }
+  .projects-3 .project-content a {
+    color: #df5706; }
+  .projects-3 .project-visual {
+    background: url(../img/unitec.png) no-repeat; }
 
-/* line 227, ../sass/views/projects.scss */
 .projects-4 {
-  background-color: #272120;
-}
-/* line 232, ../sass/views/projects.scss */
-.projects-4 .project-visual {
-  background: url(../img/btx.png) no-repeat;
-  background-position: top-left;
-}
-/* line 239, ../sass/views/projects.scss */
-.projects-4 .project-content span {
-  border-left: 1px solid #f5a109;
-  color: #f5a109;
-}
-/* line 244, ../sass/views/projects.scss */
-.projects-4 .project-content .button {
-  background-color: #f5a109;
-}
-/* line 248, ../sass/views/projects.scss */
-.projects-4 .project-content .button:hover {
-  background-color: #ffb400;
-}
-/* line 253, ../sass/views/projects.scss */
-.projects-4 .project-content a {
-  color: #ffb400;
-}
+  background-color: #272120; }
+  .projects-4 .project-content span {
+    border-left: 1px solid #f5a109;
+    color: #f5a109; }
+  .projects-4 .project-content .button {
+    background-color: #f5a109; }
+    .projects-4 .project-content .button:hover {
+      background-color: #ffb400; }
+  .projects-4 .project-content a {
+    color: #ffb400; }
+  .projects-4 .project-visual {
+    background: url(../img/btx.png) no-repeat; }
 
-/* line 3, ../sass/views/contact.scss */
 #Contact {
   position: fixed;
   top: -1200px;
@@ -753,129 +529,99 @@ body {
   z-index: 200;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-/* line 14, ../sass/views/contact.scss */
-#Contact .contact-top {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 35%;
-  margin-bottom: 5px;
-}
-/* line 22, ../sass/views/contact.scss */
-#Contact .contact-top img {
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  margin-left: -75px;
-  width: 150px;
-  height: 150px;
-  z-index: 10;
-}
-/* line 32, ../sass/views/contact.scss */
-#Contact .contact-top .coloredBg {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 75%;
-  background-color: #6faa94;
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-/* line 46, ../sass/views/contact.scss */
-#Contact .contact-top .coloredBg button {
-  height: 25px;
-  width: 25px;
-  display: block;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #fff;
-  background: url(../img/close2.svg) no-repeat;
-  background-size: 50%;
-  background-position: center;
-  border: 1px solid #fff;
-  opacity: 0.8;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-/* line 63, ../sass/views/contact.scss */
-#Contact .contact-top .coloredBg button:hover {
-  opacity: 1;
-}
-/* line 72, ../sass/views/contact.scss */
-#Contact .contact-content {
-  color: #4d4850;
-  text-align: center;
-  padding: 10px 30px 10px 30px;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-}
-/* line 80, ../sass/views/contact.scss */
-#Contact .contact-content p {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  border-top: 1px solid #ccc;
-}
-/* line 86, ../sass/views/contact.scss */
-#Contact .contact-content p:first-child {
-  color: #262427;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  border: none;
-}
-/* line 93, ../sass/views/contact.scss */
-#Contact .contact-content p a {
-  font-weight: 400;
-  display: inline-block;
-  padding: 5px;
-  color: #6faa94;
-  text-decoration: none;
-}
-/* line 103, ../sass/views/contact.scss */
-#Contact .contact-content .contact-btn {
-  display: inline-block;
-  font-size: 1.2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-  padding: 8px 10px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 30px;
-}
-/* line 118, ../sass/views/contact.scss */
-#Contact .contact-content .contact-btn-1 {
-  background-color: #8e77a7;
-}
-/* line 122, ../sass/views/contact.scss */
-#Contact .contact-content .contact-btn-1:hover {
-  background-color: #795f96;
-}
-/* line 127, ../sass/views/contact.scss */
-#Contact .contact-content .contact-btn-2 {
-  background-color: #d8836c;
-}
-/* line 131, ../sass/views/contact.scss */
-#Contact .contact-content .contact-btn-2:hover {
-  background-color: #c56a51;
-}
+  border-radius: 8px; }
+  #Contact .contact-top {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 35%;
+    margin-bottom: 5px; }
+    #Contact .contact-top img {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      margin-left: -75px;
+      width: 150px;
+      height: 150px;
+      z-index: 10; }
+    #Contact .contact-top .coloredBg {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 75%;
+      background-color: #6faa94;
+      -webkit-border-top-left-radius: 2px;
+      -webkit-border-top-right-radius: 2px;
+      -moz-border-radius-topleft: 2px;
+      -moz-border-radius-topright: 2px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+      #Contact .contact-top .coloredBg button {
+        height: 25px;
+        width: 25px;
+        display: block;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        background: url(../img/close2.svg) no-repeat;
+        background-size: 50%;
+        background-position: center;
+        border: 1px solid #fff;
+        opacity: 0.8;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px; }
+        #Contact .contact-top .coloredBg button:hover {
+          opacity: 1; }
+  #Contact .contact-content {
+    color: #4d4850;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+    #Contact .contact-content p {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #ccc; }
+      #Contact .contact-content p:first-child {
+        color: #262427;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        border: none; }
+      #Contact .contact-content p a {
+        font-weight: 400;
+        display: inline-block;
+        padding: 5px;
+        color: #6faa94;
+        text-decoration: none; }
+    #Contact .contact-content .contact-btn {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      padding: 8px 10px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 30px; }
+    #Contact .contact-content .contact-btn-1 {
+      background-color: #8e77a7; }
+      #Contact .contact-content .contact-btn-1:hover {
+        background-color: #795f96; }
+    #Contact .contact-content .contact-btn-2 {
+      background-color: #d8836c; }
+      #Contact .contact-content .contact-btn-2:hover {
+        background-color: #c56a51; }
 
-/* line 139, ../sass/views/contact.scss */
 .contactOverlay {
   position: absolute;
   top: 0px;
@@ -885,5 +631,6 @@ body {
   height: 100%;
   width: 100%;
   z-index: 100;
-  visibility: hidden;
-}
+  visibility: hidden; }
+
+/*# sourceMappingURL=main.css.map */

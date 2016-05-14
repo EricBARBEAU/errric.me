@@ -1,0 +1,248 @@
+// Define the layout
+
+// 01 - Global layout
+
+body 
+{
+	height: 100%;
+    padding: 0;
+    margin: 0;
+    
+  	font-family: $font-copy;
+  	font-weight: $font-weight-base;
+  	font-size: $font-size-16;
+
+ 	overflow:hidden;
+ 	background-color: $color-background-dark;
+
+ 	h1 { font-size: $font-size-h1; }
+ 	h2 { font-size: $font-size-h2; }
+
+ 	h1, h2 { font-weight: $font-weight-bold; letter-spacing: $font-spacing-title; }
+
+ 	b { font-weight: $font-weight-bold;}
+}
+
+.pt-page 
+{
+	height:100%;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.pt-page-current {
+    visibility: visible;
+    z-index: 1;
+}
+
+.pt-wrapper 
+{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.InsideWrapper
+{
+	position: relative;
+	display: block;
+	width: 960px;
+	height: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+
+// 02 - Media Queries - NEEDS TO BE REFACTORED WITH MIXINS
+
+	/* Tablet */
+    @media #{$tablet} 
+    {
+    	.introduction
+    	{
+    		margin-top: 210px;
+    	}
+    	.introduction
+    	{
+    		ul
+    		{
+    			top:342px;
+    		}
+    	}
+    	.projects
+		{
+			.project-content
+			{
+				span
+				{
+					font-size:1.6rem;
+					line-height: 3.0rem;
+				}
+				h2
+				{
+					margin-top: 24px;
+				}
+				p
+				{
+					margin-top: 18px;
+					font-size:1.6rem;
+					line-height: 2.0rem;
+					width: 100%;
+				}
+				.button
+				{
+					margin-top: 24px;
+				}
+			}
+			.project-visual
+			{
+		   		width: 40%;
+			}
+		}
+		#Contact
+		{
+			position: fixed;
+			top: -1200px; left: 8%; right: 8%;
+			width: 84%;
+			height: 65%;
+		}
+		#Contact
+		{
+			.contact-top
+			{
+				height: 30%;
+			}
+			.contact-top
+			{
+				img
+				{
+					margin-left: -60px;
+					width: 120px;
+					height: 120px;
+				}
+			}
+			.contact-content
+			{
+				padding: 8px 16px 8px 16px;
+			}
+			.contact-content
+			{
+				p
+				{
+					padding-bottom:10px;
+					padding-top: 10px;
+				}
+				.contact-btn
+				{
+					margin-top:15px;
+				}
+			}
+		}
+	}
+
+
+	/* Mobile Landscape */
+	@media #{$mobileLand} 
+    {
+    	.introduction
+    	{
+    		margin-top: 180px;
+
+    		ul
+    		{
+    			top:312px;
+    		}
+    	}
+    	
+    	#SideBar
+    	{
+    		width: 20%;
+    	}
+    	#ProjectsWrapper
+    	{
+    		width: 80%;
+    	}
+    	.projects
+		{
+			.project-content
+			{
+				width: 90%;
+
+				span
+				{
+					font-size:1.4rem;
+					line-height: 2.8rem;
+				}
+				h2
+				{
+					font-size: 5.2rem;
+					margin-top: 20px;
+				}
+				.button
+				{
+					margin-top: 20px;
+				}
+			}
+			.project-visual
+			{
+		   		visibility: hidden;
+			}
+		}
+		#Contact
+		{
+			position: fixed;
+			top: -1200px; left: 5%; right: 5%;
+			width: 90%;
+		}
+		#Contact
+		{
+			.contact-top
+			{
+				height: 25%;
+			}
+			.contact-top
+			{
+				img
+				{
+					margin-left: -50px;
+					width: 100px;
+					height: 100px;
+				}
+			}
+			.contact-content
+			{
+				padding: 6px 12px 6px 12px;
+				font-size: 1.2rem;
+				line-height: 1.8rem;
+			}
+			.contact-content
+			{
+				p
+				{
+					padding-bottom:8px;
+					padding-top: 8px;
+				}
+				.contact-btn
+				{
+					margin-top:12px;
+				}
+			}
+		}
+	}
+
+	/* Mobile Portrait */
+	@media #{$mobileLand} 
+	{
+		.project-content
+		{
+			width: 100%;
+		}
+		.project-visual
+		{
+	   		display: none;
+		}	
+	}

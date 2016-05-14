@@ -1,0 +1,43 @@
+// Styles for Header
+
+#TopBar
+{
+	position: fixed;
+	top: 50px; left:50px; right:50px;
+	z-index: 10;
+	height: 60px;
+	transition: transform 0.2s ease;
+
+	.logo
+	{
+		display: block;
+ 		width: 60px;
+ 		height: 60px;
+ 		background: url(../img/logo.svg);
+ 		background-size: 60px 60px;
+ 		float: left;
+	}
+	.SubNav
+	{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		float: right;
+
+		li
+		{
+			display: inline-block;
+		}
+		li
+		{
+			a
+			{
+				display: block;
+				color: $color-font-title-dark;
+				text-decoration: none;
+				line-height: 6.0rem;
+				margin-left: 30px;
+				transition: color 0.6s ease;
+			}
+		}
+	}
+}

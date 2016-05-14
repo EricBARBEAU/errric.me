@@ -1,0 +1,188 @@
+// Styles for Home Page
+
+.pt-page-1 
+{
+    background-color: $color-background-light;
+}
+
+.introduction
+{
+	display: block;
+	width: 100%;
+	margin-top: 280px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	h1
+	{
+		color:$color-font-title-dark;
+		margin-bottom: 20px;
+	}
+
+	p
+	{
+		color:$color-font-copy-dark;
+		font-size:2.4rem;
+		line-height: 4.0rem;
+		display: block;
+		position: relative;
+	}
+
+	ul
+	{
+		font-size: 2.4rem;
+		line-height: 4.0rem;
+		display: inline-block;
+		position: absolute;
+		top: 412px;
+		left: 99px;
+		width: 200px;
+		height: 42px;
+		overflow: hidden;
+
+		li
+		{
+			font-weight: 600;
+			display: block;
+		}
+		.comp_ui
+		{
+			color: $color-userinterface;
+		}
+		.comp_brand
+		{
+			color: $color-branding;
+		}
+		.comp_illu
+		{
+			color: $color-illustration;
+		}
+	}
+
+	.pt-trigger
+	{
+		font-size: $font-size-16;
+		text-transform: uppercase;
+		background: none;
+		font-weight: 600;
+		color: $color-font-copy-dark;
+		border: 2px solid $color-font-copy-dark;
+		cursor: pointer;
+		padding: 12px 32px 11px 12px;
+		-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+		margin-top: 20px;
+		background: url(../img/right-arrow-dark.svg) no-repeat;
+    	background-size: 12px 9px;
+    	position: relative;
+    	background-position: 94% 50%;
+    	transition: background-color 0.2s ease;
+
+    	&:hover
+    	{
+    		color: $color-background-light;
+			background: url(../img/right-arrow-light.svg) no-repeat;
+			background-size: 12px 9px;
+	    	position: relative;
+	    	background-position: 94% 50%;
+	    	background-color: $color-font-copy-dark;
+    	}
+	}
+}
+
+// ToolTip
+
+.tooltip 
+{
+	display: inline;
+	position: relative;
+	z-index: 999;
+}
+
+.tooltip-item 
+{
+	background-color: #ddd;
+	padding: 4px 8px;
+	-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+	font-size: $font-size-18;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+/* Tooltip */
+
+.tooltip-content {
+	position: absolute;
+	z-index: 1000;
+	width: 310px;
+	left: 50%;
+	margin: 0 0 20px -150px;
+	bottom: 100%;
+	background: $color-background-dark;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+
+.tooltip-effect-4 .tooltip-content {
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: scale3d(0.7,0.3,1);
+	transform: scale3d(0.7,0.3,1);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.tooltip:hover .tooltip-content {
+	pointer-events: auto;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+	transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+}
+
+
+
+/* Arrow */
+
+.tooltip-content::after {
+	content: '';
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #2a3035;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/* Tooltip content*/
+
+.tooltip-content img {
+	position: relative;
+	height: 170px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.tooltip-text {
+	text-align: left;
+	font-size: $font-size-16;
+	line-height: 2.4rem;
+	display: block;
+	padding: 10px;
+	color: #fff;
+}
+
+.tooltip-smallText
+{
+	font-size: 1.2rem;
+	line-height: $font-size-18;
+	color: #999;
+}

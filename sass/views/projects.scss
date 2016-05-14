@@ -1,0 +1,164 @@
+// Styles for Projects 
+
+.pt-page-2 
+{
+    background-color: $color-background-dark;
+}
+
+#SideBar
+{
+	display: block;
+	width: 10%;
+	height: 100%;
+	background-color: $color-background-light;
+	float: left;
+
+	a
+	{
+		position: relative;
+ 		top: 50%;
+  		transform: translateY(-50%);
+		margin: auto;
+		display: block;
+		height: 50px;
+		width: 50px;
+		text-decoration: none;
+		background: url(../img/back.svg) no-repeat;
+		background-size: 50px 50px;
+		opacity: 0.6;
+		cursor: pointer;
+
+		&:hover
+		{
+			opacity: 1;
+		}
+	}
+}
+
+
+#ProjectsWrapper
+{
+	display: block;
+	width: 90%;
+	height: 100%;
+	overflow-y:scroll;
+}
+
+.projects
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+	.project-content
+	{
+		display: block;
+		position: absolute;
+		top:35%;
+		left:8%;
+		width: 50%; 
+		z-index: 100;
+
+		span
+		{
+			text-transform: uppercase;
+			font-size:$font-size-18;
+			line-height: 3.2rem;
+			opacity: 0.6;
+			padding-left: 10px;
+
+			b
+			{
+				color: #fff;
+			}
+		}
+
+		h2
+		{
+			margin-top: 30px;
+			color: #fff;
+		}
+		p
+		{
+			margin-top: 20px;
+			font-size:$font-size-18;
+			line-height: 2.2rem;
+			font-weight: 200;
+			color: $color-background-light;
+			width: 80%;
+		}
+		a
+		{
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.button
+		{
+			display: inline-block;
+			font-size: 1.4rem;
+			margin-top: 30px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $color-background-light;
+			padding: 12px;
+			-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+	    	cursor: pointer;
+	    	transition: background-color 0.2s ease;
+		}
+	}
+
+	.project-visual
+	{
+		display: block;
+		position: absolute;
+		right: 0px; bottom: -800px;
+    	height: 70%;
+   		width: 50%;
+   		z-index: 10;
+   		opacity: 0.4;
+   		background-position: top-left;
+	}
+}
+
+.projects-1
+{
+	@include project-color($color-c1-p1, $color-c2-p1, $color-c3-p1);
+
+	.project-visual
+	{
+		background: url(../img/phixl.png) no-repeat;
+	}
+}
+
+.projects-2
+{
+	@include project-color($color-c1-p2, $color-c2-p2, $color-c3-p2);
+
+	.project-visual
+	{
+		background: url(../img/2degrees.png) no-repeat;
+	}
+}
+
+
+.projects-3
+{
+	@include project-color($color-c1-p3, $color-c2-p3, $color-c3-p3);
+
+	.project-visual
+	{
+		background: url(../img/unitec.png) no-repeat;
+	}
+}
+
+.projects-4
+{
+	@include project-color($color-c1-p4, $color-c2-p4, $color-c3-p4);
+
+	.project-visual
+	{
+		background: url(../img/btx.png) no-repeat;
+	}
+}

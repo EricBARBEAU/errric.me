@@ -1,8 +1,8 @@
 /*
 * Eric BARBEAU
-* Copyright 2015, Eric BARBEAU
+* Copyright 2016, Eric BARBEAU
 * www.errric.me
-* 20/09/2015
+* 20/05/2016
 */
 
 
@@ -35,6 +35,14 @@
 ================================================== */
 
 @import 'layout';
+
+
+		/* #External
+================================================== */
+
+@import 'external/jquery.fullPage';
+@import 'external/tooltip';
+@import 'external/transitions';
 
 
 		/* #Views

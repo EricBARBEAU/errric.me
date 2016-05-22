@@ -12,8 +12,8 @@
     	{
 	    	span
 	    	{
-	    		border-left: 1px solid $color1;
-				color: $color1;
+          border-left: 1px solid $color1;
+          color: $color1;
 	    	}
 	    	.button
 	    	{
@@ -28,17 +28,17 @@
 	    		color: $color2;
 	    	}
     	} 
-	}
+	}  
 
 // 02 - Media Queries
 
 	@mixin media-queries($point) 
 	{
-
+    // Current $mobilePort variable 
 	  @if $point == sm-mobile {
 	    @media (max-width: $screen-xxs-max) { @content; } // Less than 479px
 	  }
-
+    // Current $mobileLand variable 
 	  @if $point == all-mobile {
 	    @media (max-width: $screen-xs-max) { @content; } // Less than 767px
 	  }
@@ -67,6 +67,7 @@
 	    @media (min-width: $screen-desktop) and (max-width: $screen-md-max) { @content; } // 992px to 1199px
 	  }
 
+    
 	  @if $point == lg-desktop {
 	    @media (min-width: $screen-lg-desktop) { @content; } // More than 1200px
 	  }
@@ -74,11 +75,11 @@
 	  @if $point == not-mobile {
 	    @media (min-width: $screen-tablet) { @content; } // More than 768px
 	  }
-
+    // Current $desktop variable 
 	  @if $point == not-tablet {
 	    @media (min-width: $screen-desktop) { @content; } // More than 992px
 	  }
-
+    // Current $tablet variable
 	  @if $point == not-desktop {
 	    @media (max-width: $screen-sm-max) { @content; } // Less than 991px
 	  }
@@ -102,3 +103,114 @@
 	    @content;
 	  }
 	}
+
+// 03 - Elements styling
+
+  // 03-2 - Buttons
+
+  @mixin btn-styling($button)
+  {
+    @if $button == btn-project
+    {
+      display: inline-block;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color-background-light;
+      padding: 12px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    @if $button == btn-home
+    {
+      font-size: $font-size-16;
+      text-transform: uppercase;
+      background: none;
+      font-weight: 600;
+      color: $color-font-copy-dark;
+      border: 2px solid $color-font-copy-dark;
+      cursor: pointer;
+      padding: 12px 32px 11px 12px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      margin-top: 20px;
+      background: url(../img/right-arrow-dark.svg) no-repeat;
+      background-size: 12px 9px;
+      position: relative;
+      background-position: 94% 50%;
+      transition: background-color 0.2s ease;
+
+      &:hover
+      {
+        color: $color-background-light;
+        background: url(../img/right-arrow-light.svg) no-repeat;
+        background-size: 12px 9px;
+        position: relative;
+        background-position: 94% 50%;
+        background-color: $color-font-copy-dark;
+      }
+    }
+
+    @if $button == btn-close
+    {
+      height: 25px;
+      width: 25px;
+      display: block;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px; right: 10px;
+      color: #fff;
+      background: url(../img/close2.svg) no-repeat;
+      background-size: 50%;
+      background-position: center;
+      border: 1px solid #fff;
+      opacity: 0.8;
+      -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+
+      &:hover 
+      {
+        opacity: 1;
+      }
+    }
+
+    @if $button == btn-contact
+    {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      padding: 8px 10px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      transition: background-color 0.2s ease;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 30px;
+    }
+
+    @if $button == btn-back
+    {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      display: block;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      background: url(../img/back.svg) no-repeat;
+      background-size: 50px 50px;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover
+      {
+        opacity: 1;
+      }
+    }
+  }

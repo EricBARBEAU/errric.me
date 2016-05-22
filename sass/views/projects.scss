@@ -13,25 +13,14 @@
 	background-color: $color-background-light;
 	float: left;
 
-	a
-	{
-		position: relative;
- 		top: 50%;
-  		transform: translateY(-50%);
-		margin: auto;
-		display: block;
-		height: 50px;
-		width: 50px;
-		text-decoration: none;
-		background: url(../img/back.svg) no-repeat;
-		background-size: 50px 50px;
-		opacity: 0.6;
-		cursor: pointer;
+  @include mq(all-mobile)
+  {
+    width:20%;
+  }
 
-		&:hover
-		{
-			opacity: 1;
-		}
+	.pt-trigger
+	{
+		@include btn-styling(btn-back);
 	}
 }
 
@@ -42,6 +31,10 @@
 	width: 90%;
 	height: 100%;
 	overflow-y:scroll;
+  @include mq(all-mobile)
+  {
+    width: 80%;
+  }
 }
 
 .projects
@@ -50,6 +43,11 @@
 	height: 100%;
 	position: relative;
 	overflow: hidden;
+
+  @include mq(all-mobile)
+  {
+    width: 90%;
+  }
 
 	.project-content
 	{
@@ -60,6 +58,11 @@
 		width: 50%; 
 		z-index: 100;
 
+    @include mq(sm-mobile)
+    {
+      width:100%;
+    }
+
 		span
 		{
 			text-transform: uppercase;
@@ -67,6 +70,17 @@
 			line-height: 3.2rem;
 			opacity: 0.6;
 			padding-left: 10px;
+
+			@include mq(not-desktop)
+			{
+				font-size: $font-size-16;
+				line-height: 3.0rem;
+			}
+      @include mq(all-mobile)
+      {
+        font-size: $font-size-14;
+        line-height: 2.8rem;
+      }
 
 			b
 			{
@@ -78,6 +92,16 @@
 		{
 			margin-top: 30px;
 			color: #fff;
+
+      @include mq(not-desktop)
+      {
+        margin-top: 24px;
+      }
+      @include mq(all-mobile)
+      {
+        font-size: 5.2rem;
+        margin-top: 20px;
+      }
 		}
 		p
 		{
@@ -87,6 +111,13 @@
 			font-weight: 200;
 			color: $color-background-light;
 			width: 80%;
+      @include mq(not-desktop)
+      {
+        margin-top: 18px;
+        font-size:$font-size-16;
+        line-height: 2.0rem;
+        width: 100%;
+      }
 		}
 		a
 		{
@@ -95,30 +126,42 @@
 		}
 		.button
 		{
-			display: inline-block;
-			font-size: 1.4rem;
-			margin-top: 30px;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-weight: 700;
-			color: $color-background-light;
-			padding: 12px;
-			-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
-	    	cursor: pointer;
-	    	transition: background-color 0.2s ease;
+			@include btn-styling(btn-project);
+
+      @include mq(not-desktop)
+      {
+        margin-top: 24px;
+      }
+      @include mq(all-mobile)
+      {
+        margin-top: 20px;
+      }
 		}
 	}
 
 	.project-visual
 	{
-		display: block;
-		position: absolute;
-		right: 0px; bottom: -800px;
-    	height: 70%;
-   		width: 50%;
-   		z-index: 10;
-   		opacity: 0.4;
-   		background-position: top-left;
+    display: block;
+    position: absolute;
+    right: 0px; bottom: -800px;
+    height: 70%;
+    width: 50%;
+    z-index: 10;
+    opacity: 0.4;
+    background-position: top-left;
+
+    @include mq(not-desktop)
+    {
+      width: 40%;
+    }
+    @include mq(all-mobile)
+    {
+      visibility: hidden;
+    }
+    @include mq(sm-mobile)
+    {
+      display:none;
+    }
 	}
 }
 

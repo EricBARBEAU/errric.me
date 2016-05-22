@@ -1,0 +1,290 @@
+// Mixins used for the website
+
+// 01 - Colors
+
+	// 01-2 - Project colors set
+
+	@mixin project-color($color1, $color2, $color3)
+	{
+    	background-color:$color3;
+
+    	.project-content
+    	{
+	    	span
+	    	{
+          border-left: 1px solid $color1;
+          color: $color1;
+	    	}
+	    	.button
+	    	{
+	    		background-color: $color1;
+	    		&:hover
+				{
+					background-color: $color2;
+				}
+	    	}
+	    	a
+	    	{
+	    		color: $color2;
+	    	}
+    	} 
+	}  
+
+// 02 - Media Queries
+
+	@mixin media-queries($point) 
+	{
+    // Current $mobilePort variable 
+	  @if $point == sm-mobile {
+	    @media (max-width: $screen-xxs-max) { @content; } // Less than 479px
+	  }
+    // Current $mobileLand variable 
+	  @if $point == all-mobile {
+	    @media (max-width: $screen-xs-max) { @content; } // Less than 767px
+	  }
+
+	  @if $point == lg-mobile {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == sm-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == all-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-sm-max) { @content; } // 480px to 991px
+	  }
+
+	  @if $point == lg-tablet {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == sm-desktop {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == md-desktop {
+	    @media (min-width: $screen-desktop) and (max-width: $screen-md-max) { @content; } // 992px to 1199px
+	  }
+
+    
+	  @if $point == lg-desktop {
+	    @media (min-width: $screen-lg-desktop) { @content; } // More than 1200px
+	  }
+
+	  @if $point == not-mobile {
+	    @media (min-width: $screen-tablet) { @content; } // More than 768px
+	  }
+    // Current $desktop variable 
+	  @if $point == not-tablet {
+	    @media (min-width: $screen-desktop) { @content; } // More than 992px
+	  }
+    // Current $tablet variable
+	  @if $point == not-desktop {
+	    @media (max-width: $screen-sm-max) { @content; } // Less than 991px
+	  }
+
+	  @if $point == retina {
+	    @media
+	      only screen and (-webkit-min-device-pixel-ratio: 2),
+	      only screen and (min--moz-device-pixel-ratio: 2),
+	      only screen and (-o-min-device-pixel-ratio: 2/1),
+	      only screen and (min-device-pixel-ratio: 2),
+	      only screen and (min-resolution: 192dpi),
+	      only screen and (min-resolution: 2dppx) {
+	      @content;
+	    }
+	  }
+
+	}
+
+	@mixin mq($point) {
+	  @include media-queries($point) {
+	    @content;
+	  }
+	}
+
+// 03 - Elements styling
+
+  // 03-2 - Buttons
+
+  @mixin btn-styling($button)
+  {
+    @if $button == btn-project
+    {
+      display: inline-block;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color-background-light;
+      padding: 12px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    @if $button == btn-home
+    {
+      font-size: $font-size-16;
+      text-transform: uppercase;
+      background: none;
+      font-weight: 600;
+      color: $color-font-copy-dark;
+      border: 2px solid $color-font-copy-dark;
+      cursor: pointer;
+      padding: 12px 32px 11px 12px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      margin-top: 20px;
+      background: url(../img/right-arrow-dark.svg) no-repeat;
+      background-size: 12px 9px;
+      position: relative;
+      background-position: 94% 50%;
+      transition: background-color 0.2s ease;
+
+      &:hover
+      {
+        color: $color-background-light;
+        background: url(../img/right-arrow-light.svg) no-repeat;
+        background-size: 12px 9px;
+        position: relative;
+        background-position: 94% 50%;
+        background-color: $color-font-copy-dark;
+      }
+    }
+
+    @if $button == btn-close
+    {
+      height: 25px;
+      width: 25px;
+      display: block;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px; right: 10px;
+      color: #fff;
+      background: url(../img/close2.svg) no-repeat;
+      background-size: 50%;
+      background-position: center;
+      border: 1px solid #fff;
+      opacity: 0.8;
+      -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+
+      &:hover 
+      {
+        opacity: 1;
+      }
+    }
+
+    @if $button == btn-contact
+    {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      padding: 8px 10px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      transition: background-color 0.2s ease;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 30px;
+    }
+
+    @if $button == btn-back
+    {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      display: block;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      background: url(../img/back.svg) no-repeat;
+      background-size: 50px 50px;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover
+      {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 0$ - Grid
+
+  @mixin make-columns($number-lg, $number-md, $number-sm, $number-xs)
+  {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: border-box;
+
+    @if $number-lg == 1 { width: 8.33333333%; }
+    @if $number-lg == 2 { width: 16.66666667%; }
+    @if $number-lg == 3 { width: 25%; }
+    @if $number-lg == 4 { width: 33.33333333%; }
+    @if $number-lg == 5 { width: 41.66666667%; }
+    @if $number-lg == 6 { width: 50%; }
+    @if $number-lg == 7 { width: 58.33333333%; }
+    @if $number-lg == 8 { width: 66.66666667%; }
+    @if $number-lg == 9 { width: 75%; }
+    @if $number-lg == 10 { width: 83.33333333%; }
+    @if $number-lg == 11 { width: 91.66666667%; }
+    @if $number-lg == 12 { width: 100%; }
+
+    @media (min-width: $screen-desktop) and (max-width: $screen-md-max) // 992px to 1199px
+    {
+      @if $number-md == 1 { width: 8.33333333%; }
+      @if $number-md == 2 { width: 16.66666667%; }
+      @if $number-md == 3 { width: 25%; }
+      @if $number-md == 4 { width: 33.33333333%; }
+      @if $number-md == 5 { width: 41.66666667%; }
+      @if $number-md == 6 { width: 50%; }
+      @if $number-md == 7 { width: 58.33333333%; }
+      @if $number-md == 8 { width: 66.66666667%; }
+      @if $number-md == 9 { width: 75%; }
+      @if $number-md == 10 { width: 83.33333333%; }
+      @if $number-md == 11 { width: 91.66666667%; }
+      @if $number-md == 12 { width: 100%; }
+    }
+
+    @media (min-width: $screen-phone) and (max-width: $screen-sm-max) // 480px to 991px
+    {
+      @if $number-sm == 1 { width: 8.33333333%; }
+      @if $number-sm == 2 { width: 16.66666667%; }
+      @if $number-sm == 3 { width: 25%; }
+      @if $number-sm == 4 { width: 33.33333333%; }
+      @if $number-sm == 5 { width: 41.66666667%; }
+      @if $number-sm == 6 { width: 50%; }
+      @if $number-sm == 7 { width: 58.33333333%; }
+      @if $number-sm == 8 { width: 66.66666667%; }
+      @if $number-sm == 9 { width: 75%; }
+      @if $number-sm == 10 { width: 83.33333333%; }
+      @if $number-sm == 11 { width: 91.66666667%; }
+      @if $number-sm == 12 { width: 100%; }
+    }
+
+    @media (max-width: $screen-xxs-max) // Less than 479px
+    {
+      @if $number-xs == 1 { width: 8.33333333%; }
+      @if $number-xs == 2 { width: 16.66666667%; }
+      @if $number-xs == 3 { width: 25%; }
+      @if $number-xs == 4 { width: 33.33333333%; }
+      @if $number-xs == 5 { width: 41.66666667%; }
+      @if $number-xs == 6 { width: 50%; }
+      @if $number-xs == 7 { width: 58.33333333%; }
+      @if $number-xs == 8 { width: 66.66666667%; }
+      @if $number-xs == 9 { width: 75%; }
+      @if $number-xs == 10 { width: 83.33333333%; }
+      @if $number-xs == 11 { width: 91.66666667%; }
+      @if $number-xs == 12 { width: 100%; }
+    }
+
+  }  

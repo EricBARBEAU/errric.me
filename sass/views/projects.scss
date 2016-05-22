@@ -1,0 +1,217 @@
+// Styles for Projects 
+
+.pt-page-2 
+{
+    background-color: $color-background-dark;
+}
+
+#SideBar
+{
+	display: block;
+	width: 10%;
+	height: 100%;
+	background-color: $color-background-light;
+	float: left;
+
+  @include mq(all-mobile)
+  {
+    width:20%;
+  }
+
+	.pt-trigger
+	{
+		@include btn-styling(btn-back);
+	}
+}
+
+
+#ProjectsWrapper
+{
+	display: block;
+	width: 90%;
+	height: 100%;
+	overflow-y:scroll;
+  @include mq(all-mobile)
+  {
+    width: 80%;
+  }
+}
+
+.projects
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+  @include mq(all-mobile)
+  {
+    width: 90%;
+  }
+
+	.project-content
+	{
+		display: block;
+		position: absolute;
+		top:35%;
+		left:8%;
+		width: 50%; 
+		z-index: 100;
+
+    @include mq(sm-mobile)
+    {
+      width:100%;
+    }
+
+		span
+		{
+			text-transform: uppercase;
+			font-size:$font-size-18;
+			line-height: 3.2rem;
+			opacity: 0.6;
+			padding-left: 10px;
+
+			@include mq(not-desktop)
+			{
+				font-size: $font-size-16;
+				line-height: 3.0rem;
+			}
+      @include mq(all-mobile)
+      {
+        font-size: $font-size-14;
+        line-height: 2.8rem;
+      }
+
+			b
+			{
+				color: #fff;
+			}
+		}
+
+		h2
+		{
+			margin-top: 30px;
+			color: #fff;
+
+      @include mq(not-desktop)
+      {
+        margin-top: 24px;
+      }
+      @include mq(all-mobile)
+      {
+        font-size: 5.2rem;
+        margin-top: 20px;
+      }
+		}
+		p
+		{
+			margin-top: 20px;
+			font-size:$font-size-18;
+			line-height: 2.2rem;
+			font-weight: 200;
+			color: $color-background-light;
+			width: 80%;
+      @include mq(not-desktop)
+      {
+        margin-top: 18px;
+        font-size:$font-size-16;
+        line-height: 2.0rem;
+        width: 100%;
+      }
+		}
+		a
+		{
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.button
+		{
+			@include btn-styling(btn-project);
+
+      @include mq(not-desktop)
+      {
+        margin-top: 24px;
+      }
+      @include mq(all-mobile)
+      {
+        margin-top: 20px;
+      }
+		}
+	}
+
+	.project-visual
+	{
+    display: block;
+    position: absolute;
+    right: 0px; bottom: -800px;
+    height: 70%;
+    width: 50%;
+    z-index: 10;
+    opacity: 0.4;
+    background-position: top-left;
+
+    @include mq(not-desktop)
+    {
+      width: 40%;
+    }
+    @include mq(all-mobile)
+    {
+      visibility: hidden;
+    }
+    @include mq(sm-mobile)
+    {
+      display:none;
+    }
+	}
+}
+
+.projects-1
+{
+	@include project-color($color-c1-p1, $color-c2-p1, $color-c3-p1);
+
+	.project-visual
+	{
+		background: url(../img/phixl.png) no-repeat;
+	}
+}
+
+.projects-2
+{
+	@include project-color($color-c1-p2, $color-c2-p2, $color-c3-p2);
+
+	.project-visual
+	{
+		background: url(../img/2degrees.png) no-repeat;
+	}
+}
+
+
+.projects-3
+{
+	@include project-color($color-c1-p3, $color-c2-p3, $color-c3-p3);
+
+	.project-visual
+	{
+		background: url(../img/unitec.png) no-repeat;
+	}
+}
+
+.projects-4
+{
+	@include project-color($color-c1-p4, $color-c2-p4, $color-c3-p4);
+
+	.project-visual
+	{
+		background: url(../img/btx.png) no-repeat;
+	}
+}
+
+.projects-5
+{
+	@include project-color($color-c1-p5, $color-c2-p5, $color-c3-p5);
+
+	.project-visual
+	{
+		background: url(../img/btx.png) no-repeat;
+	}
+}

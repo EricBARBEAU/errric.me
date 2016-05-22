@@ -1,0 +1,107 @@
+// Variables used for the website
+
+// 01 - Colors
+
+	// 01-2 - Font Colors
+
+	$color-background-light: #f8f6f5;
+	$color-background-dark: #262427;
+	$color-background-separator: #ccc;
+
+	// 01-2 - Font Colors
+
+	$color-font-title-dark: #262427;
+	$color-font-copy-dark: #4d4850;
+	$color-font-span: #857e88;
+
+	// 01-3 - Projects Colors
+
+	$color-c1-p1: #1b3e3f;
+	$color-c2-p1: #2d5759;
+	$color-c3-p1: #428689;
+
+	$color-c1-p2: #085a94;
+	$color-c2-p2: #1970ae;
+	$color-c3-p2: #56a1cc;
+
+	$color-c1-p3: #cf330d;
+	$color-c2-p3: #df5706;
+	$color-c3-p3: #eb833f;
+
+	$color-c1-p4: #f5a109;
+	$color-c2-p4: #ffb400;
+	$color-c3-p4: #272120;
+
+	$color-c1-p5: #39403F;
+	$color-c2-p5: #333;
+	$color-c3-p5: #E14536;
+
+	// 01-4 - Competences Colors
+
+	$color-userinterface: #6faa94;
+	$color-branding: #8e77a7;
+	$color-branding-hover: #795f96;
+	$color-illustration: #d8836c;
+	$color-illustration-hover: #c56a51;
+
+
+// 02 - Typography
+
+	// 01 - Fonts
+
+	$font-copy:    'Open Sans', sans-serif;
+
+	// 02 - Size
+
+  $font-size-14:      1.4rem;
+	$font-size-16: 			1.6rem;
+	$font-size-18:			1.8rem;
+	$font-size-h1:			7.0rem;	
+	$font-size-h2:			6.0rem;
+
+	// 03 - Weight
+
+	$font-weight-base:		400;
+	$font-weight-bold:		800;
+
+	// 04 - Letter Spacing
+
+	$font-spacing-title:	-0.02em;
+
+
+// 03 - Media Queries
+
+	//Media Queries Variables 
+
+	$mobilePort: "(max-width: 545px)";
+	$mobileLand: "(max-width: 767px)";
+	$tablet: "(max-width: 1200px)";
+	$desktop: "(min-width: 1201px)";	
+
+	// ==> This is being refactored 
+
+	// Extra small screen / phone
+              
+	$screen-xs-min:              480px;
+	$screen-phone:               $screen-xs-min;
+
+	// Small screen / tablet
+
+	$screen-sm-min:              768px;
+	$screen-tablet:              $screen-sm-min;
+
+	// Medium screen / desktop
+
+	$screen-md-min:              992px;
+	$screen-desktop:             $screen-md-min;
+
+	// Large screen / wide desktop
+
+	$screen-lg-min:              1200px;
+	$screen-lg-desktop:          $screen-lg-min;
+
+	// So media queries don't overlap when required, provide a maximum
+	$screen-xxs-max:			 ($screen-xs-min - 1);
+	$screen-xs-max:              ($screen-sm-min - 1);
+	$screen-sm-max:              ($screen-md-min - 1);
+	$screen-md-max:              ($screen-lg-min - 1);

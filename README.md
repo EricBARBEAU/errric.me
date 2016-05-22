@@ -6,6 +6,6 @@ This repository is the place where I'm working and updating my website
 
 * ToDo List before starting adding code to that project :
 
-1. cd /media/Data/01 - Design/01 - WEB/Sites Web/Nouveau/03 - Dev/compass
+1. cd media/Data/01\ -\ Design/01\ -\ WEB/Sites\ Web/Nouveau/03\ -\ Dev/compass
 2. sass --watch sass/main.scss:stylesheets/main.css
 3. pull origin development

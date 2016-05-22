@@ -2242,16 +2242,16 @@ html.fp-enabled,
     background: url(../img/btx.png) no-repeat; }
 
 .projects-5 {
-  background-color: #272120; }
+  background-color: #E14536; }
   .projects-5 .project-content span {
-    border-left: 1px solid #f5a109;
-    color: #f5a109; }
+    border-left: 1px solid #39403F;
+    color: #39403F; }
   .projects-5 .project-content .button {
-    background-color: #f5a109; }
+    background-color: #39403F; }
     .projects-5 .project-content .button:hover {
-      background-color: #ffb400; }
+      background-color: #333; }
   .projects-5 .project-content a {
-    color: #ffb400; }
+    color: #333; }
   .projects-5 .project-visual {
     background: url(../img/btx.png) no-repeat; }
 

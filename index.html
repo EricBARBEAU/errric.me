@@ -4,43 +4,37 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Eric BARBEAU, Digital Designer</title>
+<meta name="description" content="French Digital Designer, Freelance Art Director">
+<meta name="keywords" content="Eric BARBEAU, Designer, UI, User Interface, Digital Designer, Art Director, Lasagna"/>
+<meta name="author" content="Eric BARBEAU">
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Eric BARBEAU, Digital Designer</title>
-	<meta name="description" content="French Digital Designer, Freelance Art Director">
-	<meta name="keywords" content="Eric BARBEAU, Designer, UI, User Interface, Digital Designer, Art Director, Lasagna"/>
-	<meta name="author" content="Eric BARBEAU">
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Stylesheets
+================================================== -->
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
-	<!-- Stylesheets
-  ================================================== -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/transition-animations.css">
+<!-- Javascript
+================================================== -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 
-	<!-- Javascript
-  ================================================== -->
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-
-	<!-- Fonts
-  ================================================== -->
-  	
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,300italic,400italic,600,600italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
-
+<!-- Fonts
+================================================== -->	
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,300italic,400italic,600,600italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
 	<div id="Contact">
 
 		<div class="contact-top">
@@ -105,7 +99,7 @@
           <div class="project-content">
             <span>November <b>2015</b></span>
             <h2>Roomorama</h2>
-            <p>Copy here</p>
+            <p>I am currently working at Roomorama as head of UI/UX. I am deeply involved in the creation process and focus everyday on finding the flaws withing the flows, review/create new features, design tailor-made solutions and finally ship it.</p>
             <a href="http://www.roomorama.com" class="button" target="_blank">Launch the site</a>
           </div>
           <div class="project-visual"></div>
@@ -154,73 +148,17 @@
 	<!-- JAVASCRIPT -->
 
 	<script type="text/javascript" src="js/classie.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
+  <script type="text/javascript" src="js/transition.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
+  <script type="text/javascript" src="js/switch.js"></script>
+  <script type="text/javascript" src="js/compSlider.js"></script>
 
-    <script type="text/javascript">
-    $(".nav-btn-2").click(function()
-    {
-    	$("#TopBar").css("transform","scale(0.94, 0.9)");
-    	$("#TopBar").animate({top: "80px"},100);
-    	$(".pt-page").css("transform","scale(0.94, 0.9)");
-    	$(".contactOverlay").css("visibility","visible");
-    	$(".contactOverlay").animate({opacity: "0.6"},300);
-    	$("#Contact").animate({top: "20%"},500);
-    });
-    </script>
-
-    <script type="text/javascript">
-    $(".close-btn").click(function()
-    {
-    	$("#Contact").animate({top: "-1200px"},500);
-    	$(".contactOverlay").css("visibility","hidden");
-    	$(".contactOverlay").animate({opacity: "0"},300);
-    	$(".pt-page").css("transform","scale(1, 1)");
-    	$("#TopBar").animate({top: "50px"},100);
-    	$("#TopBar").css("transform","scale(1, 1)");
-    });
-    </script>
-
-    <script type="text/javascript">
-    $(".pt-trigger").click(function()
-                       {
-                         if(($(this).attr("data-goto"))==-1)
-                         {
-                           $(".logo").hide('slide',300);
-                           $(".nav-btn").css("color","#f8f6f5");
-                           $('.project-visual').animate({bottom: "0px"},600);
-                           $('.project-visual').animate({opacity: "0.6"},200);
-                         }
-                         else
-                         {
-                           $(".logo").show('slide',300);
-                           $(".nav-btn").css("color","#262427");
-                           $('.project-visual').animate({bottom: "-=800px"},600);
-                           $('.project-visual').animate({opacity: "0.4"},200);
-                         }
-                       });
-    </script> 
-	
-    <script type="text/javascript">
-		$(document).ready(function() 
-		{
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "-=40px"},400);; }, 1500);
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "-=40px"},400);; }, 3000);
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "+=80px"},200);; }, 4500);
-			
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "-=40px"},400);; }, 6000);
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "-=40px"},400);; }, 7500);
-			setTimeout(function(){ $("#firstChild").animate({marginTop: "+=80px"},200);; }, 9000);
-		});
-    </script>
-
-    <script type="text/javascript">
-
-    $(".button").click(function()
-                       {
-                       		$("#ProjectsWrapper").scrollTo(500, 0);
-                       });
-
-    </script>
+  <script type="text/javascript">
+  $(".button").click(function()
+   {
+   		$("#ProjectsWrapper").scrollTo(500, 0);
+   });
+  </script>
 
 </body>
 </html>

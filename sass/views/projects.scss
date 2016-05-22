@@ -162,3 +162,13 @@
 		background: url(../img/btx.png) no-repeat;
 	}
 }
+
+.projects-5
+{
+	@include project-color($color-c1-p5, $color-c2-p5, $color-c3-p5);
+
+	.project-visual
+	{
+		background: url(../img/btx.png) no-repeat;
+	}
+}

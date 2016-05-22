@@ -19,12 +19,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 62.5%;
-  line-height: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  font-weight: 400;
+  font-size: 100%;
   font: inherit;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: baseline; }
 
@@ -49,9 +46,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 62.5%;
+  line-height: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400; }
+
+h1, h2 {
+  font-size: 7.0rem;
+  font-weight: 800;
+  letter-spacing: -0.02em; }
+
+b {
+  font-weight: 800; }
+
 		/* #Set Styles
 ================================================== */
-
 		/* #Layout
 ================================================== */
 body {
@@ -516,6 +527,20 @@ body {
   .projects-4 .project-content a {
     color: #ffb400; }
   .projects-4 .project-visual {
+    background: url(../img/btx.png) no-repeat; }
+
+.projects-5 {
+  background-color: #272120; }
+  .projects-5 .project-content span {
+    border-left: 1px solid #f5a109;
+    color: #f5a109; }
+  .projects-5 .project-content .button {
+    background-color: #f5a109; }
+    .projects-5 .project-content .button:hover {
+      background-color: #ffb400; }
+  .projects-5 .project-content a {
+    color: #ffb400; }
+  .projects-5 .project-visual {
     background: url(../img/btx.png) no-repeat; }
 
 #Contact {

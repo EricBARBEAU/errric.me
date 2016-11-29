@@ -21,14 +21,14 @@
 		/* #Reset & Basics
 ================================================== */
 
-@import 'reset';
+@import 'core/reset';
 
 
 		/* #Set Styles
 ================================================== */
 
-@import 'variables';
-@import 'mixins';
+@import 'core/variables';
+@import 'core/mixins';
 
 
 		/* #Layout

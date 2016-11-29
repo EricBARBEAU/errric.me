@@ -1,43 +1,56 @@
 /*
-* Eric BARBEAU
 * Copyright 2016, Eric BARBEAU
 * www.errric.me
 * 28/11/2016
 */
 
 
+
 /* Table of Content
 ==================================================
-	
-	#Reset & Basics
-	#Set Styles
-	#Global Layout
-	#Views
+  
+  01 - Reset
+  02 - Variables
+  03 - Mixins
+  04 - Elements
+  05 - Views
+  06 - External
 
-==================================================	*/
+==================================================  */
 
 
-
-		/* #Reset & Basics
+    /* 01 - Reset
 ================================================== */
 
 @import 'core/reset';
 
 
-		/* #Set Styles
+    /* 02 - Variables
 ================================================== */
 
 @import 'core/variables';
-@import 'core/mixins';
 
 
-		/* #Layout
+    /* 03 - Mixins
 ================================================== */
 
-@import 'layout';
+@import 'core/mixins';
+@import 'core/grid';
 
 
-		/* #External
+    /* 04 - Elements
+================================================== */
+
+@import 'core/elements/main';
+
+
+    /* 05 - Views
+================================================== */
+
+@import 'views/main';
+
+
+    /* 06 - External
 ================================================== */
 
 @import 'external/jquery.fullPage';
@@ -45,21 +58,7 @@
 @import 'external/transitions';
 
 
-		/* #Views
+		/* #Layout
 ================================================== */
 
-	// Header
-
-	@import 'views/header';
-
-	// Home
-
-	@import 'views/home.scss';
-
-	// Projects
-
-	@import 'views/projects';
-
-	// Contact
-
-	@import 'views/contact';
+@import 'layout';

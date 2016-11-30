@@ -46,7 +46,7 @@
 		z-index: 100;
 
     @include mq(all-mobile) {
-      top: 20%;
+      top: 15%;
       width: 80%;
     }
 
@@ -79,7 +79,8 @@
         margin-top: 24px;
       }
       @include mq(all-mobile) {
-        font-size: 4.2rem;
+        font-size: 3.8rem;
+        margin-top: 20px;
       }
 		}
 		p {

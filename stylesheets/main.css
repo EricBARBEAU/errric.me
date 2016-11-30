@@ -476,7 +476,7 @@ body {
     z-index: 100; }
     @media (max-width: 767px) {
       .projects .project-content {
-        top: 20%;
+        top: 15%;
         width: 80%; } }
     .projects .project-content span {
       text-transform: uppercase;
@@ -502,7 +502,8 @@ body {
           margin-top: 24px; } }
       @media (max-width: 767px) {
         .projects .project-content h2 {
-          font-size: 4.2rem; } }
+          font-size: 3.8rem;
+          margin-top: 20px; } }
     .projects .project-content p {
       margin-top: 20px;
       font-size: 1.8rem;

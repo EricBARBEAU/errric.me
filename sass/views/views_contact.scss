@@ -2,22 +2,47 @@
 
 #Contact {
 	position: fixed;
-	top: -1200px; left: 20%; right: 20%;
+	top: -1200px; left: 10%; right: 10%;
 	background-color: white;
-	width: 60%;
-	height: 60%;
+	width: 80%;
+	height: 70%;
 	margin: auto;
 	z-index: 200;
 	-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
 
+  &.visible {
+    top:15%;
+  }
+
+  @include mq(lg-desktop) {
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    height: 60%;
+
+    &.visible {
+      top: 20%;
+    }
+  }
   @include mq(not-desktop) {
-    left: 8%; right: 8%;
+    left: 8%; 
+    right: 8%;
     width: 84%;
-    height: 65%;
+    height: 80%;
+
+    &.visible {
+      top: 10%;
+    }
   }
   @include mq(all-mobile) {
-    left: 5%; right: 5%;
-    width: 90%;
+    left: 5%; 
+    right: 5%;
+    width: 90%; 
+    height: 90%;
+
+    &.visible {
+      top: 5%;
+    }
   }
 
 	.contact-top {
@@ -108,7 +133,7 @@
 				border: none;
 			}
 			a {
-				font-weight: 400;
+				font-weight: $font-weight-base;
 				display: inline-block;
 				padding: 5px;
 				color: $color-userinterface;

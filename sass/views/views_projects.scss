@@ -90,13 +90,11 @@
 			margin-top: 20px;
 			font-size:$font-size-18;
 			line-height: 2.2rem;
-			font-weight: 200;
+			font-weight: $font-weight-base;
 			color: $color-background-light;
 			width: 80%;
       @include mq(not-desktop) {
         margin-top: 18px;
-        font-size:$font-size-16;
-        line-height: 2.0rem;
         width: 100%;
       }
 		}
@@ -126,8 +124,11 @@
     opacity: 0.4;
     background-position: top-left;
 
+    @include mq(lg-desktop) {
+      height: 736px;
+    }
     @include mq(not-desktop) {
-      width: 40%;
+      width: 35%;
     }
     @include mq(all-mobile) {
       visibility: hidden;
@@ -177,4 +178,12 @@
 	.project-visual {
 		background: url(../img/roomorama.png) no-repeat;
 	}
+}
+
+.projects-6 {
+  @include project-color($color-c1-p6, $color-c2-p6, $color-c3-p6);
+
+  .project-visual {
+    background: url(../img/bridge.png) no-repeat;
+  }
 }

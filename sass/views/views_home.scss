@@ -1,45 +1,42 @@
 // Styles for Home Page
 
-.pt-page-1 
-{
+.pt-page-1 {
     background-color: $color-background-light;
 }
 
-.introduction
-{
+.introduction {
 	display: block;
 	width: 100%;
 	margin-top: 280px;
 	padding-left: 50px;
 	padding-right: 50px;
 
-  @include mq(not-desktop)
-  {
+  @include mq(not-desktop) {
     margin-top:210px;
   }
 
-  @include mq(all-mobile)
-  {
+  @include mq(all-mobile) {
     margin-top: 180px;
   }
 
-	h1
-	{
+	h1 {
 		color:$color-font-title-dark;
 		margin-bottom: 20px;
 	}
 
-	p
-	{
+	p {
 		color:$color-font-copy-dark;
 		font-size:2.4rem;
 		line-height: 4.0rem;
 		display: block;
 		position: relative;
+
+    @include mq(all-mobile) {
+      max-width: 300px;
+    }
 	}
 
-	ul
-	{
+	ul {
 		font-size: 2.4rem;
 		line-height: 4.0rem;
 		display: inline-block;
@@ -50,13 +47,11 @@
 		height: 42px;
 		overflow: hidden;
 
-    @include mq(not-desktop)
-    {
+    @include mq(not-desktop) {
       top:342px;
     }
-    @include mq(all-mobile)
-    {
-      top:312px;
+    @include mq(all-mobile) {
+      top:352px;
     }
 
 		li

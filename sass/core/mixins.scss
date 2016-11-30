@@ -130,7 +130,7 @@
       font-size: $font-size-16;
       text-transform: uppercase;
       background: none;
-      font-weight: 600;
+      font-weight: $font-weight-semibold;
       color: $color-font-copy-dark;
       border: 2px solid $color-font-copy-dark;
       cursor: pointer;

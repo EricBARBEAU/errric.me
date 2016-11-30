@@ -1,15 +1,30 @@
 // Styles for Header
 
-#TopBar
-{
+#TopBar {
 	position: fixed;
-	top: 50px; left:50px; right:50px;
+	top: 50px; 
+	left:50px; 
+	right:50px;
 	z-index: 10;
 	height: 60px;
-	transition: transform 0.2s ease;
+	transform: scale(1, 1);
+	// Transition
+	transition: all .2s ease-in-out, transform .1s linear;
+  -moz-transition: all .2s ease-in-out, transform .1s linear;
+  -webkit-transition: all .2s ease-in-out, transform .1s linear;
 
-	.logo
-	{
+  &.shrink {
+  	transform: scale(0.94, 0.9);
+  	top: 80px;
+  }
+
+  @include mq(all-mobile) {
+  	top: 20px;
+  	left: 20px;
+  	right: 20px;
+  }
+
+	.logo {
 		display: block;
  		width: 60px;
  		height: 60px;
@@ -17,26 +32,40 @@
  		background-size: 60px 60px;
  		float: left;
 	}
-	.SubNav
-	{
+	.SubNav {
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		float: right;
-
-		li
-		{
+		li {
 			display: inline-block;
 		}
-		li
-		{
-			a
-			{
-				display: block;
-				color: $color-font-title-dark;
-				text-decoration: none;
-				line-height: 6.0rem;
-				margin-left: 30px;
-				transition: color 0.6s ease;
+		li a {
+			display: block;
+			color: $color-font-title-dark;
+			text-decoration: none;
+			line-height: 6.0rem;
+			margin-left: 30px;
+			transition: color 0.6s ease;
+
+			@include mq(all-mobile) {
+				background-color: rgba(0,0,0,0.15);
+				font-weight: $font-weight-semibold;
+				font-size: 1.3rem;
+				padding: 15px;
+				line-height: inherit;
+				border-radius: 3px;
+				margin-left:15px;
+				color: lighten($color-font-title-dark,15%);
+				margin-top: 10px;
+				// Transition
+				transition: all .2s ease-in-out, transform .1s linear;
+			  -moz-transition: all .2s ease-in-out, transform .1s linear;
+			  -webkit-transition: all .2s ease-in-out, transform .1s linear;
+
+				&:hover {
+					background-color: rgba(0,0,0,0.20);
+					color: lighten($color-font-title-dark,10%);
+				}
 			}
 		}
 	}

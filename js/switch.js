@@ -6,15 +6,13 @@ $(document).ready(function()
 	 {
 	   $(".logo").hide('slide',300);
 	   $(".nav-btn").css("color","#f8f6f5");
-	   $('.project-visual').animate({bottom: "0px"},600);
-	   $('.project-visual').animate({opacity: "0.6"},200);
+	   $('.project-visual').addClass('active');
 	 }
 	 else
 	 {
 	   $(".logo").show('slide',300);
 	   $(".nav-btn").css("color","#262427");
-	   $('.project-visual').animate({bottom: "-=800px"},600);
-	   $('.project-visual').animate({opacity: "0.4"},200);
+	   $('.project-visual').removeClass('active');
 	 }
 	});
 });		

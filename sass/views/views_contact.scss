@@ -73,11 +73,6 @@
         width: 120px;
         height: 120px;
       }
-      @include mq(not-desktop) {
-        margin-left: -50px;
-        width: 100px;
-        height: 100px;
-      }
 		}
 		.coloredBg {
 			display: block;

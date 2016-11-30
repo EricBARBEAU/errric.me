@@ -1,0 +1,18 @@
+// Typography Elements
+
+body 
+{
+  font-family: $font-copy;
+  font-weight: $font-weight-base;
+  font-size: $font-size-16;
+
+  overflow:hidden;
+  background-color: $color-background-dark;
+
+  h1 { font-size: $font-size-h1; }
+  h2 { font-size: $font-size-h2; }
+
+  h1, h2 { font-weight: $font-weight-bold; letter-spacing: $font-spacing-title; }
+
+  b { font-weight: $font-weight-bold;}
+}

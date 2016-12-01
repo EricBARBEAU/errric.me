@@ -4,30 +4,24 @@
 
 	// 01-2 - Project colors set
 
-	@mixin project-color($color1, $color2, $color3)
-	{
-    	background-color:$color3;
+	@mixin project-color($color1, $color2, $color3) {
 
-    	.project-content
-    	{
-	    	span
-	    	{
-          border-left: 1px solid $color1;
-          color: $color1;
-	    	}
-	    	.button
-	    	{
-	    		background-color: $color1;
-	    		&:hover
-				{
-					background-color: $color2;
-				}
-	    	}
-	    	a
-	    	{
-	    		color: $color2;
-	    	}
-    	} 
+  	background-color:$color3;
+  	.project-content{
+    	span {
+        border-left: 1px solid $color1;
+        color: $color1;
+    	}
+    	.button {
+    		background-color: $color1;
+    		&:hover {
+				background-color: $color2;
+			  }
+    	}
+    	a {
+    		color: $color2;
+    	}
+  	} 
 	}  
 
 // 02 - Media Queries
@@ -113,7 +107,7 @@
     @if $button == btn-project
     {
       display: inline-block;
-      font-size: 1.4rem;
+      font-size: $font-size-14;
       margin-top: 30px;
       text-decoration: none;
       text-transform: uppercase;

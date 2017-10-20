@@ -526,12 +526,20 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       color: #f8f6f5;
-      padding: 12px;
+      padding: 15px;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
       cursor: pointer;
-      transition: background-color 0.2s ease; }
+      transition: background-color 0.2s ease;
+      transform: translateY(0px);
+      transition: background-color .1s ease-in-out, transform .1s linear;
+      -moz-transition: background-color .1s ease-in-out, transform .1s linear;
+      -webkit-transition: background-color .1s ease-in-out, transform .1s linear; }
+      .projects .project-content .button:hover {
+        transform: translateY(-1px); }
+      .projects .project-content .button:active, .projects .project-content .button:focus {
+        transform: translateY(1px); }
       @media (max-width: 991px) {
         .projects .project-content .button {
           margin-top: 24px; } }
@@ -624,32 +632,22 @@ body {
     background: url(../img/btx.png) no-repeat; }
 
 .projects-5 {
-  background-color: #E14536; }
+  background-color: #f07424; }
   .projects-5 .project-content span {
-    border-left: 1px solid #6e1910;
-    color: #6e1910; }
+    border-left: 1px solid #fff;
+    color: #fff; }
   .projects-5 .project-content .button {
-    background-color: #6e1910; }
+    background-color: #fff;
+    color: #f07424 !important;
+    background-color: #fff; }
     .projects-5 .project-content .button:hover {
-      background-color: #9a2217; }
+      background-color: rgba(255, 255, 255, 0.9) !important; }
+    .projects-5 .project-content .button:hover {
+      background-color: #f07424; }
   .projects-5 .project-content a {
-    color: #9a2217; }
+    color: #f07424; }
   .projects-5 .project-visual {
-    background: url(../img/roomorama.png) no-repeat; }
-
-.projects-6 {
-  background-color: #43ba9f; }
-  .projects-6 .project-content span {
-    border-left: 1px solid #286f5f;
-    color: #286f5f; }
-  .projects-6 .project-content .button {
-    background-color: #286f5f; }
-    .projects-6 .project-content .button:hover {
-      background-color: #308672; }
-  .projects-6 .project-content a {
-    color: #308672; }
-  .projects-6 .project-visual {
-    background: url(../img/bridge.png) no-repeat; }
+    background: url(../img/pigeonhole.png) no-repeat; }
 
     /* 06 - External
 ================================================== */

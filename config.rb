@@ -20,3 +20,5 @@ sourcemap = false
 # line_comments = false
 
 preferred_syntax = :scss
+
+# compass watch sass/main.scss --output-style compressed

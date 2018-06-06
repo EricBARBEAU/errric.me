@@ -52,17 +52,16 @@
 
 		span {
 			text-transform: uppercase;
-			font-size:$font-size-18;
+			font-size:$font-size-16;
 			line-height: 3.2rem;
 			opacity: 0.6;
 			padding-left: 10px;
 
 			@include mq(not-desktop) {
-				font-size: $font-size-16;
+				font-size: $font-size-14;
 				line-height: 3.0rem;
 			}
       @include mq(all-mobile) {
-        font-size: $font-size-14;
         line-height: 2.8rem;
       }
 
@@ -74,9 +73,11 @@
 		h2 {
 			margin-top: 30px;
 			color: #fff;
+      font-size: 5.8rem;
 
       @include mq(not-desktop) {
         margin-top: 24px;
+        font-size: 4.8rem;
       }
       @include mq(all-mobile) {
         font-size: 3.8rem;
@@ -91,6 +92,7 @@
 			color: $color-background-light;
 			width: 80%;
       @include mq(not-desktop) {
+        font-size:$font-size-16;
         margin-top: 18px;
         width: 100%;
       }

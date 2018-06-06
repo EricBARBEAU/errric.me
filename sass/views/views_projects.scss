@@ -40,7 +40,7 @@
 	.project-content {
 		display: block;
 		position: absolute;
-		top:35%;
+		top:25%;
 		left:8%;
 		width: 50%; 
 		z-index: 100;
@@ -53,17 +53,14 @@
 		span {
 			text-transform: uppercase;
 			font-size:$font-size-16;
-			line-height: 3.2rem;
+			line-height: 3rem;
 			opacity: 0.6;
 			padding-left: 10px;
 
 			@include mq(not-desktop) {
 				font-size: $font-size-14;
-				line-height: 3.0rem;
+				line-height: 2.8rem;
 			}
-      @include mq(all-mobile) {
-        line-height: 2.8rem;
-      }
 
 			b {
 				color: #fff;
@@ -73,7 +70,7 @@
 		h2 {
 			margin-top: 30px;
 			color: #fff;
-      font-size: 5.8rem;
+      font-size: 5.4rem;
 
       @include mq(not-desktop) {
         margin-top: 24px;

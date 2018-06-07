@@ -129,10 +129,10 @@
 
     @if $button == btn-home
     {
-      font-size: $font-size-16;
+      font-size: $font-size-14;
       text-transform: uppercase;
       background: none;
-      font-weight: $font-weight-semibold;
+      font-weight: 700;
       color: $color-font-copy-dark;
       border: 2px solid $color-font-copy-dark;
       cursor: pointer;

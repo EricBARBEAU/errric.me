@@ -77,14 +77,13 @@ var PageTransitions = (function () {
 
         switch(selectedAnimNumber) {
             case 1:
-                inClass = 'pt-page-moveFromRight';
-                outClass = 'pt-page-moveToLeft';
+                inClass = 'pt-page-moveFromRightFade';
+                outClass = 'pt-page-moveToLeftFade';
                 break;
             case 2:
-                inClass = 'pt-page-moveFromLeft';
-                outClass = 'pt-page-moveToRight';
+                inClass = 'pt-page-moveFromLeftFade';
+                outClass = 'pt-page-moveToRightFade';
                 break;
-            
         }
 
         // This will get the pt-trigger elements parent wrapper div

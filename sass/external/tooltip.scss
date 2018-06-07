@@ -32,6 +32,7 @@
 	opacity: 0;
 	cursor: default;
 	pointer-events: none;
+	border-radius:2px;
 }
 
 
@@ -65,7 +66,7 @@
 	position: absolute;
 	pointer-events: none;
 	border-color: transparent;
-	border-top-color: #2a3035;
+	border-top-color: #262427;
 	border-width: 10px;
 	margin-left: -10px;
 }

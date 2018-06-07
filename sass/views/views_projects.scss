@@ -144,7 +144,7 @@
     }
 
     @include mq(lg-desktop) {
-      height: 736px;
+      height: 620px;
     }
     @include mq(not-desktop) {
       width: 35%;
@@ -198,4 +198,12 @@
 	.project-visual {
 		background: url(../img/pigeonhole.png) no-repeat;
 	}
+}
+
+.projects-6 {
+  @include project-color($color-c1-p6, $color-c2-p6, $color-c3-p6);
+
+  .project-visual {
+    background: url(../img/roomorama.png) no-repeat;
+  }
 }

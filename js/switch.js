@@ -6,7 +6,10 @@ $(document).ready(function()
 	 {
 	   $(".logo").hide('slide',500,'ease-in-out');
 	   $(".nav-btn").css("color","#f8f6f5");
-	   $('.project-visual').addClass('active');
+
+	   setTimeout(function() {
+        $('.project-visual').addClass('active');
+    }, 500);
 	 }
 	 else
 	 {

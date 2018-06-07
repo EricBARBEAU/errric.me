@@ -18,7 +18,9 @@ body
   left: 0;
   visibility: hidden;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
+  transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -webkit-transition: transform .3s ease;
 }
 
 .pt-page-current 

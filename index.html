@@ -94,13 +94,13 @@
 						<li class="comp_brand">Brand Design</li>
 						<li class="comp_illu">Illustration</li>
 					</ul> 
-					<button class="pt-trigger" data-animation="1" data-goto="-1">See the projects</button>
+					<button class="pt-trigger pt-trigger_home" data-animation="1" data-goto="-1">See the projects</button>
 				</div>
 			</div>
 		</div>
 		<div id="ProjectPage" class="pt-page pt-page-2">
 			<div id="SideBar">
-				<a class="pt-trigger" data-animation="2" data-goto="-2"></a>
+				<a class="pt-trigger pt-trigger_projects" data-animation="2" data-goto="-2"></a>
 			</div>
 			<div id="ProjectsWrapper">
         <article class="projects projects-5">
@@ -158,7 +158,6 @@
 				</article>
 			</div>
 		</div>
-
 	</div>
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript" src="js/classie.js"></script>
@@ -166,11 +165,6 @@
   <script type="text/javascript" src="js/contact.js"></script>
   <script type="text/javascript" src="js/switch.js"></script>
   <script type="text/javascript" src="js/compSlider.js"></script>
-  <script type="text/javascript">
-  $(".button").click(function()
-   {
-   		$("#ProjectsWrapper").scrollTo(500, 0);
-   });
-  </script>
+  <script type="text/javascript">$(".pt-trigger").click(function(){$(this).hasClass("pt-trigger_home")?($(".pt-page").removeClass("homeShown"),$(".pt-page").addClass("projectShown")):($(".pt-page").removeClass("projectShown"),$(".pt-page").addClass("homeShown"))}),$(".button").click(function(){$("#ProjectsWrapper").scrollTo(500,0)});</script>
 </body>
 </html>

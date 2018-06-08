@@ -45,6 +45,19 @@
 		width: 50%; 
 		z-index: 100;
 
+    // Animate
+    opacity: 0;
+    transform: translateY(-20px);
+    // Transition
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+
+    &.drop {
+      opacity: 1; 
+      transform: translateY(0px);
+    }
+
     @include mq(all-mobile) {
       top: 15%;
       width: 80%;

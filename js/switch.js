@@ -6,13 +6,16 @@ $(document).ready(function()
 	 {
 	   $(".logo").hide('slide',500,'ease-in-out');
 	   $(".nav-btn").css("color","#f8f6f5");
+	   
 
 	   setTimeout(function() {
         $('.project-visual').addClass('active');
+        $(".project-content").addClass('drop');
     }, 500);
 	 }
 	 else
 	 {
+	 	$(".project-content").removeClass('drop');
 	 	$('.project-visual').removeClass('active');
 	 	$(".nav-btn").css("color","#262427");
 	  $(".logo").show('slide',500,'ease-in-out'); 

@@ -77,12 +77,12 @@ var PageTransitions = (function () {
 
         switch(selectedAnimNumber) {
             case 1:
-                inClass = 'pt-page-rotateRightSideFirst';
-                outClass = 'pt-page-rotateLeftSideFirst';
+                inClass = 'pt-page-moveFromRight';
+                outClass = 'pt-page-moveToLeft';
                 break;
             case 2:
-                inClass = 'pt-page-rotateLeftSideFirst';
-                outClass = 'pt-page-rotateRightSideFirst';
+                inClass = 'pt-page-moveFromLeft';
+                outClass = 'pt-page-moveToRight';
                 break;
         }
 

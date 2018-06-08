@@ -208,6 +208,15 @@
 .projects-5 {
 	@include project-color($color-c1-p5, $color-c2-p5, $color-c3-p5);
 
+  .project-content span {
+    border-left: 1px solid $color-c4-p5 !important;
+    color: $color-c4-p5 !important;
+  }
+
+  .project-content a {
+    color: $color-c4-p5 !important;
+  }
+
 	.project-visual {
 		background: url(../img/pigeonhole.png) no-repeat;
 	}

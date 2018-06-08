@@ -6,7 +6,6 @@ $(document).ready(function()
 	 {
 	   $(".logo").hide('slide',500,'ease-in-out');
 	   $(".nav-btn").css("color","#f8f6f5");
-	   
 
 	   setTimeout(function() {
         $('.project-visual').addClass('active');

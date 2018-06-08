@@ -8,6 +8,7 @@ css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
+sourcemap = false
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -19,3 +20,5 @@ javascripts_dir = "javascripts"
 # line_comments = false
 
 preferred_syntax = :scss
+
+# compass watch sass/main.scss --output-style compressed

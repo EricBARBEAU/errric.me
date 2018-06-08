@@ -33,7 +33,7 @@
  		float: left;
 	}
 	.SubNav {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		text-transform: uppercase;
 		float: right;
 		li {
@@ -50,11 +50,11 @@
 			@include mq(all-mobile) {
 				background-color: rgba(0,0,0,0.15);
 				font-weight: $font-weight-semibold;
-				font-size: 1.3rem;
-				padding: 15px;
+				font-size: 1.2rem;
+				padding: 10px;
 				line-height: inherit;
 				border-radius: 3px;
-				margin-left:15px;
+				margin-left:10px;
 				color: lighten($color-font-title-dark,15%);
 				margin-top: 10px;
 				// Transition

@@ -40,10 +40,23 @@
 	.project-content {
 		display: block;
 		position: absolute;
-		top:35%;
+		top:25%;
 		left:8%;
 		width: 50%; 
 		z-index: 100;
+
+    // Animate
+    opacity: 0;
+    transform: translateY(-20px);
+    // Transition
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+
+    &.drop {
+      opacity: 1; 
+      transform: translateY(0px);
+    }
 
     @include mq(all-mobile) {
       top: 15%;
@@ -52,19 +65,15 @@
 
 		span {
 			text-transform: uppercase;
-			font-size:$font-size-18;
-			line-height: 3.2rem;
+			font-size:$font-size-16;
+			line-height: 3rem;
 			opacity: 0.6;
 			padding-left: 10px;
 
 			@include mq(not-desktop) {
-				font-size: $font-size-16;
-				line-height: 3.0rem;
+				font-size: $font-size-14;
+				line-height: 2.8rem;
 			}
-      @include mq(all-mobile) {
-        font-size: $font-size-14;
-        line-height: 2.8rem;
-      }
 
 			b {
 				color: #fff;
@@ -74,9 +83,11 @@
 		h2 {
 			margin-top: 30px;
 			color: #fff;
+      font-size: 5.4rem;
 
       @include mq(not-desktop) {
         margin-top: 24px;
+        font-size: 4.8rem;
       }
       @include mq(all-mobile) {
         font-size: 3.8rem;
@@ -91,6 +102,7 @@
 			color: $color-background-light;
 			width: 80%;
       @include mq(not-desktop) {
+        font-size:$font-size-16;
         margin-top: 18px;
         width: 100%;
       }
@@ -145,7 +157,7 @@
     }
 
     @include mq(lg-desktop) {
-      height: 736px;
+      height: 620px;
     }
     @include mq(not-desktop) {
       width: 35%;
@@ -199,4 +211,12 @@
 	.project-visual {
 		background: url(../img/pigeonhole.png) no-repeat;
 	}
+}
+
+.projects-6 {
+  @include project-color($color-c1-p6, $color-c2-p6, $color-c3-p6);
+
+  .project-visual {
+    background: url(../img/roomorama.png) no-repeat;
+  }
 }

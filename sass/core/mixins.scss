@@ -7,6 +7,17 @@
 	@mixin project-color($color1, $color2, $color3) {
 
   	background-color:$color3;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1);
+
+    &:after {
+      display:block;
+      position:absolute;
+      bottom:0px;
+      content:'';
+      width:100%;
+      height:18%;
+      background: linear-gradient($color3, darken($color3,10%));
+    }
   	.project-content{
     	span {
         border-left: 1px solid $color1;
@@ -129,10 +140,10 @@
 
     @if $button == btn-home
     {
-      font-size: $font-size-16;
+      font-size: $font-size-14;
       text-transform: uppercase;
       background: none;
-      font-weight: $font-weight-semibold;
+      font-weight: 700;
       color: $color-font-copy-dark;
       border: 2px solid $color-font-copy-dark;
       cursor: pointer;
@@ -192,7 +203,6 @@
       transition: background-color 0.2s ease;
       margin-left: 10px;
       margin-right: 10px;
-      margin-top: 30px;
     }
 
     @if $button == btn-back
@@ -216,3 +226,92 @@
       }
     }
   }
+
+// 04 - Animations
+
+@mixin css-animate($name,$duration,$ease) {
+
+  -webkit-animation: $name $duration $ease;
+  -ms-animation: $name $duration $ease;
+  -moz-animation: $name $duration $ease;
+  animation: $name $duration $ease;
+
+  @if $name == element-drop {
+
+    @keyframes element-drop {
+      0% { 
+        opacity: 0; 
+        transform: translateY(-10px);
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  @if $name == heart-beat {
+
+    @keyframes heart-beat {
+      0%, 20%, 40%, 60% { 
+        transform: rotateY(0deg) scale(1, 1) ;
+      }
+
+      10%, 30%, 50% {
+        transform: rotateY(0deg) scale(1.1, 1.1);
+      }
+
+      70%, 62%, 60%, 95%{
+        transform: rotateY(0deg) scale(1, 1) ;
+      }
+
+      80%, 65%, 61%{
+        transform: rotateY(90deg) scale(1, 1) ;
+      }
+    }
+  }
+
+  @if $name == float {
+
+    @keyframes float {
+      0%, 100% {
+        transform: inherit translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  @if $name == jump {
+
+    @keyframes jump {
+      0% {
+        opacity: 0;
+        top: 100px;
+      }
+
+      100% {
+        opacity: 1;
+        top: 0px;
+      }
+    }
+  }
+
+  @if $name == fade {
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+} 

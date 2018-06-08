@@ -4,15 +4,21 @@ $(document).ready(function()
 	{
 	 if(($(this).attr("data-goto"))==-1)
 	 {
-	   $(".logo").hide('slide',300);
+	   $(".logo").hide('slide',500,'ease-in-out');
 	   $(".nav-btn").css("color","#f8f6f5");
-	   $('.project-visual').addClass('active');
+	   
+
+	   setTimeout(function() {
+        $('.project-visual').addClass('active');
+        $(".project-content").addClass('drop');
+    }, 500);
 	 }
 	 else
 	 {
-	   $(".logo").show('slide',300);
-	   $(".nav-btn").css("color","#262427");
-	   $('.project-visual').removeClass('active');
+	 	$(".project-content").removeClass('drop');
+	 	$('.project-visual').removeClass('active');
+	 	$(".nav-btn").css("color","#262427");
+	  $(".logo").show('slide',500,'ease-in-out'); 
 	 }
 	});
 });		

@@ -18,7 +18,29 @@ body
   left: 0;
   visibility: hidden;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  // Transition
+  transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+}
+
+// Home Setting
+.pt-page-1 {
+  &.homeShown {
+    transform:translateX(0px);
+  }
+  &.projectShown {
+    transform:translateX(-100%);
+  }
+}
+// Project Setting
+.pt-page-2 {
+  &.homeShown {
+    transform:translateX(100%);
+  }
+  &.projectShown {
+    transform:translateX(0px);
+  }
 }
 
 .pt-page-current 

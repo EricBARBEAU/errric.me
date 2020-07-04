@@ -65,4 +65,8 @@ body
   height: 100%;
   overflow: hidden;
   margin: auto;
+
+  @include mq(all-mobile) {
+    width:100%;
+  }
 }

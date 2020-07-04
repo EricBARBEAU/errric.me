@@ -6,18 +6,14 @@
 
 .introduction {
 	display: block;
-	width: 100%;
-	margin-top: 280px;
-	padding-left: 50px;
-	padding-right: 50px;
+	width: 500px;
+	position:relative;
+	margin:30vh auto;
 
-  @include mq(not-desktop) {
-    margin-top:210px;
-  }
-
-  @include mq(all-mobile) {
-    margin-top: 180px;
-  }
+	@include mq(all-mobile) {
+		width:90%;
+		margin: 15vh auto;
+	}
 
 	h1 {
 		color:$color-font-title-dark;
@@ -28,31 +24,20 @@
 		color:$color-font-copy-dark;
 		font-size:2.4rem;
 		line-height: 4.0rem;
-		display: block;
+		display: inline-block;
 		position: relative;
-
-    @include mq(all-mobile) {
-      max-width: 300px;
-    }
 	}
 
-	ul {
+	ul.compSlider {
 		font-size: $font-size-24;
 		line-height: 4.0rem;
 		display: inline-block;
-		position: absolute;
-		top: 412px;
-		left: 99px;
-		width: 200px;
+		width:80%;
+		position: relative;
 		height: 42px;
 		overflow: hidden;
-
-    @include mq(not-desktop) {
-      top:342px;
-    }
-    @include mq(all-mobile) {
-      top:352px;
-    }
+		margin-left: 5px;
+		transform: translateY(13px);
 
 		li
 		{

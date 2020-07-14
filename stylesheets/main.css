@@ -237,9 +237,9 @@ body {
 
 .introduction {
   display: block;
-  width: 500px;
+  width: auto;
   position: relative;
-  margin: 30vh auto;
+  margin: 30vh;
 }
 @media (max-width: 767px) {
   .introduction {

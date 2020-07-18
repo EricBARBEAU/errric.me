@@ -8,11 +8,12 @@
 	display: block;
 	width: auto;
 	position:relative;
-	margin:30vh;
+	margin: 30% 25vh;
 
 	@include mq(all-mobile) {
-		width:90%;
-		margin: 15vh auto;
+		width:85%;
+		margin: 20vh auto;
+		padding: 0 30px;
 	}
 
 	h1 {
@@ -24,37 +25,39 @@
 		color:$color-font-copy-dark;
 		font-size:2.4rem;
 		line-height: 4.0rem;
-		display: inline-block;
+		display: block;
 		position: relative;
-	}
 
-	ul.compSlider {
-		font-size: $font-size-24;
-		line-height: 4.0rem;
-		display: inline-block;
-		width:80%;
-		position: relative;
-		height: 42px;
-		overflow: hidden;
-		margin-left: 5px;
-		transform: translateY(13px);
-
-		li
-		{
+		span.skills-slide {
+			font-size: $font-size-24;
+			line-height: 4.0rem;
 			font-weight: 600;
-			display: block;
-		}
-		.comp_ui
-		{
-			color: $color-userinterface;
-		}
-		.comp_brand
-		{
-			color: $color-branding;
-		}
-		.comp_illu
-		{
-			color: $color-illustration;
+			display: inline;
+			position: relative;
+			animation: animate-text infinite 8s;
+
+			&:before {
+				content: '';
+				animation: animate-text infinite 8s;
+			}
+			@keyframes animate-text {
+				0% {
+					content: 'Product Design';
+					color: $color-userinterface;
+				}
+				33% {
+					content: 'Front-End Development';
+					color: $color-branding;
+				}
+				66% {
+					content: 'Illustrations';
+					color: $color-illustration;
+				}
+				100% {
+					content: 'Product Design';
+					color: $color-userinterface;
+				}
+			}
 		}
 	}
 

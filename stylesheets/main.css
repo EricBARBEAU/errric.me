@@ -163,8 +163,8 @@ body {
 #TopBar {
   position: fixed;
   top: 50px;
-  left: 50px;
-  right: 50px;
+  left: 10%;
+  right: 10%;
   z-index: 10;
   height: 60px;
   transform: scale(1, 1);
@@ -204,6 +204,7 @@ body {
   color: #262427;
   text-decoration: none;
   line-height: 6rem;
+  font-weight: 600;
   margin-left: 30px;
   transition: color 0.6s ease;
 }
@@ -239,12 +240,13 @@ body {
   display: block;
   width: auto;
   position: relative;
-  margin: 30vh;
+  margin: 30% 25vh;
 }
 @media (max-width: 767px) {
   .introduction {
-    width: 90%;
-    margin: 15vh auto;
+    width: 85%;
+    margin: 20vh auto;
+    padding: 0 30px;
   }
 }
 .introduction h1 {
@@ -255,32 +257,38 @@ body {
   color: #4d4850;
   font-size: 2.4rem;
   line-height: 4rem;
-  display: inline-block;
+  display: block;
   position: relative;
 }
-.introduction ul.compSlider {
+.introduction p span.skills-slide {
   font-size: 2.4rem;
   line-height: 4rem;
-  display: inline-block;
-  width: 80%;
-  position: relative;
-  height: 42px;
-  overflow: hidden;
-  margin-left: 5px;
-  transform: translateY(13px);
-}
-.introduction ul.compSlider li {
   font-weight: 600;
-  display: block;
+  display: inline;
+  position: relative;
+  animation: animate-text infinite 8s;
 }
-.introduction ul.compSlider .comp_ui {
-  color: #6faa94;
+.introduction p span.skills-slide:before {
+  content: "";
+  animation: animate-text infinite 8s;
 }
-.introduction ul.compSlider .comp_brand {
-  color: #8e77a7;
-}
-.introduction ul.compSlider .comp_illu {
-  color: #d8836c;
+@keyframes animate-text {
+  0% {
+    content: "Product Design";
+    color: #6faa94;
+  }
+  33% {
+    content: "Front-End Development";
+    color: #8e77a7;
+  }
+  66% {
+    content: "Illustrations";
+    color: #d8836c;
+  }
+  100% {
+    content: "Product Design";
+    color: #6faa94;
+  }
 }
 .introduction .pt-trigger {
   font-size: 1.4rem;

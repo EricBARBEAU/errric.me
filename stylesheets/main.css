@@ -266,28 +266,64 @@ body {
   font-weight: 600;
   display: inline;
   position: relative;
-  animation: animate-text infinite 8s;
+  opacity: 0%;
+  top: -20px;
+  animation: let-it-drop infinite 2.5s;
 }
 .introduction p span.skills-slide:before {
   content: "";
-  animation: animate-text infinite 8s;
+  animation: animate-text infinite 10s;
 }
 @keyframes animate-text {
   0% {
-    content: "Product Design";
+    content: "Photography";
     color: #6faa94;
   }
-  33% {
-    content: "Front-End Development";
+  25% {
+    content: "Product Design";
     color: #8e77a7;
   }
-  66% {
-    content: "Illustrations";
+  50% {
+    content: "Front-End Development";
     color: #d8836c;
   }
+  75% {
+    content: "Illustration";
+    color: #8e77a7;
+  }
   100% {
-    content: "Product Design";
+    content: "Photography";
     color: #6faa94;
+  }
+}
+@keyframes let-it-drop {
+  0% {
+    opacity: 0%;
+    top: -20px;
+  }
+  33% {
+    opacity: 0%;
+    top: -20px;
+  }
+  50% {
+    opacity: 100%;
+    top: 3px;
+  }
+  53% {
+    opacity: 100%;
+    top: -1px;
+  }
+  54% {
+    opacity: 100%;
+    top: 0px;
+  }
+  90% {
+    opacity: 100%;
+    top: 0px;
+  }
+  100% {
+    opacity: 0%;
+    top: 0px;
   }
 }
 .introduction .pt-trigger {

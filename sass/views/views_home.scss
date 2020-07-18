@@ -34,28 +34,64 @@
 			font-weight: 600;
 			display: inline;
 			position: relative;
-			animation: animate-text infinite 8s;
+			opacity: 0%;
+			top: -20px;
+			animation: let-it-drop infinite 2.5s;
 
 			&:before {
 				content: '';
-				animation: animate-text infinite 8s;
+				animation: animate-text infinite 10s;
 			}
 			@keyframes animate-text {
 				0% {
-					content: 'Product Design';
+					content: 'Photography';
 					color: $color-userinterface;
 				}
-				33% {
-					content: 'Front-End Development';
+				25% {
+					content: 'Product Design';
 					color: $color-branding;
 				}
-				66% {
-					content: 'Illustrations';
+				50% {
+					content: 'Front-End Development';
 					color: $color-illustration;
 				}
+				75% {
+					content: 'Illustration';
+					color: $color-branding;
+				}
 				100% {
-					content: 'Product Design';
+					content: 'Photography';
 					color: $color-userinterface;
+				}
+			}
+			@keyframes let-it-drop {
+				0% {
+					opacity: 0%;
+					top: -20px;
+				}
+				33% {
+					opacity: 0%;
+					top: -20px;
+				}
+				50% {
+					opacity: 100%;
+					top: 3px;
+				}
+				53% {
+					opacity: 100%;
+					top: -1px;
+				}
+				54% {
+					opacity: 100%;
+					top: 0px;
+				}
+				90% {
+					opacity: 100%;
+					top: 0px;
+				}
+				100% {
+					opacity: 0%;
+					top: 0px;
 				}
 			}
 		}

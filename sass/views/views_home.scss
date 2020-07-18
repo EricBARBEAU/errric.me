@@ -6,18 +6,15 @@
 
 .introduction {
 	display: block;
-	width: 100%;
-	margin-top: 280px;
-	padding-left: 50px;
-	padding-right: 50px;
+	width: auto;
+	position:relative;
+	margin: 30% 25vh;
 
-  @include mq(not-desktop) {
-    margin-top:210px;
-  }
-
-  @include mq(all-mobile) {
-    margin-top: 180px;
-  }
+	@include mq(all-mobile) {
+		width:85%;
+		margin: 20vh auto;
+		padding: 0 30px;
+	}
 
 	h1 {
 		color:$color-font-title-dark;
@@ -31,45 +28,36 @@
 		display: block;
 		position: relative;
 
-    @include mq(all-mobile) {
-      max-width: 300px;
-    }
-	}
-
-	ul {
-		font-size: $font-size-24;
-		line-height: 4.0rem;
-		display: inline-block;
-		position: absolute;
-		top: 412px;
-		left: 99px;
-		width: 200px;
-		height: 42px;
-		overflow: hidden;
-
-    @include mq(not-desktop) {
-      top:342px;
-    }
-    @include mq(all-mobile) {
-      top:352px;
-    }
-
-		li
-		{
+		span.skills-slide {
+			font-size: $font-size-24;
+			line-height: 4.0rem;
 			font-weight: 600;
-			display: block;
-		}
-		.comp_ui
-		{
-			color: $color-userinterface;
-		}
-		.comp_brand
-		{
-			color: $color-branding;
-		}
-		.comp_illu
-		{
-			color: $color-illustration;
+			display: inline;
+			position: relative;
+			animation: animate-text infinite 8s;
+
+			&:before {
+				content: '';
+				animation: animate-text infinite 8s;
+			}
+			@keyframes animate-text {
+				0% {
+					content: 'Product Design';
+					color: $color-userinterface;
+				}
+				33% {
+					content: 'Front-End Development';
+					color: $color-branding;
+				}
+				66% {
+					content: 'Illustrations';
+					color: $color-illustration;
+				}
+				100% {
+					content: 'Product Design';
+					color: $color-userinterface;
+				}
+			}
 		}
 	}
 

@@ -35,13 +35,13 @@
     }
   }
   @include mq(all-mobile) {
-    left: 5%; 
-    right: 5%;
-    width: 90%; 
-    height: 90%;
+    left: 0px; 
+    right: 0px;
+    width: 100%; 
+    height: 100%;
 
     &.visible {
-      top: 5%;
+      top: 0%;
     }
   }
 
@@ -52,12 +52,12 @@
 		height: 35%;
 		margin-bottom: 5px;
 
-    @include mq(not-desktop) {
-      height: 30%;
-    }
-    @include mq(all-mobile) {
-      height: 25%;
-    }
+	    @include mq(not-desktop) {
+	      height: 30%;
+	    }
+	    @include mq(all-mobile) {
+	      height: 35%;
+	    }
 
 		img {
 			display: block;

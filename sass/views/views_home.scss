@@ -12,7 +12,7 @@
 
 	@include mq(all-mobile) {
 		width:85%;
-		margin: 20vh auto;
+		margin: 50% auto;
 		padding: 0 30px;
 	}
 
@@ -28,6 +28,10 @@
 		display: block;
 		position: relative;
 
+		@include mq(all-mobile) {
+			line-height: 4.5rem;
+		}
+
 		span.skills-slide {
 			font-size: $font-size-24;
 			line-height: 4.0rem;
@@ -36,63 +40,13 @@
 			position: relative;
 			opacity: 0%;
 			top: -20px;
-			animation: let-it-drop infinite 2.5s;
+			// animation: let-it-drop infinite 2.5s;
+			@include css-animate(let-it-drop,3s,infinite);
 
 			&:before {
 				content: '';
-				animation: animate-text infinite 10s;
-			}
-			@keyframes animate-text {
-				0% {
-					content: 'Photography';
-					color: $color-userinterface;
-				}
-				25% {
-					content: 'Product Design';
-					color: $color-branding;
-				}
-				50% {
-					content: 'Front-End Development';
-					color: $color-illustration;
-				}
-				75% {
-					content: 'Illustration';
-					color: $color-branding;
-				}
-				100% {
-					content: 'Photography';
-					color: $color-userinterface;
-				}
-			}
-			@keyframes let-it-drop {
-				0% {
-					opacity: 0%;
-					top: -20px;
-				}
-				33% {
-					opacity: 0%;
-					top: -20px;
-				}
-				50% {
-					opacity: 100%;
-					top: 3px;
-				}
-				53% {
-					opacity: 100%;
-					top: -1px;
-				}
-				54% {
-					opacity: 100%;
-					top: 0px;
-				}
-				90% {
-					opacity: 100%;
-					top: 0px;
-				}
-				100% {
-					opacity: 0%;
-					top: 0px;
-				}
+				// animation: animate-text infinite 10s;
+				@include css-animate(animate-text,12s,infinite);
 			}
 		}
 	}

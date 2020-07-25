@@ -41,12 +41,12 @@
 			opacity: 0%;
 			top: -20px;
 			// animation: let-it-drop infinite 2.5s;
-			@include css-animate(let-it-drop,3s,infinite);
+			@include css-animate(let-it-drop,3.5s,infinite);
 
 			&:before {
 				content: '';
 				// animation: animate-text infinite 10s;
-				@include css-animate(animate-text,12s,infinite);
+				@include css-animate(animate-text,14s,infinite);
 			}
 		}
 	}

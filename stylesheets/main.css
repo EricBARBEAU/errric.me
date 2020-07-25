@@ -273,10 +273,10 @@ body {
   position: relative;
   opacity: 0%;
   top: -20px;
-  -webkit-animation: let-it-drop 3s infinite;
-  -ms-animation: let-it-drop 3s infinite;
-  -moz-animation: let-it-drop 3s infinite;
-  animation: let-it-drop 3s infinite;
+  -webkit-animation: let-it-drop 3.5s infinite;
+  -ms-animation: let-it-drop 3.5s infinite;
+  -moz-animation: let-it-drop 3.5s infinite;
+  animation: let-it-drop 3.5s infinite;
 }
 @keyframes let-it-drop {
   0% {
@@ -287,41 +287,41 @@ body {
     opacity: 0%;
     top: -20px;
   }
-  46% {
+  36% {
     opacity: 100%;
     top: 3px;
   }
-  49% {
+  39% {
     opacity: 100%;
     top: -1px;
   }
-  50% {
+  40% {
     opacity: 100%;
     top: 0px;
   }
-  95% {
+  90% {
     opacity: 100%;
     top: 0px;
   }
-  97% {
+  92% {
     opacity: 100%;
-    top: 3px;
+    top: -2px;
   }
   99% {
     opacity: 0%;
-    top: -5px;
+    top: 10px;
   }
   100% {
     opacity: 0%;
-    top: -5px;
+    top: 10px;
   }
 }
 .introduction p span.skills-slide:before {
   content: "";
-  -webkit-animation: animate-text 12s infinite;
-  -ms-animation: animate-text 12s infinite;
-  -moz-animation: animate-text 12s infinite;
-  animation: animate-text 12s infinite;
+  -webkit-animation: animate-text 14s infinite;
+  -ms-animation: animate-text 14s infinite;
+  -moz-animation: animate-text 14s infinite;
+  animation: animate-text 14s infinite;
 }
 @keyframes animate-text {
   0% {
@@ -782,6 +782,7 @@ body {
   z-index: 10;
   opacity: 0.2;
   background-position: top-left;
+  background-size: auto 100%;
   transition: all 0.6s ease-in-out, transform 0.1s linear;
   -moz-transition: all 0.6s ease-in-out, transform 0.1s linear;
   -webkit-transition: all 0.6s ease-in-out, transform 0.1s linear;
@@ -931,7 +932,7 @@ body {
 }
 
 .projects-5 {
-  background-color: #f07424;
+  background-color: #f3f3f4;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 .projects-5:after {
@@ -941,7 +942,7 @@ body {
   content: "";
   width: 100%;
   height: 18%;
-  background: linear-gradient(#f07424, #d35b0e);
+  background: linear-gradient(#f3f3f4, #d8d8dc);
 }
 .projects-5 .project-content span {
   border-left: 1px solid #fff;
@@ -962,14 +963,14 @@ body {
   color: #f07424;
 }
 .projects-5 .project-content span {
-  border-left: 1px solid #3b3e4e !important;
-  color: #3b3e4e !important;
+  border-left: 1px solid #f07424 !important;
+  color: #f07424 !important;
 }
-.projects-5 .project-content a {
+.projects-5 .project-content h2, .projects-5 .project-content p, .projects-5 .project-content span b {
   color: #3b3e4e !important;
 }
 .projects-5 .project-visual {
-  background: url(../img/pigeonhole.png) no-repeat;
+  background: url(../img/phl-admin.png) no-repeat;
 }
 
 .projects-6 {
@@ -1000,6 +1001,41 @@ body {
 }
 .projects-6 .project-visual {
   background: url(../img/roomorama.png) no-repeat;
+}
+
+.projects-7 {
+  background-color: #8f9ced;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+.projects-7:after {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  width: 100%;
+  height: 18%;
+  background: linear-gradient(#8f9ced, #6375e6);
+}
+.projects-7 .project-content span {
+  border-left: 1px solid #fff;
+  color: #fff;
+}
+.projects-7 .project-content .button {
+  background-color: #fff;
+  color: #5161bb !important;
+  background-color: #fff;
+}
+.projects-7 .project-content .button:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.projects-7 .project-content .button:hover {
+  background-color: #5161bb;
+}
+.projects-7 .project-content a {
+  color: #5161bb;
+}
+.projects-7 .project-visual {
+  background: url(../img/msteams.png) no-repeat;
 }
 
 /* 06 - External

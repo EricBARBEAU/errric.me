@@ -131,6 +131,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 700;
+      letter-spacing: 1px;
       color: $color-background-light;
       padding: 15px;
       -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
@@ -146,6 +147,7 @@
       text-transform: uppercase;
       background: none;
       font-weight: 700;
+      letter-spacing: 1px;
       color: $color-font-copy-dark;
       border: 2px solid $color-font-copy-dark;
       cursor: pointer;

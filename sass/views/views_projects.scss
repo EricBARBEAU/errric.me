@@ -65,7 +65,9 @@
 
 		span {
 			text-transform: uppercase;
-			font-size:$font-size-16;
+			font-size: $font-size-16;
+      font-family: $font-link;
+      font-weight: 400; 
 			line-height: 3rem;
 			opacity: 0.6;
 			padding-left: 10px;
@@ -83,7 +85,7 @@
 		h2 {
 			margin-top: 30px;
 			color: #fff;
-      font-size: 5.4rem;
+      font-size: 5rem;
 
       @include mq(not-desktop) {
         margin-top: 24px;

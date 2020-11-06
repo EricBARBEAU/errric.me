@@ -5,6 +5,10 @@
 	display: inline;
 	position: relative;
 	z-index: 999;
+
+	@include mq(all-mobile) {
+		display: inline-block;
+	}
 }
 
 .tooltip-item 

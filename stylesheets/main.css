@@ -251,6 +251,25 @@ body.theme-light .introduction h1 {
 body.theme-light .introduction p {
   color: #4d4850;
 }
+body.theme-light .tooltip-item {
+  background-color: #ddd;
+}
+body.theme-light .pt-trigger {
+  color: #4d4850;
+  border: 2px solid #4d4850;
+  background: url(../img/right-arrow-dark.svg) no-repeat;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
+}
+body.theme-light .pt-trigger:hover {
+  color: #ccc;
+  background: url(../img/right-arrow-light.svg) no-repeat;
+  background-color: #262427;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
+}
 body.theme-dark .pt-page-1 {
   background-color: #262427;
   transition: background-color ease-in-out 0.2s;
@@ -266,6 +285,25 @@ body.theme-dark .introduction h1 {
 }
 body.theme-dark .introduction p {
   color: #ccc;
+}
+body.theme-dark .tooltip-item {
+  background-color: #302f31;
+}
+body.theme-dark .pt-trigger {
+  color: #ccc;
+  border: 2px solid #ccc;
+  background: url(../img/right-arrow-light.svg) no-repeat;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
+}
+body.theme-dark .pt-trigger:hover {
+  color: #4d4850;
+  background: url(../img/right-arrow-dark.svg) no-repeat;
+  background-color: #f8f6f5;
+  background-size: 12px 9px;
+  position: relative;
+  background-position: 94% 50%;
 }
 
 .noise-bg {
@@ -401,18 +439,12 @@ body.theme-dark .introduction p {
   background: none;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #4d4850;
-  border: 2px solid #4d4850;
   cursor: pointer;
   padding: 12px 32px 11px 12px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin-top: 20px;
-  background: url(../img/right-arrow-dark.svg) no-repeat;
-  background-size: 12px 9px;
-  position: relative;
-  background-position: 94% 50%;
   transition: background-color 0.2s ease;
   transform: translateY(0px);
   transition: background-color 0.1s ease-in-out, transform 0.1s linear;
@@ -424,14 +456,6 @@ body.theme-dark .introduction p {
 }
 .introduction .pt-trigger:active, .introduction .pt-trigger:focus {
   transform: translateY(1px);
-}
-.introduction .pt-trigger:hover {
-  color: #f8f6f5;
-  background: url(../img/right-arrow-light.svg) no-repeat;
-  background-size: 12px 9px;
-  position: relative;
-  background-position: 94% 50%;
-  background-color: #4d4850;
 }
 
 #Contact {
@@ -1505,7 +1529,6 @@ html.fp-enabled,
 }
 
 .tooltip-item {
-  background-color: #ddd;
   padding: 4px 8px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;

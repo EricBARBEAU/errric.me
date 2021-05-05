@@ -48,6 +48,7 @@
 
     body.theme {
 
+      // Light theme
       &-light {
         .pt-page-1 {
           background-color: $color-background-light;
@@ -67,7 +68,29 @@
             color:$color-font-copy-dark;
           }
         }
+        .tooltip-item {
+          background-color: #ddd;
+        }
+        .pt-trigger {
+          color: $color-font-copy-dark;
+          border: 2px solid $color-font-copy-dark;
+          background: url(../img/right-arrow-dark.svg) no-repeat;
+          background-size: 12px 9px;
+          position: relative;
+          background-position: 94% 50%;
+          &:hover
+          {
+            color: $color-font-copy-light;
+            background: url(../img/right-arrow-light.svg) no-repeat;
+            background-color: $color-background-dark;
+            background-size: 12px 9px;
+            position: relative;
+            background-position: 94% 50%;
+          }
+        }
       }
+
+      // Dark theme
       &-dark {
         .pt-page-1 {
           background-color: $color-background-dark;
@@ -87,7 +110,28 @@
             color:$color-font-copy-light;
           }
         }
+        .tooltip-item {
+          background-color: #302f31;
+        }
+        .pt-trigger {
+          color: $color-font-copy-light;
+          border: 2px solid $color-font-copy-light;
+          background: url(../img/right-arrow-light.svg) no-repeat;
+          background-size: 12px 9px;
+          position: relative;
+          background-position: 94% 50%;
+          &:hover
+          {
+            color: $color-font-copy-dark;
+            background: url(../img/right-arrow-dark.svg) no-repeat;
+            background-color: $color-background-light;
+            background-size: 12px 9px;
+            position: relative;
+            background-position: 94% 50%;
+          }
+        }
       }
+
     }
   }
 
@@ -196,29 +240,13 @@
       background: none;
       font-weight: 700;
       letter-spacing: 1px;
-      color: $color-font-copy-dark;
-      border: 2px solid $color-font-copy-dark;
       cursor: pointer;
       padding: 12px 32px 11px 12px;
       -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
       margin-top: 20px;
-      background: url(../img/right-arrow-dark.svg) no-repeat;
-      background-size: 12px 9px;
-      position: relative;
-      background-position: 94% 50%;
       transition: background-color 0.2s ease;
 
       @include btn-animate();
-
-      &:hover
-      {
-        color: $color-background-light;
-        background: url(../img/right-arrow-light.svg) no-repeat;
-        background-size: 12px 9px;
-        position: relative;
-        background-position: 94% 50%;
-        background-color: $color-font-copy-dark;
-      }
     }
 
     @if $button == btn-close

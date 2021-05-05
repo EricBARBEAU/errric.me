@@ -49,7 +49,7 @@
 
 </script>
 </head>
-<body>
+<body class="theme-light">
 	<div id="Contact">
 		<div class="contact-top">
 			<img src="img/Eric.png">
@@ -105,7 +105,7 @@
 			<div class="noise-bg inset-0" aria-hidden="true">
 		    <svg>
 		      <filter id='noise-bg-fx'>
-		        <feTurbulence baseFrequency="0.8" />
+		        <feTurbulence baseFrequency="0.8" numOctaves="1" type="fractalNoise"></feTurbulence>
 		      </filter>
 		    </svg>
 		  </div>
@@ -185,6 +185,7 @@
   	<script type="text/javascript" src="js/transition.min.js"></script>
   	<script type="text/javascript" src="js/contact.js"></script>
   	<script type="text/javascript" src="js/switch.js"></script>
+  	<script type="text/javascript" src="js/theme-switch.js"></script>
   	<script type="text/javascript">$(".pt-trigger").click(function(){$(this).hasClass("pt-trigger_home")?($(".pt-page").removeClass("homeShown"),$(".pt-page").addClass("projectShown")):($(".pt-page").removeClass("projectShown"),$(".pt-page").addClass("homeShown"))}),$(".button").click(function(){$("#ProjectsWrapper").scrollTo(500,0)});</script>
 </body>
 </html>

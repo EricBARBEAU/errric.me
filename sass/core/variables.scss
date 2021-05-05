@@ -1,20 +1,23 @@
 // Variables used for the website
 
-// 01 - Colors
+// 01 - Colours
 
-	// 01-2 - Font Colors
+	// 01-1 - Background Colours
 
 	$color-background-light: #f8f6f5;
 	$color-background-dark: #262427;
-	$color-background-separator: #ccc;
+	$color-background-sep-light: rgba(0,0,0,0.2);
+	$color-background-sep-dark: rgba(255,255,255,0.2);
 
-	// 01-2 - Font Colors
+	// 01-2 - Font Colours
 
 	$color-font-title-dark: #262427;
 	$color-font-copy-dark: #4d4850;
+	$color-font-title-light: #f8f6f5;
+	$color-font-copy-light: #ccc;
 	$color-font-span: #857e88;
 
-	// 01-3 - Projects Colors
+	// 01-3 - Projects Colours
 
 	$color-c1-p1: #1b3e3f;
 	$color-c2-p1: #2d5759;
@@ -45,7 +48,7 @@
 	$color-c2-p7: #5161bb;
 	$color-c3-p7: #8f9ced;
 
-	// 01-4 - Competences Colors
+	// 01-4 - Competences Colours
 
 	$color-userinterface: #6faa94;
 	$color-branding: #8e77a7;

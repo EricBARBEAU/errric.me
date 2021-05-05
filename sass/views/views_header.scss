@@ -28,7 +28,6 @@
 		display: block;
  		width: 60px;
  		height: 60px;
- 		background: url(../img/logo.svg);
  		background-size: 60px 60px;
  		float: left;
 	}
@@ -41,7 +40,6 @@
 		}
 		li a {
 			display: block;
-			color: $color-font-title-dark;
 			text-decoration: none;
 			line-height: 6.0rem;
 			font-weight: 600;

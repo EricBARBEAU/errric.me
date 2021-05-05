@@ -2,7 +2,7 @@
 
 // 01 - Colors
 
-	// 01-2 - Project colors set
+	// 01-1 - Project colors set
 
 	@mixin project-color($color1, $color2, $color3) {
 
@@ -42,6 +42,54 @@
     	}
   	} 
 	}  
+
+  // 01.2 - Theme switcher
+  @mixin theme-switcher {
+
+    body.theme {
+
+      &-light {
+        .pt-page-1 {
+          background-color: $color-background-light;
+          transition: background-color ease-in-out .2s;
+        }
+        .logo {
+          background: url(../img/logo-dark.svg);
+        }
+        .SubNav li a {
+          color: $color-font-title-dark;
+        }
+        .introduction {
+          h1 {
+            color:$color-font-title-dark;
+          }
+          p {
+            color:$color-font-copy-dark;
+          }
+        }
+      }
+      &-dark {
+        .pt-page-1 {
+          background-color: $color-background-dark;
+          transition: background-color ease-in-out .2s;
+        }
+        .logo {
+          background: url(../img/logo-light.svg);
+        }
+        .SubNav li a {
+          color: $color-font-title-light;
+        }
+        .introduction {
+          h1 {
+            color:$color-font-title-light;
+          }
+          p {
+            color:$color-font-copy-light;
+          }
+        }
+      }
+    }
+  }
 
 // 02 - Media Queries
 

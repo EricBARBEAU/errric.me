@@ -1,12 +1,11 @@
 // Styles for Home Page
 
-.pt-page-1 {
-    background-color: $color-background-light;
-}
+@include theme-switcher;
+
 
 .noise-bg {
 	pointer-events: none;
-	opacity: 0.35; // control the noise opacity
+	opacity: 0.3; // control the noise opacity
 	filter: grayscale(100%); // convert to grayscale colors
 	position: absolute;
 	left: 0;
@@ -37,12 +36,10 @@
 	}
 
 	h1 {
-		color:$color-font-title-dark;
 		margin-bottom: 20px;
 	}
 
 	p {
-		color:$color-font-copy-dark;
 		font-size:2.4rem;
 		line-height: 4.0rem;
 		display: block;

@@ -191,7 +191,6 @@ body {
   display: block;
   width: 60px;
   height: 60px;
-  background: url(../img/logo.svg);
   background-size: 60px 60px;
   float: left;
 }
@@ -205,7 +204,6 @@ body {
 }
 #TopBar .SubNav li a {
   display: block;
-  color: #262427;
   text-decoration: none;
   line-height: 6rem;
   font-weight: 600;
@@ -237,13 +235,42 @@ body {
   }
 }
 
-.pt-page-1 {
+body.theme-light .pt-page-1 {
   background-color: #f8f6f5;
+  transition: background-color ease-in-out 0.2s;
+}
+body.theme-light .logo {
+  background: url(../img/logo-dark.svg);
+}
+body.theme-light .SubNav li a {
+  color: #262427;
+}
+body.theme-light .introduction h1 {
+  color: #262427;
+}
+body.theme-light .introduction p {
+  color: #4d4850;
+}
+body.theme-dark .pt-page-1 {
+  background-color: #262427;
+  transition: background-color ease-in-out 0.2s;
+}
+body.theme-dark .logo {
+  background: url(../img/logo-light.svg);
+}
+body.theme-dark .SubNav li a {
+  color: #f8f6f5;
+}
+body.theme-dark .introduction h1 {
+  color: #f8f6f5;
+}
+body.theme-dark .introduction p {
+  color: #ccc;
 }
 
 .noise-bg {
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.3;
   filter: grayscale(100%);
   position: absolute;
   left: 0;
@@ -275,11 +302,9 @@ body {
   }
 }
 .introduction h1 {
-  color: #262427;
   margin-bottom: 20px;
 }
 .introduction p {
-  color: #4d4850;
   font-size: 2.4rem;
   line-height: 4rem;
   display: block;

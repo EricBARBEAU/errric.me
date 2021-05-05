@@ -8,7 +8,6 @@
 	display: block;
 	width: 10%;
 	height: 100%;
-	background-color: $color-background-light;
 	float: left;
 
   @include mq(all-mobile) {

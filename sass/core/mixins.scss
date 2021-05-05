@@ -57,9 +57,6 @@
         .logo {
           background: url(../img/logo-dark.svg);
         }
-        .SubNav li a {
-          color: $color-font-title-dark;
-        }
         .introduction {
           h1 {
             color:$color-font-title-dark;
@@ -71,9 +68,16 @@
         .tooltip-item {
           background-color: #ddd;
         }
+        #SideBar {
+          background-color: $color-background-light;
+
+          .pt-trigger {
+            background: url(../img/back-dark.svg) no-repeat;
+          }
+        }
         .pt-trigger {
           color: $color-font-copy-dark;
-          border: 2px solid $color-font-copy-dark;
+          border: 2px solid $color-background-dark;
           background: url(../img/right-arrow-dark.svg) no-repeat;
           background-size: 12px 9px;
           position: relative;
@@ -99,9 +103,6 @@
         .logo {
           background: url(../img/logo-light.svg);
         }
-        .SubNav li a {
-          color: $color-font-title-light;
-        }
         .introduction {
           h1 {
             color:$color-font-title-light;
@@ -113,9 +114,16 @@
         .tooltip-item {
           background-color: #302f31;
         }
+        #SideBar {
+          background-color: $color-background-dark;
+
+          .pt-trigger {
+            background: url(../img/back-light.svg) no-repeat;
+          }
+        }
         .pt-trigger {
           color: $color-font-copy-light;
-          border: 2px solid $color-font-copy-light;
+          border: 2px solid $color-background-light;
           background: url(../img/right-arrow-light.svg) no-repeat;
           background-size: 12px 9px;
           position: relative;
@@ -296,13 +304,13 @@
       transform: translateY(-50%);
       margin: auto;
       display: block;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       text-decoration: none;
-      background: url(../img/back.svg) no-repeat;
       background-size: contain;
       opacity: 0.6;
       cursor: pointer;
+      border:none;
 
       &:hover
       {

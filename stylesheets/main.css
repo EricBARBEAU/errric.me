@@ -193,6 +193,55 @@ body {
   height: 60px;
   background-size: 60px 60px;
   float: left;
+  border: none;
+}
+#TopBar .logo:after {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  top: 13px;
+  max-width: 130px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.8rem;
+  cursor: default;
+  -webkit-animation: the-ghost 10s infinite;
+  -ms-animation: the-ghost 10s infinite;
+  -moz-animation: the-ghost 10s infinite;
+  animation: the-ghost 10s infinite;
+}
+@keyframes the-ghost {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  48% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  49% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  99% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+@media (max-width: 767px) {
+  #TopBar .logo:after {
+    left: 5px;
+    top: 70px;
+  }
 }
 #TopBar .SubNav {
   font-size: 1.4rem;
@@ -236,12 +285,19 @@ body {
   }
 }
 
+body.theme-light {
+  background-color: #f8f6f5;
+}
 body.theme-light .pt-page-1 {
   background-color: #f8f6f5;
   transition: background-color ease-in-out 0.2s;
 }
 body.theme-light .logo {
   background: url(../img/logo-dark.svg);
+}
+body.theme-light .logo:after {
+  color: rgba(0, 0, 0, 0.4);
+  content: "You like it dark? Click this.";
 }
 body.theme-light .introduction h1 {
   color: #262427;
@@ -274,12 +330,19 @@ body.theme-light .pt-trigger:hover {
   position: relative;
   background-position: 94% 50%;
 }
+body.theme-dark {
+  background-color: #262427;
+}
 body.theme-dark .pt-page-1 {
   background-color: #262427;
   transition: background-color ease-in-out 0.2s;
 }
 body.theme-dark .logo {
   background: url(../img/logo-light.svg);
+}
+body.theme-dark .logo:after {
+  color: rgba(255, 255, 255, 0.4);
+  content: "Prefer it light? Click this.";
 }
 body.theme-dark .introduction h1 {
   color: #f8f6f5;

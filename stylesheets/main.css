@@ -893,6 +893,23 @@ body.theme-dark .pt-trigger:hover {
     opacity: 0.2;
   }
 }
+.projects .project-visual_gif {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: 89%;
+  left: 15px;
+  top: 800px;
+  z-index: 10;
+  opacity: 0.2;
+  transition: all 0.6s ease-in-out, transform 0.1s linear;
+  -moz-transition: all 0.6s ease-in-out, transform 0.1s linear;
+  -webkit-transition: all 0.6s ease-in-out, transform 0.1s linear;
+}
+.projects .project-visual_gif.active {
+  top: 68px;
+  opacity: 0.9;
+}
 
 .projects-1 {
   background-color: #428689;
@@ -982,36 +999,6 @@ body.theme-dark .pt-trigger:hover {
 }
 .projects-3 .project-visual {
   background: url(../img/unitec.png) no-repeat;
-}
-
-.projects-4 {
-  background-color: #272120;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-}
-.projects-4:after {
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  content: "";
-  width: 100%;
-  height: 18%;
-  background: linear-gradient(#272120, #0b0909);
-}
-.projects-4 .project-content span {
-  border-left: 1px solid #f5a109;
-  color: #f5a109;
-}
-.projects-4 .project-content .button {
-  background-color: #f5a109;
-}
-.projects-4 .project-content .button:hover {
-  background-color: #ffb400;
-}
-.projects-4 .project-content a {
-  color: #ffb400;
-}
-.projects-4 .project-visual {
-  background: url(../img/btx.png) no-repeat;
 }
 
 .projects-5 {
@@ -1119,6 +1106,36 @@ body.theme-dark .pt-trigger:hover {
 }
 .projects-7 .project-visual {
   background: url(../img/msteams.png) no-repeat;
+}
+
+.projects-8 {
+  background-color: #3b3e4e;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+.projects-8:after {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  width: 100%;
+  height: 18%;
+  background: linear-gradient(#3b3e4e, #252731);
+}
+.projects-8 .project-content span {
+  border-left: 1px solid #f07424;
+  color: #f07424;
+}
+.projects-8 .project-content .button {
+  background-color: #f07424;
+}
+.projects-8 .project-content .button:hover {
+  background-color: #f39254;
+}
+.projects-8 .project-content a {
+  color: #f39254;
+}
+.projects-8 .project-visual {
+  background: url(../img/phl-chat-bg.png) no-repeat;
 }
 
 /* 06 - External

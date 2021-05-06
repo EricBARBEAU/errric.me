@@ -50,12 +50,18 @@
 
       // Light theme
       &-light {
+        background-color: $color-background-light;
         .pt-page-1 {
           background-color: $color-background-light;
           transition: background-color ease-in-out .2s;
         }
         .logo {
           background: url(../img/logo-dark.svg);
+
+          &:after {
+            color: rgba(0,0,0,0.4);
+            content: 'You like it dark? Click this.';
+          }
         }
         .introduction {
           h1 {
@@ -96,12 +102,18 @@
 
       // Dark theme
       &-dark {
+        background-color: $color-background-dark;
         .pt-page-1 {
           background-color: $color-background-dark;
           transition: background-color ease-in-out .2s;
         }
         .logo {
           background: url(../img/logo-light.svg);
+
+          &:after {
+            color: rgba(255,255,255,0.4);
+            content: 'Prefer it light? Click this.';
+          }
         }
         .introduction {
           h1 {
@@ -491,6 +503,36 @@
       100% {
         opacity: 0%;
         top: 10px;
+      }
+    }
+  }
+
+  @if $name == the-ghost {
+
+    @keyframes the-ghost {
+      0% { 
+        opacity: 0; 
+        transform: translateY(-20px);
+      }
+      48% { 
+        opacity: 0; 
+        transform: translateY(-20px);
+      }
+      49% { 
+        opacity: 1; 
+        transform: translateY(5px);
+      }
+      50% { 
+        opacity: 1; 
+        transform: translateY(0px);
+      }
+      99% {
+        opacity: 1; 
+        transform: translateY(5px);
+      }
+      100% {
+        opacity: 0; 
+        transform: translateY(-20px);
       }
     }
   }

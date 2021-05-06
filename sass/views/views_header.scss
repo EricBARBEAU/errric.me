@@ -10,8 +10,8 @@
 	transform: scale(1, 1);
 	// Transition
 	transition: all .2s ease-in-out, transform .1s linear;
-  -moz-transition: all .2s ease-in-out, transform .1s linear;
-  -webkit-transition: all .2s ease-in-out, transform .1s linear;
+	-moz-transition: all .2s ease-in-out, transform .1s linear;
+	-webkit-transition: all .2s ease-in-out, transform .1s linear;
 
   &.shrink {
   	transform: scale(0.94, 0.9);
@@ -30,6 +30,28 @@
  		height: 60px;
  		background-size: 60px 60px;
  		float: left;
+ 		border:none;
+
+ 		// Dark theme indicator
+ 		&:after {
+			display: inline-block;
+			position: absolute;
+			left: 70px;
+			top: 13px;
+			max-width: 130px;
+			font-size: 11px;
+			font-weight: 500;
+			font-family: $font-link;
+			line-height: 1.8rem;
+			cursor: default;
+
+			@include css-animate(the-ghost,10s,infinite);
+
+			@include mq(all-mobile) {
+				left: 5px;
+				top: 70px;
+			}
+ 		}
 	}
 	.SubNav {
 		font-size: 1.4rem;

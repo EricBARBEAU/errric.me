@@ -158,6 +158,28 @@
         opacity: 0.2;
       }
     }
+
+    // Gif contained in visual
+    &_gif {
+      display: block;
+      position: absolute;
+      width: auto;
+      height: 89%;
+      left: 15px; 
+      top: 800px;
+      z-index: 10;
+      opacity: 0.2;
+      // Transition
+      transition: all .6s ease-in-out, transform .1s linear;
+      -moz-transition: all .6s ease-in-out, transform .1s linear;
+      -webkit-transition: all .6s ease-in-out, transform .1s linear;
+
+      &.active {
+        top:68px;
+        opacity: 0.9;
+      }
+    }
+
 	}
 }
 
@@ -186,13 +208,13 @@
 	}
 }
 
-.projects-4 {
-	@include project-color($color-c1-p4, $color-c2-p4, $color-c3-p4);
+// .projects-4 {
+// 	@include project-color($color-c1-p4, $color-c2-p4, $color-c3-p4);
 
-	.project-visual {
-		background: url(../img/btx.png) no-repeat;
-	}
-}
+// 	.project-visual {
+// 		background: url(../img/btx.png) no-repeat;
+// 	}
+// }
 
 .projects-5 {
 	@include project-color($color-c1-p5, $color-c3-p5, $color-c2-p5);
@@ -227,5 +249,13 @@
 
   .project-visual {
     background: url(../img/msteams.png) no-repeat;
+  }
+}
+
+.projects-8 {
+  @include project-color($color-c1-p8, $color-c2-p8, $color-c3-p8);
+
+  .project-visual {
+    background: url(../img/phl-chat-bg.png) no-repeat;
   }
 }

@@ -957,11 +957,11 @@ body.theme-dark .pt-trigger:hover {
     opacity: 0.2;
   }
 }
-.projects .project-visual_gif {
+.projects .project-visual_vid {
   display: block;
   position: absolute;
   width: auto;
-  height: 89%;
+  height: 90%;
   left: 15px;
   top: 800px;
   z-index: 10;
@@ -970,8 +970,8 @@ body.theme-dark .pt-trigger:hover {
   -moz-transition: all 0.6s ease-in-out, transform 0.1s linear;
   -webkit-transition: all 0.6s ease-in-out, transform 0.1s linear;
 }
-.projects .project-visual_gif.active {
-  top: 68px;
+.projects .project-visual_vid.active {
+  top: 66px;
   opacity: 0.9;
 }
 

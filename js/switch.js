@@ -12,7 +12,7 @@ $(document).ready(function()
 
 	   setTimeout(function() {
         $('.project-visual').addClass('active');
-        $('.project-visual_gif').addClass('active');
+        $('.project-visual_vid').addClass('active');
         $(".project-content").addClass('drop');
     }, 300);
 	 }
@@ -22,7 +22,7 @@ $(document).ready(function()
 
 	 	$(".project-content").removeClass('drop');
 	 	$('.project-visual').removeClass('active');
-	 	$('.project-visual_gif').removeClass('active');
+	 	$('.project-visual_vid').removeClass('active');
 
 	 	if (document.body.classList.contains('theme-light')) {
 			$(".nav-btn").css("color","#262427");

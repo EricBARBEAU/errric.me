@@ -1,7 +1,7 @@
 /*
-* Copyright 2021, Eric BARBEAU
+* Copyright 2022, Eric BARBEAU
 * www.errric.me
-* 06/05/2021
+* 23/09/2022
 */
 /* Table of Content
 ==================================================
@@ -315,7 +315,7 @@ body.theme-light #SideBar .pt-trigger {
   background: url(../img/back-dark.svg) no-repeat;
 }
 body.theme-light .pt-trigger {
-  color: #4d4850;
+  color: #262427;
   border: 2px solid #262427;
   background: url(../img/right-arrow-dark.svg) no-repeat;
   background-size: 12px 9px;
@@ -360,7 +360,7 @@ body.theme-dark #SideBar .pt-trigger {
   background: url(../img/back-light.svg) no-repeat;
 }
 body.theme-dark .pt-trigger {
-  color: #ccc;
+  color: #f8f6f5;
   border: 2px solid #f8f6f5;
   background: url(../img/right-arrow-light.svg) no-repeat;
   background-size: 12px 9px;

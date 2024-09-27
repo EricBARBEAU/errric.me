@@ -40,7 +40,7 @@
 	}
 
 	p {
-		font-size:2.4rem;
+		font-size:2rem;
 		line-height: 4.0rem;
 		display: block;
 		position: relative;
@@ -49,23 +49,23 @@
 			line-height: 4.5rem;
 		}
 
-		span.skills-slide {
-			font-size: $font-size-24;
-			line-height: 4.0rem;
-			font-weight: 600;
-			display: inline;
-			position: relative;
-			opacity: 0%;
-			top: -20px;
-			// animation: let-it-drop infinite 2.5s;
-			@include css-animate(let-it-drop,3.5s,infinite);
+		// span.skills-slide {
+		// 	font-size: $font-size-24;
+		// 	line-height: 4.0rem;
+		// 	font-weight: 600;
+		// 	display: inline;
+		// 	position: relative;
+		// 	opacity: 0%;
+		// 	top: -20px;
+		// 	// animation: let-it-drop infinite 2.5s;
+		// 	@include css-animate(let-it-drop,3.5s,infinite);
 
-			&:before {
-				content: '';
-				// animation: animate-text infinite 10s;
-				@include css-animate(animate-text,14s,infinite);
-			}
-		}
+		// 	&:before {
+		// 		content: '';
+		// 		// animation: animate-text infinite 10s;
+		// 		@include css-animate(animate-text,14s,infinite);
+		// 	}
+		// }
 	}
 
 	.pt-trigger

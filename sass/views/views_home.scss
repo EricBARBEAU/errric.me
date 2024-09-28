@@ -27,7 +27,7 @@
 	display: block;
 	width: auto;
 	position:relative;
-	margin: 30% 25vh;
+	margin: 30% 20vh;
 
 	@include mq(all-mobile) {
 		width:85%;
@@ -40,7 +40,7 @@
 	}
 
 	p {
-		font-size:2rem;
+		font-size:1.8rem;
 		line-height: 4.0rem;
 		display: block;
 		position: relative;

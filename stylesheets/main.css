@@ -89,13 +89,13 @@ body p {
   letter-spacing: -0.1rem;
 }
 body h1 {
-  font-size: 7rem;
-}
-body h2 {
   font-size: 6rem;
 }
+body h2 {
+  font-size: 5.4rem;
+}
 body h1, body h2, body h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -403,7 +403,7 @@ body.theme-dark .pt-trigger:hover {
   display: block;
   width: auto;
   position: relative;
-  margin: 30% 25vh;
+  margin: 30% 20vh;
 }
 @media (max-width: 767px) {
   .introduction {
@@ -416,7 +416,7 @@ body.theme-dark .pt-trigger:hover {
   margin-bottom: 20px;
 }
 .introduction p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 4rem;
   display: block;
   position: relative;

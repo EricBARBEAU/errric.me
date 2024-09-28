@@ -5,7 +5,7 @@
 */
 /* Table of Content
 ==================================================
-  
+
   01 - Reset
   02 - Variables
   03 - Mixins
@@ -79,20 +79,23 @@ b {
 /* 04 - Elements
 ================================================== */
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Fira Mono", monospace;
   font-weight: 400;
   font-size: 1.6rem;
   overflow: hidden;
   background-color: #262427;
 }
-body h1 {
-  font-size: 7rem;
+body p {
+  letter-spacing: -0.1rem;
 }
-body h2 {
+body h1 {
   font-size: 6rem;
 }
+body h2 {
+  font-size: 5.4rem;
+}
 body h1, body h2, body h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -400,7 +403,7 @@ body.theme-dark .pt-trigger:hover {
   display: block;
   width: auto;
   position: relative;
-  margin: 30% 25vh;
+  margin: 30% 20vh;
 }
 @media (max-width: 767px) {
   .introduction {
@@ -413,7 +416,7 @@ body.theme-dark .pt-trigger:hover {
   margin-bottom: 20px;
 }
 .introduction p {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 4rem;
   display: block;
   position: relative;
@@ -421,86 +424,6 @@ body.theme-dark .pt-trigger:hover {
 @media (max-width: 767px) {
   .introduction p {
     line-height: 4.5rem;
-  }
-}
-.introduction p span.skills-slide {
-  font-size: 2.4rem;
-  line-height: 4rem;
-  font-weight: 600;
-  display: inline;
-  position: relative;
-  opacity: 0%;
-  top: -20px;
-  -webkit-animation: let-it-drop 3.5s infinite;
-  -ms-animation: let-it-drop 3.5s infinite;
-  -moz-animation: let-it-drop 3.5s infinite;
-  animation: let-it-drop 3.5s infinite;
-}
-@keyframes let-it-drop {
-  0% {
-    opacity: 0%;
-    top: -20px;
-  }
-  33% {
-    opacity: 0%;
-    top: -20px;
-  }
-  36% {
-    opacity: 100%;
-    top: 3px;
-  }
-  39% {
-    opacity: 100%;
-    top: -1px;
-  }
-  40% {
-    opacity: 100%;
-    top: 0px;
-  }
-  90% {
-    opacity: 100%;
-    top: 0px;
-  }
-  92% {
-    opacity: 100%;
-    top: -2px;
-  }
-  99% {
-    opacity: 0%;
-    top: 10px;
-  }
-  100% {
-    opacity: 0%;
-    top: 10px;
-  }
-}
-.introduction p span.skills-slide:before {
-  content: "";
-  -webkit-animation: animate-text 14s infinite;
-  -ms-animation: animate-text 14s infinite;
-  -moz-animation: animate-text 14s infinite;
-  animation: animate-text 14s infinite;
-}
-@keyframes animate-text {
-  0% {
-    content: "Photography";
-    color: #6faa94;
-  }
-  25% {
-    content: "Product Design";
-    color: #8e77a7;
-  }
-  50% {
-    content: "Front-End Development";
-    color: #d8836c;
-  }
-  75% {
-    content: "Illustration";
-    color: #8e77a7;
-  }
-  100% {
-    content: "Photography";
-    color: #6faa94;
   }
 }
 .introduction .pt-trigger {
@@ -866,8 +789,8 @@ body.theme-dark .pt-trigger:hover {
 }
 .projects .project-content p {
   margin-top: 20px;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   font-weight: 400;
   color: #f8f6f5;
   width: 80%;

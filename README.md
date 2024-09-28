@@ -1,3 +1,3 @@
-# Website 2021
+# Website 2024
 
 Public repository for http://errric.me

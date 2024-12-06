@@ -1,0 +1,22 @@
+// Typography Elements
+
+body 
+{
+  font-family: $font-copy_new;
+  font-weight: $font-weight-400;
+  font-size: $font-size-16;
+
+  overflow:hidden;
+  background-color: $color-background-dark;
+
+  p { letter-spacing: -0.1rem; }
+
+  h1 { font-size: $font-size-h1; }
+  h2 { font-size: $font-size-h2; }
+
+  h1, h2, h3 { font-family: $font-title_new; font-weight: $font-weight-800; letter-spacing: $font-spacing-title; }
+
+  b { font-weight: $font-weight-800;}
+
+  a, button { font-family: $font-link; }
+}

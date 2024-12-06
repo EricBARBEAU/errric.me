@@ -1,0 +1,553 @@
+// Mixins used for the website
+
+// 01 - Colors
+
+	// 01-1 - Project colors set
+
+	@mixin project-color($color1, $color2, $color3) {
+
+  	background-color:$color3;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.1);
+
+    &:after {
+      display:block;
+      position:absolute;
+      bottom:0px;
+      content:'';
+      width:100%;
+      height:18%;
+      background: linear-gradient($color3, darken($color3,10%));
+    }
+  	.project-content{
+    	span {
+        border-left: 1px solid $color1;
+        color: $color1;
+    	}
+    	.button {
+
+        @if $color1 == $color-c1-p5 {
+          background-color: $color1;
+          color: $color2 !important;
+          &:hover {
+            background-color: rgba(255,255,255,0.9) !important;
+          }
+        }
+    		background-color: $color1;
+    		&:hover {
+				  background-color: $color2;
+			  }
+    	}
+    	a {
+    		color: $color2;
+    	}
+  	} 
+	}  
+
+  // 01.2 - Theme switcher
+  @mixin theme-switcher {
+
+    body.theme {
+
+      // Light theme
+      &-light {
+        background-color: $color-background-light;
+        .pt-page-1 {
+          background-color: $color-background-light;
+          transition: background-color ease-in-out .2s;
+        }
+        .logo {
+          background: url(../../img/logo-dark.svg);
+
+          &:after {
+            color: rgba(0,0,0,0.4);
+            content: 'You like it dark? Click this.';
+          }
+        }
+        .introduction {
+          h1 {
+            color:$color-font-title-dark;
+          }
+          p {
+            color:$color-font-copy-dark;
+          }
+        }
+        .tooltip-item {
+          background-color: #ddd;
+        }
+        #SideBar {
+          background-color: $color-background-light;
+
+          .pt-trigger {
+            background: url(../../img/back-dark.svg) no-repeat;
+          }
+        }
+        .pt-trigger {
+          color: $color-font-copy-dark;
+          border: 2px solid $color-background-dark;
+          background: url(../../img/right-arrow-dark.svg) no-repeat;
+          background-size: 12px 9px;
+          position: relative;
+          background-position: 94% 50%;
+          &:hover
+          {
+            color: $color-font-copy-light;
+            background: url(../../img/right-arrow-light.svg) no-repeat;
+            background-color: $color-background-dark;
+            background-size: 12px 9px;
+            position: relative;
+            background-position: 94% 50%;
+          }
+        }
+      }
+
+      // Dark theme
+      &-dark {
+        background-color: $color-background-dark;
+        .pt-page-1 {
+          background-color: $color-background-dark;
+          transition: background-color ease-in-out .2s;
+        }
+        .logo {
+          background: url(../../img/logo-light.svg);
+
+          &:after {
+            color: rgba(255,255,255,0.4);
+            content: 'Prefer it light? Click this.';
+          }
+        }
+        .introduction {
+          h1 {
+            color:$color-font-title-light;
+          }
+          p {
+            color:$color-font-copy-light;
+          }
+        }
+        .tooltip-item {
+          background-color: #302f31;
+        }
+        #SideBar {
+          background-color: $color-background-dark;
+
+          .pt-trigger {
+            background: url(../../img/back-light.svg) no-repeat;
+          }
+        }
+        .pt-trigger {
+          color: $color-font-copy-light;
+          border: 2px solid $color-background-light;
+          background: url(../../img/right-arrow-light.svg) no-repeat;
+          background-size: 12px 9px;
+          position: relative;
+          background-position: 94% 50%;
+          &:hover
+          {
+            color: $color-font-copy-dark;
+            background: url(../../img/right-arrow-dark.svg) no-repeat;
+            background-color: $color-background-light;
+            background-size: 12px 9px;
+            position: relative;
+            background-position: 94% 50%;
+          }
+        }
+      }
+
+    }
+  }
+
+// 02 - Media Queries
+
+	@mixin media-queries($point) 
+	{
+    // Current $mobilePort variable
+	  @if $point == sm-mobile {
+	    @media (max-width: $screen-xxs-max) { @content; } // Less than 479px
+	  }
+    // Current $mobileLand variable 
+	  @if $point == all-mobile {
+	    @media (max-width: $screen-xs-max) { @content; } // Less than 767px
+	  }
+
+	  @if $point == lg-mobile {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == sm-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-xs-max) { @content; } // 480px to 767px // lg-mobile = sm-tablet
+	  }
+
+	  @if $point == all-tablet {
+	    @media (min-width: $screen-phone) and (max-width: $screen-sm-max) { @content; } // 480px to 991px
+	  }
+
+	  @if $point == lg-tablet {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == sm-desktop {
+	    @media (min-width: $screen-tablet) and (max-width: $screen-sm-max) { @content; } // 768px to 991px // lg-tablet = sm-desktop
+	  }
+
+	  @if $point == md-desktop {
+	    @media (min-width: $screen-desktop) and (max-width: $screen-md-max) { @content; } // 992px to 1199px
+	  }
+
+    
+	  @if $point == lg-desktop {
+	    @media (min-width: $screen-lg-desktop) { @content; } // More than 1200px
+	  }
+
+	  @if $point == not-mobile {
+	    @media (min-width: $screen-tablet) { @content; } // More than 768px
+	  }
+    // Current $desktop variable 
+	  @if $point == not-tablet {
+	    @media (min-width: $screen-desktop) { @content; } // More than 992px
+	  }
+    // Current $tablet variable
+	  @if $point == not-desktop {
+	    @media (max-width: $screen-sm-max) { @content; } // Less than 991px
+	  }
+
+	  @if $point == retina {
+	    @media
+	      only screen and (-webkit-min-device-pixel-ratio: 2),
+	      only screen and (min--moz-device-pixel-ratio: 2),
+	      only screen and (-o-min-device-pixel-ratio: 2/1),
+	      only screen and (min-device-pixel-ratio: 2),
+	      only screen and (min-resolution: 192dpi),
+	      only screen and (min-resolution: 2dppx) {
+	      @content;
+	    }
+	  }
+
+	}
+
+	@mixin mq($point) {
+	  @include media-queries($point) {
+	    @content;
+	  }
+	}
+
+// 03 - Elements styling
+
+  // 03-2 - Buttons
+
+  @mixin btn-styling($button)
+  {
+    @if $button == btn-project
+    {
+      display: inline-block;
+      font-size: $font-size-14;
+      margin-top: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $color-background-light;
+      padding: 15px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      @include btn-animate();
+    }
+
+    @if $button == btn-home
+    {
+      font-size: $font-size-14;
+      text-transform: uppercase;
+      background: none;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      padding: 12px 32px 11px 12px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      margin-top: 20px;
+      transition: background-color 0.2s ease;
+
+      @include btn-animate();
+    }
+
+    @if $button == btn-close
+    {
+      height: 50px;
+      width: 50px;
+      display: block;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 50px; right: 0px;
+      color: #fff;
+      background: url(../../img/close2.svg) no-repeat;
+      background-size: 50%;
+      background-position: center;
+      opacity: 0.8;
+      z-index: 200;
+
+      &:hover 
+      {
+        opacity: 1;
+      }
+    }
+
+    @if $button == btn-contact
+    {
+      display: inline-block;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      padding: 8px 10px;
+      -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+      transition: background-color 0.2s ease;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      @include btn-animate();
+    }
+
+    @if $button == btn-back
+    {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      display: block;
+      height: 40px;
+      width: 40px;
+      text-decoration: none;
+      background-size: contain;
+      opacity: 0.6;
+      cursor: pointer;
+      border:none;
+
+      &:hover
+      {
+        opacity: 1;
+      }
+
+      @include mq(all-mobile) {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  @mixin btn-animate() {
+
+    transform: translateY(0px);
+    // Transition
+    transition: background-color .1s ease-in-out, transform .1s linear;
+    -moz-transition: background-color .1s ease-in-out, transform .1s linear;
+    -webkit-transition: background-color .1s ease-in-out, transform .1s linear;
+    &:hover {
+      transform: translateY(-1px);
+    }
+    &:active, &:focus {
+      transform: translateY(1px);
+    }
+
+  }
+
+// 04 - Animations
+
+@mixin css-animate($name,$duration,$ease) {
+
+  -webkit-animation: $name $duration $ease;
+  -ms-animation: $name $duration $ease;
+  -moz-animation: $name $duration $ease;
+  animation: $name $duration $ease;
+
+  @if $name == element-drop {
+
+    @keyframes element-drop {
+      0% { 
+        opacity: 0; 
+        transform: translateY(-10px);
+      }
+      100% { 
+        opacity: 1; 
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  @if $name == heart-beat {
+
+    @keyframes heart-beat {
+      0%, 20%, 40%, 60% { 
+        transform: rotateY(0deg) scale(1, 1) ;
+      }
+
+      10%, 30%, 50% {
+        transform: rotateY(0deg) scale(1.1, 1.1);
+      }
+
+      70%, 62%, 60%, 95%{
+        transform: rotateY(0deg) scale(1, 1) ;
+      }
+
+      80%, 65%, 61%{
+        transform: rotateY(90deg) scale(1, 1) ;
+      }
+    }
+  }
+
+  @if $name == float {
+
+    @keyframes float {
+      0%, 100% {
+        transform: inherit translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  @if $name == jump {
+
+    @keyframes jump {
+      0% {
+        opacity: 0;
+        top: 100px;
+      }
+
+      100% {
+        opacity: 1;
+        top: 0px;
+      }
+    }
+  }
+
+  @if $name == fade {
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  @if $name == animate-text {
+
+    @keyframes animate-text {
+      0% {
+        content: 'Photography';
+        color: $color-userinterface;
+      }
+      25% {
+        content: 'Product Design';
+        color: $color-branding;
+      }
+      50% {
+        content: 'Front-End Development';
+        color: $color-illustration;
+      }
+      75% {
+        content: 'Illustration';
+        color: $color-branding;
+      }
+      100% {
+        content: 'Photography';
+        color: $color-userinterface;
+      }
+    }
+  }
+
+  @if $name == show-photo {
+
+    @keyframes show-photo {
+      0% {
+        opacity: 20%;
+        bottom: -800px
+      }
+      100% {
+        opacity: 100%;
+        bottom: 0px;
+      }
+    }
+  }
+
+  @if $name == let-it-drop {
+
+    @keyframes let-it-drop {
+      0% {
+        opacity: 0%;
+        top: -20px;
+      }
+      33% {
+        opacity: 0%;
+        top: -20px;
+      }
+      36% {
+        opacity: 100%;
+        top: 3px;
+      }
+      39% {
+        opacity: 100%;
+        top: -1px;
+      }
+      40% {
+        opacity: 100%;
+        top: 0px;
+      }
+      90% {
+        opacity: 100%;
+        top: 0px;
+      }
+      92% {
+        opacity: 100%;
+        top: -2px;
+      }
+      99% {
+        opacity: 0%;
+        top: 10px;
+      }
+      100% {
+        opacity: 0%;
+        top: 10px;
+      }
+    }
+  }
+
+  @if $name == the-ghost {
+
+    @keyframes the-ghost {
+      0% { 
+        opacity: 0; 
+        transform: translateY(-20px);
+      }
+      48% { 
+        opacity: 0; 
+        transform: translateY(-20px);
+      }
+      49% { 
+        opacity: 1; 
+        transform: translateY(5px);
+      }
+      50% { 
+        opacity: 1; 
+        transform: translateY(0px);
+      }
+      99% {
+        opacity: 1; 
+        transform: translateY(5px);
+      }
+      100% {
+        opacity: 0; 
+        transform: translateY(-20px);
+      }
+    }
+  }
+
+} 

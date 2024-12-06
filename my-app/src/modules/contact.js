@@ -35,7 +35,7 @@ function Contact() {
             </div>
             <div className="ctas">
               <a href="mailto:hello@errric.me?subject=Hey Eric, let's work together!" className="contact-btn contact-btn-1">write me</a>
-              <a href="https://errric.me/EricBARBEAU_Resume2024.pdf" target="_blank" rel="noreferrer" className="contact-btn contact-btn-2">my resume</a>
+              <a href="https://cdn.jsdelivr.net/gh/EricBARBEAU/errric.me@master/EricBARBEAU_Resume2024.pdf" target="_blank" rel="noreferrer" className="contact-btn contact-btn-2">my resume</a>
             </div>
           </div>
           <img src={eric_new} className="about_photo" alt="EricBarbeau" />

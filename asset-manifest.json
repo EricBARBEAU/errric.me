@@ -1,29 +1,16 @@
 {
   "files": {
-    "main.css": "/errric.me/static/css/main.db8a39d3.css",
-    "main.js": "/errric.me/static/js/main.fab368c2.js",
-    "static/media/Eric_new.jpg": "/errric.me/static/media/Eric_new.95ef227c67b216f7973a.jpg",
-    "static/media/roomorama.png": "/errric.me/static/media/roomorama.5ca5116a7c821206c789.png",
-    "static/media/phixl.png": "/errric.me/static/media/phixl.ce514a9796044d38a0a6.png",
-    "static/media/unitec.png": "/errric.me/static/media/unitec.a0e52a18560591d01153.png",
-    "static/media/jmrvisas_2.png": "/errric.me/static/media/jmrvisas_2.363f5a92924b9b5be6e8.png",
-    "static/media/phl-admin.png": "/errric.me/static/media/phl-admin.6bd5d66a0f7e02767446.png",
-    "static/media/2degrees.png": "/errric.me/static/media/2degrees.12ef14dc04e0948a6205.png",
-    "static/media/msteams.png": "/errric.me/static/media/msteams.d9986553d8b43ee82ae3.png",
-    "static/media/phl-chat-bg.png": "/errric.me/static/media/phl-chat-bg.063e8cd0de113bd8f2f2.png",
+    "main.css": "/errric.me/static/css/main.f855e6bc.css",
+    "main.js": "/errric.me/static/js/main.05acfce7.js",
+    "static/js/453.ed3810f9.chunk.js": "/errric.me/static/js/453.ed3810f9.chunk.js",
+    "static/media/logo.svg": "/errric.me/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/errric.me/index.html",
-    "static/media/logo-dark.svg": "/errric.me/static/media/logo-dark.d4ca427e3a4b833bed07.svg",
-    "static/media/logo-light.svg": "/errric.me/static/media/logo-light.e372221144d53b567357.svg",
-    "static/media/close2.svg": "/errric.me/static/media/close2.3c62cfb862360ccc04c8.svg",
-    "static/media/right-arrow-dark.svg": "/errric.me/static/media/right-arrow-dark.86e12ab2649cf4ad29f3.svg",
-    "static/media/right-arrow-light.svg": "/errric.me/static/media/right-arrow-light.b9742350877866c34694.svg",
-    "static/media/back-light.svg": "/errric.me/static/media/back-light.753bfa51b5ef34e4bc5a.svg",
-    "static/media/back-dark.svg": "/errric.me/static/media/back-dark.ac0516306113e6be2810.svg",
-    "main.db8a39d3.css.map": "/errric.me/static/css/main.db8a39d3.css.map",
-    "main.fab368c2.js.map": "/errric.me/static/js/main.fab368c2.js.map"
+    "main.f855e6bc.css.map": "/errric.me/static/css/main.f855e6bc.css.map",
+    "main.05acfce7.js.map": "/errric.me/static/js/main.05acfce7.js.map",
+    "453.ed3810f9.chunk.js.map": "/errric.me/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db8a39d3.css",
-    "static/js/main.fab368c2.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.05acfce7.js"
   ]
 }

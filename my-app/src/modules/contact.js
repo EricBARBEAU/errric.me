@@ -13,16 +13,14 @@ function Contact() {
             <h1><b>world wide web</b></h1>
             <h1>since 2011.</h1>
             <div className="sep"></div>
-            <p className="contact-intro">
-              <ul>
-                <li><b>2022:</b> Freelance UI Designer & Developer - <i>World</i></li>
-                <li><b>2017:</b> Senior UI Designer & Developer - <i>Singapore, Singapore</i></li>
-                <li><b>2015:</b> Lead Product Designer - <i>Singapore, Singapore</i></li>
-                <li><b>2014:</b> Lead UI Designer - <i>Wellington, New Zealand</i></li>
-                <li><b>2012:</b> Junior Art Director -<i>Paris, France</i></li>
-                <li><b>2011:</b> Junior Art Director - <i>New York, USA</i></li>
-              </ul>
-            </p>
+            <ul className="contact-intro">
+              <li><b>2022:</b> Freelance UI Designer & Developer - <i>World</i></li>
+              <li><b>2017:</b> Senior UI Designer & Developer - <i>Singapore, Singapore</i></li>
+              <li><b>2015:</b> Lead Product Designer - <i>Singapore, Singapore</i></li>
+              <li><b>2014:</b> Lead UI Designer - <i>Wellington, New Zealand</i></li>
+              <li><b>2012:</b> Junior Art Director -<i>Paris, France</i></li>
+              <li><b>2011:</b> Junior Art Director - <i>New York, USA</i></li>
+            </ul>
             <div className="social-links">
               <a href="https://linkedin.com/in/eric-barbeau/en" className="link link_linkedin">
               </a>

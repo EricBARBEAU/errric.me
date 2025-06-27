@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb75377a.css",
-    "main.js": "/static/js/main.7b07e223.js",
+    "main.css": "/static/css/main.386a81eb.css",
+    "main.js": "/static/js/main.b6c46728.js",
     "static/media/Eric_new.jpg": "/static/media/Eric_new.95ef227c67b216f7973a.jpg",
     "static/media/roomorama.png": "/static/media/roomorama.5ca5116a7c821206c789.png",
     "static/media/phixl.png": "/static/media/phixl.ce514a9796044d38a0a6.png",
     "static/media/unitec.png": "/static/media/unitec.a0e52a18560591d01153.png",
     "static/media/jmrvisas_2.png": "/static/media/jmrvisas_2.363f5a92924b9b5be6e8.png",
+    "static/media/visadocs2.png": "/static/media/visadocs2.19f5ebd0e53fa2ba2fba.png",
     "static/media/phl-admin.png": "/static/media/phl-admin.6bd5d66a0f7e02767446.png",
     "static/media/2degrees.png": "/static/media/2degrees.12ef14dc04e0948a6205.png",
     "static/media/msteams.png": "/static/media/msteams.d9986553d8b43ee82ae3.png",
@@ -19,11 +20,11 @@
     "static/media/right-arrow-light.svg": "/static/media/right-arrow-light.b9742350877866c34694.svg",
     "static/media/back-light.svg": "/static/media/back-light.753bfa51b5ef34e4bc5a.svg",
     "static/media/back-dark.svg": "/static/media/back-dark.ac0516306113e6be2810.svg",
-    "main.eb75377a.css.map": "/static/css/main.eb75377a.css.map",
-    "main.7b07e223.js.map": "/static/js/main.7b07e223.js.map"
+    "main.386a81eb.css.map": "/static/css/main.386a81eb.css.map",
+    "main.b6c46728.js.map": "/static/js/main.b6c46728.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb75377a.css",
-    "static/js/main.7b07e223.js"
+    "static/css/main.386a81eb.css",
+    "static/js/main.b6c46728.js"
   ]
 }

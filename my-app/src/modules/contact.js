@@ -1,6 +1,4 @@
-// import eric_picture from '../img/Eric.png';
 import eric_new from '../img/Eric_new.jpg';
-import Nav from './header';
 
 function Contact() {
   return (
@@ -14,6 +12,7 @@ function Contact() {
             <h1>since 2011.</h1>
             <div className="sep"></div>
             <ul className="contact-intro">
+              <li><b>2025:</b> Designed, Built and launched <b>visadocs.ai</b> - <i>World</i></li>
               <li><b>2022:</b> Freelance UI Designer & Developer - <i>World</i></li>
               <li><b>2017:</b> Senior UI Designer & Developer - <i>Singapore, Singapore</i></li>
               <li><b>2015:</b> Lead Product Designer - <i>Singapore, Singapore</i></li>

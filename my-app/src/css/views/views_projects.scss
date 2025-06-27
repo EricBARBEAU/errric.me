@@ -282,11 +282,6 @@
 
   .project-content {
 
-    // span {
-    //   border-left: 1px solid $color-c3-p5 !important;
-    //   color: $color-c3-p5 !important;
-    // }
-
     h2, p, b {
       color: $color-c4-p5 !important;
     }
@@ -294,6 +289,18 @@
 
   .project-visual {
     background: url(../../img/jmrvisas_2.png) no-repeat;
+  }
+}
+
+.projects-10 {
+  @include project-color($color-c1-p10, $color-c2-p10, $color-c3-p10);
+
+  .project-visual {
+    background: url(../../img/visadocs2.png) no-repeat;
+
+    @include mq(lg-desktop) {
+      height: 75vh !important;
+    }
   }
 }
 

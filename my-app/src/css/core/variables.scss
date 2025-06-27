@@ -53,13 +53,16 @@
 	$color-c3-p7: #8f9ced;
 
 	$color-c1-p8: #f07424;
-	// $color-c2-p8: lighten(#f07424,10%);
 	$color-c2-p8: color.scale(#f07424, $lightness: +10%);
 	$color-c3-p8: #3b3e4e;
 
 	$color-c1-p9: #5359E9;
 	$color-c2-p9: #6A70FF;
 	$color-c3-p9: #c8c8d5;
+
+	$color-c1-p10: #478AF6;
+	$color-c2-p10: #2374F8;
+	$color-c3-p10: #2F3540;
 
 
 	// 01-4 - Competences Colours

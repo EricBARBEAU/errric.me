@@ -1,5 +1,14 @@
 [
   {
+    "id": "projects projects-10",
+    "month": "July",
+    "year": "2025",
+    "title": "visadocs.ai",
+    "paragraph_01": "As someone who's spent a good amount of time travelling the past decade, I know that travel documents for visa application can easily become a hassle.",
+    "paragraph_02": "To make people's life easier, I built this online tool to generate travel documents in less than 2 minutes, all of that with simple and clear design and powered by AI.",
+    "link": "https://visadocs.ai"
+  },
+  {
     "id": "projects projects-9",
     "month": "August",
     "year": "2024",

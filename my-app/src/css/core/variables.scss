@@ -33,18 +33,12 @@
 	$color-c2-p3: #df5706;
 	$color-c3-p3: #eb833f;
 
-	// $color-c1-p4: #f5a109;
-	// $color-c2-p4: #ffb400;
-	// $color-c3-p4: #272120;
-
 	$color-c1-p5: #fff;
 	$color-c2-p5: #eae7e4;
 	$color-c3-p5: #f07424;
 	$color-c4-p5: #3b3e4e;
 
-	// $color-c1-p6: darken(#E14536,30%);
 	$color-c1-p6: color.scale(#E14536, $lightness: -50%);
-	// $color-c2-p6: darken(#E14536,20%);
 	$color-c2-p6: color.scale(#E14536, $lightness: -40%);
 	$color-c3-p6: #E14536;
 

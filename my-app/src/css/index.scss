@@ -1,50 +1,17 @@
 /* Table of Content
 ==================================================
   
-  01 - Reset
-  02 - Variables
-  03 - Mixins
-  04 - Elements
-  05 - Views
-  06 - External
+  01 - Core
+  02 - Views
 
 ==================================================  */
 
-
-    /* 01 - Reset
+    /* 01 - Core
 ================================================== */
 
-@import 'core/reset';
+@use 'core/core_main' as core;
 
-
-    /* 02 - Variables
+    /* 02 - Views
 ================================================== */
 
-@import 'core/variables';
-
-
-    /* 03 - Mixins
-================================================== */
-
-@import 'core/mixins';
-@import 'core/grid';
-
-
-    /* 04 - Elements
-================================================== */
-
-@import 'core/elements/main';
-
-
-    /* 05 - Views
-================================================== */
-
-@import 'views/main';
-
-
-    /* 06 - External
-================================================== */
-
-@import 'external/jquery.fullPage';
-@import 'external/tooltip';
-@import 'external/transitions';
+@use 'views/views_main' as views;

@@ -2,6 +2,19 @@
 
 // 01 - Colours
 
+	// White / Cream
+	$clr-white:				#FFFFFF;
+	$clr-cream--light:		#FDFDFC;
+	$clr-cream:				#F9F8F7;
+
+	// Grey
+	$clr-grey--dark:		#222327;
+	$clr-grey--med:			#6B6B6B;
+
+	// Green
+	$clr-green--dark:		#608175;
+
+	// Red
 
 
 // 02 - Typography
@@ -14,6 +27,7 @@
 
 	$font-size-10:      	1.0rem;
 	$font-size-12:      	1.2rem;
+	$font-size-13:      	1.3rem;
   	$font-size-14:      	1.4rem;
 	$font-size-16: 			1.6rem;
 	$font-size-18:			1.8rem;
@@ -23,6 +37,16 @@
 	$font-size-26:			2.6rem;
 	$font-size-28:			2.8rem;
 	$font-size-30:			3.0rem;
+
+	// Weight
+	$f-weight-100:			100;
+	$f-weight-200:			200;
+	$f-weight-300:			300;
+	$f-weight-400:			400;
+	$f-weight-500:			500;
+	$f-weight-600:			600;
+	$f-weight-700:			700;
+	$f-weight-800:			800;
 
 	// Letter Spacing
 

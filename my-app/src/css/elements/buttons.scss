@@ -1,0 +1,45 @@
+// Import core
+@use '../core/core_main' as core;
+
+// 01 - Global
+.btn {
+
+}
+
+// 02 - Links
+.link {
+
+}
+
+// 03 - Navbar
+.navbar_menu .navbar_menu-item {
+
+	position: relative;
+	width: auto;
+	height: auto;
+
+	// Button
+	.link {
+		text-transform: uppercase;
+		font-size: core.$font-size-13;
+		font-weight: core.$f-weight-500;
+
+		padding: 8px 12px 7px 12px;
+		border: 1px solid;
+		border-radius: 4px;
+
+		@include test;
+
+		&:not(.link_download) {
+			border-color: #A8B3BE;
+			color: core.$clr-grey--dark;
+			background-color: #fff;
+		}
+		&.link_download {
+			border-color: #B4BFBF;
+			background-color: #F1F3F3;
+			color: core.$clr-green--dark;
+		}
+	}
+
+}

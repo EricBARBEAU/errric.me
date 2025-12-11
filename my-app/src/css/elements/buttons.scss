@@ -28,18 +28,32 @@
 		border: 1px solid;
 		border-radius: 4px;
 
-		@include btn-animate();
+		// Animate / Hover
+		transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
 
 		&:not(.link_download) {
-			border-color: #A8B3BE;
+			border-color: core.$clr-grey--border;
 			color: core.$clr-grey--dark;
-			background-color: #fff;
+			background-color: core.$clr-white;
+
+			&:hover {
+				border-color: core.$clr-red--border;
+				color: core.$clr-red--dark;
+				background-color: core.$clr-red--lightest;
+			}
 		}
 		&.link_download {
-			border-color: #B4BFBF;
-			background-color: #F1F3F3;
+			border-color: core.$clr-green--border;
 			color: core.$clr-green--dark;
+			background-color: core.$clr-green--lightest;
+
+			&:hover {
+				background-color: core.$clr-green--light;
+			}
 		}
+
 	}
 
 }

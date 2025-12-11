@@ -10,7 +10,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 100px 40px 80px;
+	padding: 40px 0px;
+	z-index: 1000;
 
 	// Logo
 	.logo, .logo img {
@@ -30,6 +31,7 @@
 		// Sep
 		&-sep {
 			font-size: core.$font-size-14;
+			color: rgba(0,0,0,0.25);
 		}
 	}
 }

@@ -10,12 +10,20 @@
 	// Grey
 	$clr-grey--dark:		#222327;
 	$clr-grey--med:			#6B6B6B;
+	$clr-grey--border:		#A8B3BE;
 
 	// Green
 	$clr-green--dark:		#608175;
+	$clr-green--reg:		#A2D1C0;
+	$clr-green--border:		#B4BFBF;
+	$clr-green--lightest:	#F1F3F3;
+	$clr-green--light:		#E1EBE8;
 
 	// Red
-
+	$clr-red--dark:			#B96B55;
+	$clr-red--reg:			#B96B55;
+	$clr-red--border:		#D5B6AD;
+	$clr-red--lightest:		#FAF5F3;
 
 // 02 - Typography
 
@@ -37,6 +45,9 @@
 	$font-size-26:			2.6rem;
 	$font-size-28:			2.8rem;
 	$font-size-30:			3.0rem;
+	$font-size-32:			3.2rem;
+
+	$font-size-h1:			5.2rem;
 
 	// Weight
 	$f-weight-100:			100;
@@ -49,6 +60,18 @@
 	$f-weight-800:			800;
 
 	// Letter Spacing
+	$l-spacing-min-1:		-1%;
+	$l-spacing-min-2:		-2%;
+	$l-spacing-min-3:		-3%;
+	$l-spacing-min-4:		-4%;
+	$l-spacing-min-5:		-5%;
+	$l-spacing-min-6:		-6%;
+	$l-spacing-min-7:		-7%;
+	$l-spacing-min-8:		-8%;
+	$l-spacing-min-9:		-9%;
+	$l-spacing-min-10:		-10%;
+	$l-spacing-plus-1:		1%;
+	$l-spacing-plus-2:		2%;
 
 	// Line Height
 
@@ -68,3 +91,9 @@
 	h1, .link, button {
 		font-family: $font-fcode;
 	}
+
+	h1 {
+		font-size: $font-size-h1;
+		font-weight: $f-weight-600;
+	}
+

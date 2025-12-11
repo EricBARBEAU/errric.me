@@ -1,16 +1,19 @@
 
 // Mixins
 
-@mixin test {
-	transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-webkit-transition: all .1s ease-in-out;
-	transform: translateY(0px);
+@mixin btn-animate() {
 
-	&:hover {
-		transform: translateY(-1px);
-	}
-	&:active, &:focus {
-		transform: translateY(1px);
-	}
+  transition: all .1s ease-in-out;
+
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  transform: translateY(0px);
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+  &:active, &:focus {
+    transform: translateY(1px);
+  }
+
 }

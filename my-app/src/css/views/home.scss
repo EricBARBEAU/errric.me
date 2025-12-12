@@ -8,15 +8,8 @@
   	// Container
   	.container {
   		// Styling
-  		padding: 0px 140px 0px 80px;
-  		width: 80vw;
-  		// background: linear-gradient(
-		//   to bottom,
-		//   core.$clr-white 0%,
-		//   core.$clr-white 45%,
-		//   core.$clr-cream 45%,
-		//   core.$clr-cream 100%
-		// );
+  		padding: 0px;
+  		width: 86vw;
 		background-color: #fff;
 
   		&:after {
@@ -34,6 +27,12 @@
   		}
   	}
 
+  	// Nav
+  	.navbar {
+  		padding-left:80px;
+  		padding-right: 140px;
+  	}
+
   	// Home page
   	.home {
 
@@ -47,7 +46,6 @@
 
 	  	&_intro, &_body {
 	  		z-index: 100;
-	  		padding: 30px 80px;
 	  	}
 
 	  	// Intro
@@ -55,6 +53,7 @@
 	  		display: flex;
 	  		flex-direction: row;
 	  		gap: 40px;
+	  		padding: 40px 80px 30px 180px;
 	  		align-items: center;
 
 	  		// Avatar
@@ -117,6 +116,15 @@
 	  		display: flex;
 	  		flex-direction: column;
 	  		gap: 30px;
+	  		padding: 60px 80px 30px 180px;
+	  		// Width: Same as container - paddings
+	  		width: calc( 86vw - 260px);
+	  		border-top: 1px solid transparent;
+		    border-image: linear-gradient(
+		      	to right,
+		      	core.$clr-green--border-light 0,
+		    	rgba(255,255,255,0) 50%
+		    ) 1;
 
 	  		// Blocks
 	  		&-blk {
@@ -143,15 +151,26 @@
 	  						&:before {
 	  							content: url("/img/graphics_chevron--grey.svg");
 	  							margin-right: 12px;
+	  							vertical-align: text-top;
 	  						}
 	  					}
 	  				}
 	  			}
 	  			&.home_body-blk02 {
+	  				display: flex;
+	  				flex-direction: row;
+	  				justify-content: space-between;
+	  				align-items: center;
+
 	  				.visual {
 	  					display: block;
 	  					height: 122px;
 	  					width: auto;
+	  				}
+
+	  				.btn {
+	  					z-index: 1000;
+	  					margin-right: 40px;
 	  				}
 	  			}
 	  		}

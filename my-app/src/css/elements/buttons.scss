@@ -1,8 +1,53 @@
 // Import core
 @use '../core/core_main' as core;
 
-// 01 - Global
+// 01 - Buttons
 .btn {
+
+	// 01 - Global
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-weight: core.$f-weight-500;
+	cursor: pointer;
+	height: fit-content;
+	width: fit-content;
+
+	// Animate / Hover
+	transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	transform: translateY(0px);
+
+	&:hover {
+		transform: translateY(-1px);
+	}
+	&:active, &:focus {
+		transform: translateY(1px);
+	}
+
+	// 02 - Colours
+	&_white {
+		background-color: core.$clr-white;
+	}
+
+	// 03 - Size
+	&_lg {
+		border: none;
+		padding: 16px 20px 15px 20px;
+		font-size: core.$font-size-18;
+		border-radius: 8px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	}
+
+	// 04 - Misc
+
+	// Uppercase
+	&_up {
+		text-transform: uppercase;
+	}
 
 }
 

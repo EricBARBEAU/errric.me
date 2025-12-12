@@ -61,9 +61,15 @@ function Home() {
                     I <b className="highlight">test & validate ideas</b> by building <b className="highlight">in-browser prototypes</b> — not only mockups.
                   </h3>
                 </div>
+                <div className="body_copy">
+                  <h3>
+                    I match the industry’s pace through an <b className="highlight">end-to-end approach:</b>
+                  </h3>
+                </div>
               </div>
               <div className="home_body-blk home_body-blk02">
                 <img src={graph_process} className="visual" alt="Design Process" />
+                <button className="btn btn_white btn_up btn_lg">📚 Projects</button>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
 	// White / Cream
 	$clr-white:				#FFFFFF;
 	$clr-cream--light:		#FDFDFC;
-	$clr-cream:				#F9F8F7;
+	$clr-cream:				#F3F3F3;
 
 	// Grey
 	$clr-grey--dark:		#222327;
@@ -13,9 +13,11 @@
 	$clr-grey--border:		#A8B3BE;
 
 	// Green
-	$clr-green--dark:		#608175;
-	$clr-green--reg:		#A2D1C0;
-	$clr-green--border:		#B4BFBF;
+	$clr-green--dark:			#608175;
+	$clr-green--reg:			#A2D1C0;
+	$clr-green--border:			#B4BFBF;
+	$clr-green--border-light:	#CBDBD6;
+
 	$clr-green--lightest:	#F1F3F3;
 	$clr-green--light:		#E1EBE8;
 
@@ -88,7 +90,7 @@
 			font-weight: 600;
 		}
 	}
-	h1, .link, button {
+	h1, .link, button, button.btn {
 		font-family: $font-fcode;
 	}
 

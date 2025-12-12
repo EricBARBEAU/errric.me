@@ -1,0 +1,10 @@
+// Import core
+@use '../core/core_main' as core;
+
+// Homepage stylesheet
+.view_projects {
+	background-color: core.$clr-green--reg;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}

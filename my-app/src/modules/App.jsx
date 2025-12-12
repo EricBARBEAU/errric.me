@@ -7,6 +7,7 @@ import Layout from './_layout';
 
 // Views
 import Home from './views/home';
+import Projects from './views/projects';
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route element={<Layout />}>
             {/*Home*/}
-            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>
       </BrowserRouter>

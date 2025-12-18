@@ -12,28 +12,17 @@
   	.container {
   		// Styling
   		padding: 0px;
-  		width: 86vw;
-		background-color: #fff;
-
-  		&:after {
-  			position: absolute;
-  			top: 0px; right: 0px; bottom: 0px;
-  			height: 100%;
-  			width: 610px;
-  			display: block;
-  			content: '';
-  			background-image: url("/img/graphics_landing--green.svg");
-	  		background-repeat: no-repeat;
-			background-size: auto 110%;
-		  	background-position-x: right -30px;
-		  	z-index: 0;
-  		}
+  		width: 75vw;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.05);
+			border-radius: 40px 80px 0px 0px;
   	}
 
   	// Nav
   	.navbar {
-  		padding-left:80px;
-  		padding-right: 140px;
+  		padding-left:60px;
+  		padding-right:60px;
+  		border-bottom: 1px solid core.$clr-green--light;
   	}
 
   	// Home page
@@ -43,9 +32,9 @@
 	  	display: flex;
 	  	flex-direction: column;
 	  	align-items: flex-start;
-	  	gap: 40px;
 	  	width: 100%;
 	  	height: 100%;
+	  	background-color: #fff;
 
 	  	&_intro, &_body {
 	  		z-index: 100;
@@ -56,15 +45,109 @@
 	  		display: flex;
 	  		flex-direction: row;
 	  		gap: 40px;
-	  		padding: 40px 80px 30px 180px;
+	  		padding: 14vh 80px 30px 160px;
 	  		align-items: center;
 
 	  		// Avatar
-	  		.avatar {
-	  			display: block;
+	  		.avatar_container {
+
+	  			position: relative;
 	  			height: 160px;
 	  			width: 160px;
-	  		}
+	  			cursor: pointer;
+
+	  			// Real picture revealed on mouse-over
+	  			&:after {
+	  				content: '';
+    				position: absolute;
+    				inset: 0;
+						background: url('/img/avatar_real.png') no-repeat center / cover;
+						opacity: 0;
+    				pointer-events: none;
+    				transition: opacity 0.2s ease-in-out;
+    				// Mask
+	  				mask-image: radial-gradient(
+				      circle 100px at var(--x) var(--y),
+				      #000 0%,
+				      #000 50%,
+				      transparent 80%
+				    );
+	  			}
+
+	  			&.is-hovered {
+
+	  				cursor: url('/img/cursor-magic.png') 12 12, auto;
+
+	  				&:after {
+	  					opacity: 1;
+	  				}
+				  }
+
+	  			&:not(.is-hovered)::after {
+				    transition: none;
+				  }
+
+				  // Text for mouse-over
+				  .avatar_cta {
+				  	position: absolute;
+				  	left: -5px;
+				  	bottom: -5px;
+				  	z-index: 100;
+				  	display: flex;
+				  	flex-direction: row;
+				  	gap: 4px;
+				  	align-items: center;
+				  	background: radial-gradient(#fff 15%, #d9d9d9 80%, #ccd1cc 100%);
+				  	background-position: center left;
+						padding: 4px 0px 6px 8px;
+						border-radius: 18px 4px 18px 14px;
+						border: 2px solid #cdd2cd;
+						box-shadow: 0px 0px 3px rgba(0, 0, 0,0.1);
+						transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+				  	.wand {
+							font-size: 24px;
+				  	}
+				  	.label {
+							font-family: core.$font-fcode;
+							font-weight: core.$f-weight-600;
+							letter-spacing: core.$l-spacing-min-6;
+							font-size: core.$font-size-12;
+							white-space: nowrap;
+							opacity: 0;
+							transform: translateX(-6px);
+							transform: translateY(1px);
+							max-width: 0;
+							overflow: hidden;
+
+							transition:
+								opacity 0.25s ease,
+								transform 0.25s cubic-bezier(0.19, 1, 0.22, 1),
+								max-width 0.25s ease;
+				  	}
+
+				  	&:hover {
+				  		cursor: pointer;
+
+				  		.label {
+								opacity: 1;
+								transform: translateX(0);
+								transform: translateY(1px);
+								max-width: 120px;
+								padding-right: 10px;
+								padding-top: 2px;
+				  		}
+				  	}
+				  }
+
+				  // Original pixel avatar
+		  		.avatar {
+		  			width: 160px;
+    				height: 160px;
+		  			display: block;
+		  			border-radius: 85px;
+		  		}
+		  	}
 
 	  		// Content
 	  		.intro_content {
@@ -119,15 +202,9 @@
 	  		display: flex;
 	  		flex-direction: column;
 	  		gap: 30px;
-	  		padding: 60px 80px 30px 180px;
+	  		padding: 30px 80px 80px 160px;
 	  		// Width: Same as container - paddings
-	  		width: calc( 86vw - 260px);
-	  		border-top: 1px solid transparent;
-		    border-image: linear-gradient(
-		      	to right,
-		      	core.$clr-green--border-light 0,
-		    	rgba(255,255,255,0) 50%
-		    ) 1;
+	  		width: calc( 75vw - 240px);
 
 	  		// Blocks
 	  		&-blk {
@@ -173,7 +250,9 @@
 
 	  				.btn {
 	  					z-index: 1000;
-	  					margin-right: 40px;
+							position: absolute;
+							right: calc( -156px / 2 );
+							top: calc(50vh - ( 57px / 2 ));
 	  				}
 	  			}
 	  		}

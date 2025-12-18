@@ -37,9 +37,16 @@
 	&_lg {
 		border: none;
 		padding: 16px 20px 15px 20px;
+		font-size: core.$font-size-16;
+		border-radius: 6px;
+		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+	}
+	&_xl {
+		border: none;
+		padding: 20px 26px 19px 26px;
 		font-size: core.$font-size-18;
 		border-radius: 8px;
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
 	}
 
 	// 04 - Misc
@@ -47,6 +54,11 @@
 	// Uppercase
 	&_up {
 		text-transform: uppercase;
+	}
+
+	// Animate
+	&_spin {
+
 	}
 
 }

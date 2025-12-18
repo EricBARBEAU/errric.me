@@ -1,5 +1,5 @@
 // React stuff
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 // Elements
@@ -11,6 +11,29 @@ const graph_developer = '/img/graphics_landing--developer.svg';
 const graph_process = '/img/graphics_landing--process.png';
 
 function Home() {
+
+  // Function for the avatar reveal
+  const avatarRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    avatarRef.current.classList.add('is-hovered');
+  };
+
+  const handleMouseMove = (e) => {
+    const rect = avatarRef.current.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    avatarRef.current.style.setProperty('--x', `${x}%`);
+    avatarRef.current.style.setProperty('--y', `${y}%`);
+  };
+
+  const handleMouseLeave = () => {
+    avatarRef.current.classList.remove('is-hovered');
+    avatarRef.current.style.removeProperty('--x');
+    avatarRef.current.style.removeProperty('--y');
+  };
+
   return (
     <>
       <Helmet>
@@ -24,7 +47,19 @@ function Home() {
       <div className="home">
         {/*Intro: Hi I'm Eric*/}
         <div className="home_intro">
-          <img className="avatar" src={avatar} />
+          <div
+            ref={avatarRef}
+            className="avatar_container"
+            onMouseEnter={handleMouseEnter}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img className="avatar" src={avatar} alt="Avatar" />
+            <div className="avatar_cta">
+              <span className="wand">🪄</span>
+              <span className="label">That's me!</span>
+            </div>
+          </div>
           <div className="intro_content">
             <h1 className="intro_content-main">Hi! I’m Eric.</h1>
             <div className="intro_content-sub">
@@ -63,7 +98,7 @@ function Home() {
           </div>
           <div className="home_body-blk home_body-blk02">
             <img src={graph_process} className="visual" alt="Design Process" />
-            <Link className="btn btn_white btn_up btn_lg" to="/projects" >📚 Projects</Link>
+            <Link className="btn btn_white btn_up btn_xl" to="/projects" >📚 Projects</Link>
           </div>
         </div>
       </div>

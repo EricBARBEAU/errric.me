@@ -1,5 +1,5 @@
 // React stuff
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 // Elements
@@ -9,17 +9,44 @@ const avatar = '/img/avatar.png';
 const graph_designer = '/img/graphics_landing--designer.svg';
 const graph_developer = '/img/graphics_landing--developer.svg';
 const graph_process = '/img/graphics_landing--process.png';
+const chevron_green = '/img/graphics_chevron--green.svg';
 
 function Home() {
 
   // Function for the avatar reveal
   const avatarRef = useRef(null);
+  const [wandMode, setWandMode] = useState(false);
+  const [wandLoading, setWandLoading] = useState(false);
+
+  const toggleWandMode = (e) => {
+    e.stopPropagation();
+
+    // If already enabled → disable immediately
+    if (wandMode) {
+      setWandMode(false);
+      return;
+    }
+
+    // Prevent double clicks
+    if (wandLoading) return;
+
+    // Start loading animation
+    setWandLoading(true);
+
+    setTimeout(() => {
+      setWandLoading(false);
+      setWandMode(true);
+    }, 2000);
+  };
 
   const handleMouseEnter = () => {
+    if (!wandMode) return;
     avatarRef.current.classList.add('is-hovered');
   };
 
   const handleMouseMove = (e) => {
+    if (!wandMode) return;
+
     const rect = avatarRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
@@ -29,6 +56,8 @@ function Home() {
   };
 
   const handleMouseLeave = () => {
+    if (!wandMode) return;
+
     avatarRef.current.classList.remove('is-hovered');
     avatarRef.current.style.removeProperty('--x');
     avatarRef.current.style.removeProperty('--y');
@@ -49,15 +78,21 @@ function Home() {
         <div className="home_intro">
           <div
             ref={avatarRef}
-            className="avatar_container"
+            className={`avatar_container ${wandMode ? 'wand_mode' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
             <img className="avatar" src={avatar} alt="Avatar" />
-            <div className="avatar_cta">
+             <div
+                className={`
+                  avatar_cta
+                  ${wandMode ? 'wand_mode' : ''}
+                  ${wandLoading ? 'is-loading' : ''}
+                `}
+                onClick={toggleWandMode}
+              >
               <span className="wand">🪄</span>
-              <span className="label">That's me!</span>
             </div>
           </div>
           <div className="intro_content">
@@ -98,7 +133,19 @@ function Home() {
           </div>
           <div className="home_body-blk home_body-blk02">
             <img src={graph_process} className="visual" alt="Design Process" />
-            <Link className="btn btn_white btn_up btn_xl" to="/projects" >📚 Projects</Link>
+            <div className="projects_cta" to="/projects" >
+              <div className="blk">
+                <div className="icons">
+                  <div className="icon icon_1"></div>
+                  <div className="icon icon_2"></div>
+                  <div className="icon icon_3"></div>
+                  <div className="icon icon_4"></div>
+                </div>
+                <Link className="cta" to="/projects" >
+                  <img src={chevron_green} alt="Projects"/>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

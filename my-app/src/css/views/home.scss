@@ -12,10 +12,10 @@
   	.container {
   		// Styling
   		padding: 0px;
-  		width: 75vw;
-			background-color: #fff;
-			box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.05);
+  		width: 80vw;
+			background-color: core.$clr-cream--light;
 			border-radius: 40px 80px 0px 0px;
+			box-shadow: 2px 0px 10px rgba(0,0,0,0.05);
   	}
 
   	// Nav
@@ -54,7 +54,7 @@
 	  			position: relative;
 	  			height: 160px;
 	  			width: 160px;
-	  			cursor: pointer;
+	  			cursor: inherit;
 
 	  			// Real picture revealed on mouse-over
 	  			&:after {
@@ -89,53 +89,49 @@
 
 				  // Text for mouse-over
 				  .avatar_cta {
-				  	position: absolute;
-				  	left: -5px;
-				  	bottom: -5px;
-				  	z-index: 100;
-				  	display: flex;
-				  	flex-direction: row;
-				  	gap: 4px;
-				  	align-items: center;
-				  	background: radial-gradient(#fff 15%, #d9d9d9 80%, #ccd1cc 100%);
-				  	background-position: center left;
-						padding: 4px 0px 6px 8px;
-						border-radius: 18px 4px 18px 14px;
-						border: 2px solid #cdd2cd;
-						box-shadow: 0px 0px 3px rgba(0, 0, 0,0.1);
-						transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+						position: absolute;
+						right: 0px;
+						top: 10px;
+						z-index: 100;
+						background: radial-gradient(core.$clr-white 20%, core.$clr-cream 100%);
+						padding: 8px 5px 9px 8px;
+						border-radius: 20px;
+						border: 2px solid;
+						border-color: #5c594c; 
+						cursor: pointer;
+						transition: all 0.2s ease-in-out;
+						scale: 1;
 
 				  	.wand {
-							font-size: 24px;
+							font-size: core.$font-size-14;
 				  	}
-				  	.label {
-							font-family: core.$font-fcode;
-							font-weight: core.$f-weight-600;
-							letter-spacing: core.$l-spacing-min-6;
-							font-size: core.$font-size-12;
-							white-space: nowrap;
-							opacity: 0;
-							transform: translateX(-6px);
-							transform: translateY(1px);
-							max-width: 0;
-							overflow: hidden;
 
-							transition:
-								opacity 0.25s ease,
-								transform 0.25s cubic-bezier(0.19, 1, 0.22, 1),
-								max-width 0.25s ease;
+				  	&.is-loading {
+				  		animation: load-wand 1s infinite;
+				  	}
+
+				  	&.wand_mode {
+				  		border-color: core.$clr-green--reg; 
 				  	}
 
 				  	&:hover {
 				  		cursor: pointer;
+				  		background: radial-gradient(core.$clr-white 20%, core.$clr-white 100%);
+				  	}
+				  	&:active, &:focus {
+				  		background: radial-gradient(core.$clr-white 20%, core.$clr-white 100%);
+				  		scale: 0.9;
+				  	}
 
-				  		.label {
-								opacity: 1;
-								transform: translateX(0);
-								transform: translateY(1px);
-								max-width: 120px;
-								padding-right: 10px;
-								padding-top: 2px;
+				  	@keyframes load-wand {
+				  		0% {
+				  			border-color: core.$clr-green--reg; 
+				  		}
+				  		50% {
+				  			border-color: #5c594c; 
+				  		}
+				  		100% {
+				  			border-color: core.$clr-green--reg; 
 				  		}
 				  	}
 				  }
@@ -204,7 +200,7 @@
 	  		gap: 30px;
 	  		padding: 30px 80px 80px 160px;
 	  		// Width: Same as container - paddings
-	  		width: calc( 75vw - 240px);
+	  		width: calc( 80vw - 240px);
 
 	  		// Blocks
 	  		&-blk {
@@ -225,7 +221,7 @@
 
 	  						.highlight {
 	  							font-weight: core.$f-weight-600;
-	  							color: core.$clr-red--dark;
+	  							color: core.$clr-red--reg;
 	  						}
 
 	  						&:before {
@@ -248,11 +244,70 @@
 	  					width: auto;
 	  				}
 
-	  				.btn {
+	  				.projects_cta {
 	  					z-index: 1000;
 							position: absolute;
-							right: calc( -156px / 2 );
-							top: calc(50vh - ( 57px / 2 ));
+							right: calc( -150px / 2 );
+							top: calc(50vh - ( 112px / 2 ));
+							background-color: core.$clr-green--reg;
+							padding: 4px;
+							border-radius: 24px;
+
+							.blk {
+								display: flex;
+								flex-direction: row;
+								gap: 12px;
+								align-items: center;
+								background-color: core.$clr-white;
+								padding: 14px;
+								border-radius: 20px;
+								box-shadow: 2px 0px 10px rgba(0,0,0,0.2);
+
+								// Projects grid
+								.icons {
+									display: grid;
+									grid-template-columns: 34px 34px; 
+									grid-template-rows: auto auto; 
+									gap: 8px;
+									width: 100%;
+
+									.icon {
+										display: block;
+										height: 34px;
+										width: 34px;
+
+										&_1 {
+											background: url("/img/Projects/visadocs/visadocs_icon--small.png") no-repeat;
+											background-size: 100% 100%;
+										}
+										&_2 {
+											background: url("/img/Projects/jmr-visas/jmr_icon--small.png") no-repeat;
+											background-size: 100% 100%;
+										}
+										&_3 {
+											background: url("/img/Projects/phl-chat/phl-chat_icon--small.png") no-repeat;
+											background-size: 100% 100%;
+										}
+										&_4 {
+											background: url("/img/Projects/phl-reactions/phl-reactions_icon--small.png") no-repeat;
+											background-size: 100% 100%;
+										}
+									}
+								}
+
+								// CTA
+								.cta {
+									padding: 8px 10px 7px 10.5px;
+									background-color: core.$clr-green--light;
+									border-radius: 20px;
+									opacity: 0.75;
+									transition: opacity 0.2s ease-in-out;
+
+									&:hover {
+										opacity: 1;
+									}
+								}
+							}
 	  				}
 	  			}
 	  		}

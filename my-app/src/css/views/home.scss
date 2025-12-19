@@ -67,7 +67,7 @@
     				transition: opacity 0.2s ease-in-out;
     				// Mask
 	  				mask-image: radial-gradient(
-				      circle 100px at var(--x) var(--y),
+				      circle 80px at var(--x) var(--y),
 				      #000 0%,
 				      #000 50%,
 				      transparent 80%
@@ -75,7 +75,6 @@
 	  			}
 
 	  			&.is-hovered {
-
 	  				cursor: url('/img/cursor-magic.png') 12 12, auto;
 
 	  				&:after {
@@ -111,7 +110,8 @@
 				  	}
 
 				  	&.wand_mode {
-				  		border-color: core.$clr-green--reg; 
+				  		border-color: core.$clr-green--reg;
+				  		// background: radial-gradient(#D8FBEE 20%, #9DBDB1 100%); 
 				  	}
 
 				  	&:hover {

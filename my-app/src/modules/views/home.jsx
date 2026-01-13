@@ -1,7 +1,7 @@
 // React stuff
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from 'react-helmet-async';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // Elements
 import Nav from '../elements/navbar';
 // Assets
@@ -13,24 +13,23 @@ const chevron_green = '/img/graphics_chevron--green.svg';
 
 function Home() {
 
-  // Function for the avatar reveal
   const avatarRef = useRef(null);
   const [wandMode, setWandMode] = useState(false);
   const [wandLoading, setWandLoading] = useState(false);
 
+  const navigate = useNavigate();
+  const projects_cta = useRef(null);
+  const cta_icon = useRef(null);
+  const [ctaAnimate, setCtaAnimate] = useState(false);
+
   const toggleWandMode = (e) => {
     e.stopPropagation();
 
-    // If already enabled → disable immediately
     if (wandMode) {
       setWandMode(false);
       return;
     }
-
-    // Prevent double clicks
     if (wandLoading) return;
-
-    // Start loading animation
     setWandLoading(true);
 
     setTimeout(() => {
@@ -61,6 +60,33 @@ function Home() {
     avatarRef.current.classList.remove('is-hovered');
     avatarRef.current.style.removeProperty('--x');
     avatarRef.current.style.removeProperty('--y');
+  };
+
+  const toggleAnimate = (e) => {
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (ctaAnimate) return;
+
+    setCtaAnimate(true);
+    projects_cta.current.classList.add('is-animated');
+    cta_icon.current.classList.remove('hidden');
+
+    setTimeout(() => {
+      cta_icon.current.classList.add('hidden');
+    }, 200);
+
+    setTimeout(() => {
+      navigate('/projects');
+      setCtaAnimate(false);
+      cta_icon.current.classList.remove('hidden');
+
+      setTimeout(() => {
+        projects_cta.current.classList.remove('is-animated');
+      }, 600);
+
+    }, 2400);
   };
 
   return (
@@ -133,7 +159,10 @@ function Home() {
           </div>
           <div className="home_body-blk home_body-blk02">
             <img src={graph_process} className="visual" alt="Design Process" />
-            <div className="projects_cta" to="/projects" >
+            <div 
+              className="projects_cta" 
+              ref={projects_cta}
+            >
               <div className="blk">
                 <div className="icons">
                   <div className="icon icon_1"></div>
@@ -141,9 +170,14 @@ function Home() {
                   <div className="icon icon_3"></div>
                   <div className="icon icon_4"></div>
                 </div>
-                <Link className="cta" to="/projects" >
+                <a
+                  className="cta"
+                  onClick={toggleAnimate}
+                  disabled={ctaAnimate}
+                  ref={cta_icon} 
+                >
                   <img src={chevron_green} alt="Projects"/>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

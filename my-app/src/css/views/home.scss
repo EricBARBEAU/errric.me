@@ -252,6 +252,10 @@
 							background-color: core.$clr-green--reg;
 							padding: 4px;
 							border-radius: 24px;
+							transform: translateX(0px);
+
+							// Animation related
+							transition: all 0.2s ease-in-out;
 
 							.blk {
 								display: flex;
@@ -270,11 +274,15 @@
 									grid-template-rows: auto auto; 
 									gap: 8px;
 									width: 100%;
+									scale: 1;
+									transition: scale 0.4s ease-in-out;
 
 									.icon {
 										display: block;
 										height: 34px;
 										width: 34px;
+										border-radius: 8px;
+										transition: background 1s ease-in-out;
 
 										&_1 {
 											background: url("/img/Projects/visadocs/visadocs_icon--small.png") no-repeat;
@@ -297,15 +305,76 @@
 
 								// CTA
 								.cta {
+									position: relative;
 									padding: 8px 10px 7px 10.5px;
 									background-color: core.$clr-green--light;
 									border-radius: 20px;
 									opacity: 0.75;
-									transition: opacity 0.2s ease-in-out;
+									max-width: 26.5px;
+									max-height: 26.5px;
+									cursor: pointer;
+									width: auto;
+									scale: 1;
+      						transition: all 0.2s ease-in-out;
 
 									&:hover {
 										opacity: 1;
 									}
+								}
+							}
+
+
+							// When the CTA is animated
+							&.is-animated {
+
+								transform: translateX(-16px);
+
+								@keyframes rotate {
+						  		0% {
+						  			transform: rotate(0deg);
+						  		}
+						  		50% {
+						  			transform: rotate(180deg);
+						  		}
+						  		100% {
+						  			transform: rotate(360deg);
+						  		}
+						  	}
+
+								.icons {
+
+									scale: 0.35;
+									animation: rotate 1.2s ease-in-out infinite;
+
+									.icon {
+
+										border-radius: 12px;
+										
+										&_1 {
+											background: #2D78EF;
+										}
+										&_2 {
+											background: #EB8287;
+										}
+										&_3 {
+											background: #F39124;
+										}
+										&_4 {
+											background: #FFB23B;
+										}
+									}
+								}
+
+								.cta {
+									width: 0;
+									scale: 0;
+									padding-left: 0;
+									padding-right: 0;
+									opacity: 0;
+
+									&.hidden {
+						        display: none;
+						      }
 								}
 							}
 	  				}

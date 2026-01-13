@@ -282,7 +282,7 @@
 										height: 34px;
 										width: 34px;
 										border-radius: 8px;
-										transition: background 1s ease-in-out;
+										transition: background 1s ease-in-out, opacity 0.4s ease;
 
 										&_1 {
 											background: url("/img/Projects/visadocs/visadocs_icon--small.png") no-repeat;
@@ -349,6 +349,7 @@
 									.icon {
 
 										border-radius: 12px;
+										opacity: 0.8;
 										
 										&_1 {
 											background: #2D78EF;

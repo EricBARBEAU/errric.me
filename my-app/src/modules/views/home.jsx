@@ -86,7 +86,7 @@ function Home() {
         projects_cta.current.classList.remove('is-animated');
       }, 600);
 
-    }, 2400);
+    }, 2200);
   };
 
   return (

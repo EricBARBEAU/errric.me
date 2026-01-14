@@ -84,7 +84,7 @@ function Home() {
 
       setTimeout(() => {
         projects_cta.current.classList.remove('is-animated');
-      }, 600);
+      }, 400);
 
     }, 2200);
   };

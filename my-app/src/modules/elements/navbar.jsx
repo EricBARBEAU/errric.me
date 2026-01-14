@@ -14,9 +14,11 @@ function Nav({ isDark, isWhite }) {
         <img src={isDark ? logo_dark : isWhite ? logo_white : logo_dark} className="logo_img" alt="errric.me" />
       </NavLink>
       <ul className="navbar_menu">
-        <li className="navbar_menu-item navbar_menu-item--projects" >
-          <NavLink to="/projects" className="link" alt="Projects">📚 Projects</NavLink>
-        </li>
+        {isDark && 
+          <li className="navbar_menu-item navbar_menu-item--projects" >
+            <NavLink to="/projects" className="link" alt="Projects">📚 Projects</NavLink>
+          </li>
+        }
         <li className="navbar_menu-item navbar_menu-item--playground" >
           <NavLink to="https://playground.errric.me" className="link" target="_blank" alt="Playground">📟 Playground</NavLink>
         </li>

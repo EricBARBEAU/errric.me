@@ -1,23 +1,27 @@
 [
   {
+    "id": "project-01",
     "class": "project-01",
     "title": "Visadocs.ai",
     "year": "2025",
     "body": "Building an AI-powered visa document generator to help travellers across the world."
   },
   {
+    "id": "project-02",
     "class": "project-02",
     "title": "JMR Visa Services",
     "year": "2024",
     "body": "Creating a new identity and a fresh website for a visa consultancy agency."
   },
   {
+    "id": "project-03",
     "class": "project-03",
     "title": "Pigeonhole Live ~ Chat",
     "year": "2021",
     "body": "Leading the design of a feature facilitating conversations during live events."
   },
   {
+    "id": "project-04",
     "class": "project-04",
     "title": "Pigeonhole Live ~ Reactions",
     "year": "2020",

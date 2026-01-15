@@ -37,6 +37,9 @@ function Layout() {
               isWhite={true}
             />
             <Projects />
+
+            {/*Footer here*/}
+            
           </div>
         </div>
 

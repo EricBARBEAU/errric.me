@@ -52,12 +52,12 @@
   			display: flex;
   			flex-direction: column;
   			gap: 24px;
-			position: relative;
-			margin-left: auto;
-			right: 12vw;
-			width: 60vw;
+				position: relative;
+				margin-left: auto;
+				right: 12vw;
+				width: 60vw;
 
-			// Intro text
+				// Intro text
   			.intro_content {
 
   				&-main {
@@ -69,13 +69,8 @@
 	  				}
 	  			}
 	  			&-sub {
-	  				font-size: core.$font-size-32;
+	  				// Defined in global css file "shared_elements" under typography
 	  				font-weight: core.$f-weight-200;
-	  				line-height: core.$line-height-140;
-
-	  				b {
-	  					font-weight: core.$f-weight-500;
-	  				}
 	  			}
   			}
 
@@ -88,79 +83,11 @@
 				gap: 12px;
 
 				.project {
-					display: flex;
-					flex-direction: row;
-					gap: 12px;
-					align-items: center;
-					padding: 10px 20px 9px 14px;
-					border-radius: 8px;
-					border: 1px solid core.$clr-green--border-light;
-					cursor: pointer;
-					scale: 1;
-					transition: all 0.1s ease-in-out;
-
-					&:hover {
-						background-color: rgba(0,0,0,0.02);
-						scale: 0.98;
-					}
-
-					// Visual
-					&_visual {
-						display: block;
-						height: 62px;
-						width: 62px;
-					}
-
-					// Content
-					&_content {
-
-						display: flex;
-						flex-direction: column;
-						gap: 2px;
-						width: 80%;
-
-						// Title
-						.title {
-							display: flex;
-							flex-direction: row;
-							gap: 6px;
-							font-family: core.$font-fcode;
-							color: core.$clr-grey--dark;
-							align-items: center;
-							font-size: core.$font-size-16;
-							font-weight: core.$f-weight-600;
-							letter-spacing: core.$l-spacing-min-4;
-
-							span.date {
-								font-size: core.$font-size-10 !important;
-								font-weight: core.$f-weight-400;
-								padding: 3px 5px 2px 4px;
-								border-radius: 10px;
-								background-color: #EFEEED;
-								border: 1px solid #D7D6D5;
-								letter-spacing: core.$l-spacing-min-2;
-							}
-						}
-						// Body
-						.body {
-							font-size: core.$font-size-13;
-							color: core.$clr-grey--med;
-							font-weight: core.$f-weight-300;
-							letter-spacing: core.$l-spacing-plus-2;
-							line-height: core.$line-height-120;
-							padding-right: 40px;
-						}
-					}
-
-					// CTA
-					&_cta {
-
-					}
+					// Defined in global css file "shared_elements" under blocks.
 				}
 
 				// Individual styling
 				.project {
-
 					// 01
 					&-01 {
 						.project_visual {
@@ -197,12 +124,10 @@
   			display: flex;
   			flex-direction: column;
   			position: relative;
-  			width: 100vw;
-  			margin-top: 280px;
-  			padding: 20px 120px;
+  			margin-top: 200px;
+  			padding: 20px 16vw;
 
   			.project_renderer {
-
 
 					@keyframes projectDrop {
 					  to {
@@ -211,19 +136,130 @@
 					  }
 					}
 
+					// GLOBAL STYLING
   				.project {
 						opacity: 0;
 						transform: translateY(-12px);
 						animation: projectDrop 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-
+						display: flex;
+						flex-direction: column;
+						gap: 40px;
 
 						// 01 - Title
 						&-title {
 							display: flex;
 							flex-direction: row;
 							gap: 40px;
+
+							.line {
+								// Defined in global css file "shared_elements" under visuals.
+							}
+
+							.title-container {
+
+								padding: 8px 0px;
+
+								.project-name {
+									display: flex;
+									flex-direction: row;
+									gap: 8px;
+									align-items: center;
+									margin-bottom: 12px;
+								}
+								.body.typ-title-main {
+									font-weight: core.$f-weight-400;
+								}
+							}
 						}
+
+						// 02 - Intro
+						&-intro {
+							display: grid;
+							grid-template-columns: 70% 30%;
+							gap: 20px;
+
+							.intro-text {
+								// Defined in global css file "shared_elements" under blocks.
+							}
+							.project-specs {
+								display: flex;
+								flex-direction: column;
+								gap: 12px;
+								padding: 32px 40px 20px 20px;
+								background-color: core.$clr-green--lightest;
+								border: 1px solid core.$clr-green--border;
+								border-radius: 8px;
+
+								.specs {
+									display: flex;
+									flex-direction: row;
+									gap: 12px;
+									font-size: core.$font-size-14;
+									color: core.$clr-grey--dark;
+									font-weight: core.$f-weight-300;
+									line-height: core.$line-height-140;
+									align-items: baseline;
+
+									&-type {
+										padding-left: 7px;
+									}
+									&-role {
+										padding-left: 6px;
+									}
+									&-stack {
+										padding-left: 2px;
+									}
+								}
+							}
+						}
+
+						// 03 - Hero
+
+						// 04 - Content Blks
   				}
+
+  				// INDIVIDUAL STYLING
+
+  					// Project 01
+	  				.project-01 {
+	  					a, .link {
+	  						color: core.$clr-visadocs--01;
+	  					}
+	  					.line {
+	  						background-color: core.$clr-visadocs--02;
+	  					}
+	  				}
+
+	  				// Project 02
+	  				.project-02 {
+	  					a, .link {
+	  						color: core.$clr-jmr--01;
+	  					}
+	  					.line {
+	  						background-color: core.$clr-jmr--02;
+	  					}
+	  				}
+
+	  				// Project 03
+	  				.project-03 {
+	  					a, .link {
+	  						color: core.$clr-phl-chat--01;
+	  					}
+	  					.line {
+	  						background-color: core.$clr-phl-chat--02;
+	  					}
+	  				}
+
+	  				// Project 04
+	  				.project-04 {
+	  					a, .link {
+	  						color: core.$clr-phl-react--01;
+	  					}
+	  					.line {
+	  						background-color: core.$clr-phl-react--02;
+	  					}
+	  				}
+
   			}
   		}
   	}

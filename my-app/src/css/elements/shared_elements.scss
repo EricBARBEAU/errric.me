@@ -1,0 +1,138 @@
+// Import core
+@use '../core/core_main' as core;
+
+// Below are listed individual elements used across the website multiple times
+
+// 01 - Blocks
+
+	// 01-1 - Project CTA block (Used in Project view)
+	.projects_intro .intro_grid .project {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		align-items: center;
+		padding: 10px 20px 9px 14px;
+		border-radius: 8px;
+		border: 1px solid core.$clr-green--border-light;
+		cursor: pointer;
+		scale: 1;
+		transition: all 0.1s ease-in-out;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.02);
+			scale: 0.98;
+		}
+
+		// Visual
+		&_visual {
+			display: block;
+			height: 62px;
+			width: 62px;
+		}
+
+		// Content
+		&_content {
+
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			width: 80%;
+			
+			// Body
+			.body {
+				font-size: core.$font-size-13;
+				color: core.$clr-grey--med;
+				font-weight: core.$f-weight-300;
+				letter-spacing: core.$l-spacing-plus-2;
+				line-height: core.$line-height-120;
+				padding-right: 40px;
+			}
+		}
+	}
+
+	// 01-2 - Text block (Used in Project view)
+	.project_renderer .project .txt-blk {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		padding: 32px 40px 32px 32px;
+		background-color: core.$clr-white;
+		border: 1px solid core.$clr-grey--border;
+		border-radius: 8px;
+
+		p {
+			font-size: core.$font-size-16;
+			font-weight: core.$f-weight-300;
+			letter-spacing: core.$l-spacing-plus-2;
+			line-height: core.$line-height-140;
+			color: core.$clr-grey--dark;
+
+			b {
+				font-weight: core.$f-weight-500;
+			}
+		}
+	}
+
+// 02 - Typography
+
+	// 02-1 - Title level 2 (In Projects view)
+	.typ-title-sub {
+		display: flex;
+		flex-direction: row;
+		gap: 6px;
+		font-family: core.$font-fcode;
+		color: core.$clr-grey--dark;
+		align-items: center;
+		font-size: core.$font-size-16;
+		font-weight: core.$f-weight-600;
+		letter-spacing: core.$l-spacing-min-4;
+	}
+
+	// 02-1 - Title level 1 (In Projects view)
+	.typ-title-main {
+		font-size: core.$font-size-32;
+		line-height: core.$line-height-140;
+		letter-spacing: core.$l-spacing-plus-2;
+
+		b {
+			font-weight: core.$f-weight-500;
+		}
+	}
+
+// 03 - Visuals
+
+	// 03-1 - Vertical line (In projects view)
+	.project_renderer .project .line {
+		width: 6px;
+		height: auto;
+		border-radius: 12px;
+	}
+
+// 04 - Pills
+
+	// 04-1 - Date pill (Used in projects view)
+	span.date {
+		font-size: core.$font-size-10 !important;
+		font-weight: core.$f-weight-400;
+		padding: 3px 5px 2px 4px;
+		border-radius: 10px;
+		background-color: #EFEEED;
+		border: 1px solid #D7D6D5;
+		letter-spacing: core.$l-spacing-min-2;
+	}
+
+	// 04-2 - Specs label (Used in projects view)
+	.specs span.label {
+		font-size: core.$font-size-12;
+		font-weight: core.$f-weight-500;
+		color: core.$clr-grey--dark;
+		text-transform: uppercase;
+		padding: 4px 6px;
+		background-color: core.$clr-white;
+		border: 1px solid core.$clr-green--border;
+		border-radius: 4px;
+		min-width: fit-content;
+		height: fit-content;
+		justify-content: center;
+		align-items: center;
+	}

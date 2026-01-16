@@ -32,7 +32,7 @@ function Projects() {
     		{/*Intro + Projects selection*/}
         <div className="projects_intro">
           <h1 className="intro_content-main"><span>📚</span>Projects</h1>
-          <div className="intro_content-sub">
+          <div className="intro_content-sub typ-title-main">
             Since 2011, I’ve been 
             <b> applying my skills on meaningful projects </b> 
             and 
@@ -50,7 +50,7 @@ function Projects() {
               >
                 <div className="project_visual"></div>
                 <div className="project_content">
-                  <div className="title">
+                  <div className="title typ-title-sub">
                     {item.title}
                     <span className="date">{item.year}</span>
                   </div>

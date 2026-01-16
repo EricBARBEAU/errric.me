@@ -3,24 +3,52 @@
     "class": "project-01",
     "year": "2025",
     "alt": "Visadocs.ai",
-    "main_title": "Building an AI-powered visa document generator to help travellers across the world."
+    "main_title": "Building an AI-powered visa document generator to help travellers across the world.",
+    "intro_part1": "The idea behind **visadocs.ai** began long before I ever considered building it, back when I was constantly frustrated by the paperwork involved in visa applications — both for myself and when helping my relatives.",
+    "intro_part2": "I built the platform with a simple goal: to **streamline and simplify the visa application process.** Since requirements vary widely from one country to another, I decided to start with **travel itineraries**, as they are one of the most commonly required documents in visa applications.",
+    "intro_part3": "Behind the scenes, it runs on a modern **React + Cloudflare stack**, integrates securely with **Stripe for payments**, and supports multilingual PDF generation. All generated PDFs are carefully **designed to meet typical embassy standards.**",
+    "specs_type": "Self-launched product",
+    "specs_role": "Founder, Designer, Developer",
+    "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
+    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments"
   },
   "project-02": {
     "class": "project-02",
     "year": "2024",
     "alt": "JMR Visa Services",
-    "main_title": "Creating a new identity and a fresh website for a visa consultancy agency."
+    "main_title": "Creating a new identity and a fresh website for a visa consultancy agency.",
+    "intro_part1": "In 2024, I returned to hands-on product design work after a period exploring a different craft. This project marked my re-entry into digital product work, where I partnered with JMR Visa Services to redesign their digital presence.",
+    "intro_part2": "This project focused on redesigning the online presence of JMR Visa Services to increase trust and improve lead conversion. The challenge was to improve the existing website into a clear and trustworthy experience through improved information architecture, refreshed branding, and streamlined contact flows.",
+    "intro_part3": "I owned the project end to end, from product strategy and UX to visual design, front-end development (React + Tailwind), and Cloudflare-based hosting and deployment.",
+    "specs_type": "Freelance, Self-launched product",
+    "specs_role": "Designer, Developer",
+    "specs_tools": "Figma, Github, Git, Cloudflare, EmailJS",
+    "specs_stack": "React Native, Cloudflare, Tailwind"
   },
   "project-03": {
     "class": "project-03",
     "year": "2021",
     "alt": "Pigeonhole Live ~ Chat",
-    "main_title": "Leading the design of a feature facilitating conversations during live events."
+    "main_title": "Leading the design of a feature facilitating conversations during live events.",
+    "intro_part1": "The idea behind **visadocs.ai** began long before I ever considered building it, back when I was constantly frustrated by the paperwork involved in visa applications — both for myself and when helping my relatives.",
+    "intro_part2": "I built the platform with a simple goal: to **streamline and simplify the visa application process.** Since requirements vary widely from one country to another, I decided to start with **travel itineraries**, as they are one of the most commonly required documents in visa applications.",
+    "intro_part3": "Behind the scenes, it runs on a modern **React + Cloudflare stack**, integrates securely with **Stripe for payments**, and supports multilingual PDF generation. All generated PDFs are carefully **designed to meet typical embassy standards.**",
+    "specs_type": "Self-launched product",
+    "specs_role": "Founder, Designer, Developer",
+    "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
+    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments"
   },
   "project-04": {
     "class": "project-04",
     "year": "2020",
     "alt": "Pigeonhole Live ~ Reactions",
-    "main_title": "Imagining and designing a feature that brings the event audience’s emotions to life."
+    "main_title": "Imagining and designing a feature that brings the event audience’s emotions to life.",
+    "intro_part1": "The idea behind **visadocs.ai** began long before I ever considered building it, back when I was constantly frustrated by the paperwork involved in visa applications — both for myself and when helping my relatives.",
+    "intro_part2": "I built the platform with a simple goal: to **streamline and simplify the visa application process.** Since requirements vary widely from one country to another, I decided to start with **travel itineraries**, as they are one of the most commonly required documents in visa applications.",
+    "intro_part3": "Behind the scenes, it runs on a modern **React + Cloudflare stack**, integrates securely with **Stripe for payments**, and supports multilingual PDF generation. All generated PDFs are carefully **designed to meet typical embassy standards.**",
+    "specs_type": "Self-launched product",
+    "specs_role": "Founder, Designer, Developer",
+    "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
+    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments"
   }
 }

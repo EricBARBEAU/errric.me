@@ -17,10 +17,15 @@
 		cursor: pointer;
 		scale: 1;
 		transition: all 0.1s ease-in-out;
+		opacity: 1;
 
 		&:hover {
 			background-color: rgba(0,0,0,0.02);
 			scale: 0.98;
+		}
+
+		&:not(.is-active) {
+			opacity: 0.75;
 		}
 
 		// Visual

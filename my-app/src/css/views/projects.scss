@@ -90,6 +90,11 @@
 				.project {
 					// 01
 					&-01 {
+
+						&.is-active {
+							box-shadow: 0px 0px 8px core.$clr-visadocs--02;
+							border-color: core.$clr-visadocs--02;
+						}
 						.project_visual {
 							background: url('/img/Projects/visadocs/visadocs_icon--medium.png') no-repeat;
 							background-size: 100% 100%;
@@ -97,6 +102,11 @@
 					}
 					// 02
 					&-02 {
+
+						&.is-active {
+							box-shadow: 0px 0px 8px core.$clr-jmr--02;
+							border-color: core.$clr-jmr--02;
+						}
 						.project_visual {
 							background: url('/img/Projects/jmr-visas/jmr_icon--medium.png') no-repeat;
 							background-size: 100% 100%;
@@ -104,6 +114,11 @@
 					}
 					// 03
 					&-03 {
+
+						&.is-active {
+							box-shadow: 0px 0px 8px core.$clr-phl-chat--02;
+							border-color: core.$clr-phl-chat--02;
+						}
 						.project_visual {
 							background: url('/img/Projects/phl-chat/phl-chat_icon--medium.png') no-repeat;
 							background-size: 100% 100%;
@@ -111,6 +126,11 @@
 					}
 					// 04
 					&-04 {
+
+						&.is-active {
+							box-shadow: 0px 0px 8px core.$clr-phl-react--02;
+							border-color: core.$clr-phl-react--02;
+						}
 						.project_visual {
 							background: url('/img/Projects/phl-reactions/phl-reactions_icon--medium.png') no-repeat;
 							background-size: 100% 100%;

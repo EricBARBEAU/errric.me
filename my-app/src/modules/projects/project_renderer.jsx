@@ -2,17 +2,24 @@
 import data from "../../_data/data_projects-content.json";
 // Functions
 import renderWithBold from "../../functions/renderWithBold";
-// Assets
-const visual_visadocs = '/img/Projects/visadocs/visadocs_icon--small.png';
-const visual_jmr = '/img/Projects/jmr-visas/jmr_icon--small.png';
-const visual_phlchat = '/img/Projects/phl-chat/phl-chat_icon--small.png';
-const visual_phlreact = '/img/Projects/phl-reactions/phl-reactions_icon--small.png';
-// Map project IDs to visuals
+// Load assets based on Project
 const visualsMap = {
-  "project-01": visual_visadocs,
-  "project-02": visual_jmr,
-  "project-03": visual_phlchat,
-  "project-04": visual_phlreact
+  "project-01": {
+    icon: '/img/Projects/visadocs/visadocs_icon--small.png',
+    hero: '/img/Projects/visadocs/visadocs-hero.png',
+  },
+  "project-02": {
+    icon: '/img/Projects/jmr-visas/jmr_icon--small.png',
+    hero: '/img/Projects/jmr-visas/jmr-hero.png',
+  },
+  "project-03": {
+    icon: '/img/Projects/phl-chat/phl-chat_icon--small.png',
+    hero: '/img/Projects/phl-chat/phl-chat-hero.png',
+  },
+  "project-04": {
+    icon: '/img/Projects/phl-reactions/phl-reactions_icon--small.png',
+    hero: '/img/Projects/phl-reactions/phl-reactions-hero.png',
+  }
 };
 
 function ProjectRenderer({
@@ -23,7 +30,10 @@ function ProjectRenderer({
 	if (!project) return null;
 
 	// Get the visual based on activeProject
-  const visualSrc = visualsMap[activeProject] || '';
+	const visuals = visualsMap[activeProject] ?? {};
+
+  const visualSrc = visuals.icon;
+	const heroSrc = visuals.hero;
 
   return (
   	<>
@@ -75,7 +85,7 @@ function ProjectRenderer({
 	    			</div>
 	    		</div>
 	    		<div className="project-hero">
-	          <img alt={project.alt} />
+	          <img src= {heroSrc} alt={project.alt} />
 	        </div>
 	    		<div className="project-blks">
 		    		<div className="blk blk_objective">

@@ -146,6 +146,7 @@
   			position: relative;
   			margin-top: 200px;
   			padding: 20px 16vw;
+  			max-width: calc(100% - 32vw);
 
   			.project_renderer {
 
@@ -195,7 +196,7 @@
 						// 02 - Intro
 						&-intro {
 							display: grid;
-							grid-template-columns: 70% 30%;
+							grid-template-columns: 7fr 3fr;
 							gap: 20px;
 
 							.intro-text {
@@ -234,6 +235,13 @@
 						}
 
 						// 03 - Hero
+						&-hero {
+
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
 
 						// 04 - Content Blks
   				}

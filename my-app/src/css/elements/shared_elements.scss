@@ -78,6 +78,17 @@
 		}
 	}
 
+	// 01-3 - Title block (Used in Project view)
+	.project_renderer .title_blk {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+
+		.title-container {
+			padding: 8px 0px;
+		}
+	}
+
 // 02 - Typography
 
 	// 02-1 - Title level 2 (In Projects view)

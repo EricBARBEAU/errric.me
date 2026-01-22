@@ -42,7 +42,7 @@ function ProjectRenderer({
 	        key={activeProject}
 	        className={`project ${project.class} is-active`}
 	      >
-	    		<div className="project-title">
+	    		<div className="project-title title_blk">
 	    			<span className="line"></span>
 	    			<div className="title-container">
 	    				<div className="project-name">
@@ -89,7 +89,21 @@ function ProjectRenderer({
 	        </div>
 	    		<div className="project-blks">
 		    		<div className="blk blk_objective">
-		    			Objective
+		    			<div className=" objective-title title_blk">
+		    				<span className="line"></span>
+		    				<div className="title-container">
+		    					<div className="title typ-title-sub">
+			    					<span className="icon">🎯</span>
+			    					The objective
+			    				</div>
+			    				<div className="body typ-title-main">
+			    					{project.title_objective}
+			    				</div>
+		    				</div>
+		    			</div>
+		    			<div className="txt-blk">
+		    				<p></p>
+		    			</div>
 		    		</div>
 		    		<div className="blk blk_process">
 		    			Process

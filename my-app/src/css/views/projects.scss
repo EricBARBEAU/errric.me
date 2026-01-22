@@ -168,17 +168,12 @@
 
 						// 01 - Title
 						&-title {
-							display: flex;
-							flex-direction: row;
-							gap: 40px;
-
+							
 							.line {
 								// Defined in global css file "shared_elements" under visuals.
 							}
 
 							.title-container {
-
-								padding: 8px 0px;
 
 								.project-name {
 									display: flex;
@@ -244,6 +239,17 @@
 						}
 
 						// 04 - Content Blks
+						.blk {
+
+							// 04-1 - Objectives
+							&_objective {
+
+								.title {
+									margin-bottom: 12px;
+								}
+							}
+						}
+
   				}
 
   				// INDIVIDUAL STYLING

@@ -10,7 +10,8 @@
     "specs_type": "Self-launched product",
     "specs_role": "Founder, Designer, Developer",
     "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
-    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments"
+    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments",
+    "title_objective": "Offering a way to generate quality PDF travel itineraries in less than 2 minutes."
   },
   "project-02": {
     "class": "project-02",

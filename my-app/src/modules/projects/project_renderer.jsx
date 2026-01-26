@@ -1,8 +1,19 @@
+// Elements
+import ProjectOne from "./p/project_one";
+import ProjectTwo from "./p/project_two";
+import ProjectThree from "./p/project_three";
+import ProjectFour from "./p/project_four";
 // Data
 import data from "../../_data/data_projects-content.json";
 // Functions
 import renderWithBold from "../../functions/renderWithBold";
 // Load assets based on Project
+const blocksMap = {
+  "project-01": ProjectOne,
+  "project-02": ProjectTwo,
+  "project-03": ProjectThree,
+  "project-04": ProjectFour
+};
 const visualsMap = {
   "project-01": {
     icon: '/img/Projects/visadocs/visadocs_icon--small.png',
@@ -31,7 +42,6 @@ function ProjectRenderer({
 
 	// Get the visual based on activeProject
 	const visuals = visualsMap[activeProject] ?? {};
-
   const visualSrc = visuals.icon;
 	const heroSrc = visuals.hero;
 
@@ -88,32 +98,10 @@ function ProjectRenderer({
 	          <img src= {heroSrc} alt={project.alt} />
 	        </div>
 	    		<div className="project-blks">
-		    		<div className="blk blk_objective">
-		    			<div className=" objective-title title_blk">
-		    				<span className="line"></span>
-		    				<div className="title-container">
-		    					<div className="title typ-title-sub">
-			    					<span className="icon">🎯</span>
-			    					The objective
-			    				</div>
-			    				<div className="body typ-title-main">
-			    					{project.title_objective}
-			    				</div>
-		    				</div>
-		    			</div>
-		    			<div className="txt-blk">
-		    				<p></p>
-		    			</div>
-		    		</div>
-		    		<div className="blk blk_process">
-		    			Process
-		    		</div>
-		    		<div className="blk blk_challenge">
-		    			Challenge
-		    		</div>
-		    		<div className="blk blk_delivery">
-		    			Delivery
-		    		</div>
+	    			{(() => {
+					    const Blocks = blocksMap[activeProject];
+					    return Blocks ? <Blocks project={project} /> : null;
+					  })()}
 		    	</div>
 	    	</div>
 	    </div>

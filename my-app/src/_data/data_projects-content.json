@@ -11,7 +11,41 @@
     "specs_role": "Founder, Designer, Developer",
     "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
     "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments",
-    "title_objective": "Offering a way to generate quality PDF travel itineraries in less than 2 minutes."
+    "objective_title": "Offering a way to generate quality PDF travel itineraries in less than 2 minutes.",
+    "objective_intro": "With many travel and visa-consultancy agencies offering tailored services, the idea was to build a **SaaS platform** which would be:",
+    "features": [
+      {
+        "class": "feature_blk-one",
+        "title": "Product centred",
+        "content": "A tool to simplify a complex part of the visa process."
+      },
+      {
+        "class": "feature_blk-two",
+        "title": "Fast",
+        "content": "Reducing time and stress during the visa demand process."
+      },
+      {
+        "class": "feature_blk-three",
+        "title": "Quality focused",
+        "content": "Serving top-tier PDFs that meet embassy format standards."
+      },
+      {
+        "class": "feature_blk-four",
+        "title": "Global",
+        "content": "Multi-language export to help users worldwide."
+      },
+      {
+        "class": "feature_blk-five",
+        "title": "Single usage",
+        "content": "You don’t apply for a visa every day, so no account is needed."
+      },
+      {
+        "class": "feature_blk-six",
+        "title": "Affordable",
+        "content": "A one-time, low-cost service to keep visa demand affordable."
+      }
+    ],
+    "process_title": "POC → Low-fi design → Prototype & Tests → High-fi design → Final build"
   },
   "project-02": {
     "class": "project-02",

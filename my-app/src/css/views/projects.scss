@@ -239,17 +239,24 @@
 						}
 
 						// 04 - Content Blks
-						.blk {
+						&-blks {
 
-							// 04-1 - Objectives
-							&_objective {
+							display: flex;
+							flex-direction: column;
+							gap: 40px;
 
-								display: flex;
-								flex-direction: column;
-								gap: 16px;
+							.blk {
 
-								.title-container .title {
-									margin-bottom: 12px;
+								// 04-1 - Objectives
+								&_objective {
+
+									display: flex;
+									flex-direction: column;
+									gap: 16px;
+
+									.title-container .title {
+										margin-bottom: 12px;
+									}
 								}
 							}
 						}

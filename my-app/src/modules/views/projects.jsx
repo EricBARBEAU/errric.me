@@ -81,6 +81,7 @@ function Projects() {
         </div>
         {/*Other projects CTAs*/}
         <div className="projects_push">
+          Element to be built for other projects CTAs
         </div>
     	</div>
     </>

@@ -45,7 +45,9 @@
         "content": "A one-time, low-cost service to keep visa demand affordable."
       }
     ],
-    "process_title": "POC → Low-fi design → Prototype & Tests → High-fi design → Final build"
+    "process_title": "POC → Low-fi design → Prototype & Tests → High-fi design → Final build",
+    "challenge_title": "Where AI fell short. And why custom logic was needed.",
+    "delivery_title": "A scalable and robust system for quickly generating travel itineraries"
   },
   "project-02": {
     "class": "project-02",

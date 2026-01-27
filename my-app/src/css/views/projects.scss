@@ -182,9 +182,6 @@
 									align-items: center;
 									margin-bottom: 12px;
 								}
-								.body.typ-title-main {
-									font-weight: core.$f-weight-400;
-								}
 							}
 						}
 
@@ -247,16 +244,12 @@
 
 							.blk {
 
-								// 04-1 - Objectives
-								&_objective {
+								display: flex;
+								flex-direction: column;
+								gap: 16px;
 
-									display: flex;
-									flex-direction: column;
-									gap: 16px;
-
-									.title-container .title {
-										margin-bottom: 12px;
-									}
+								.title-container .title.typ-title-sub {
+									margin-bottom: 12px;
 								}
 							}
 						}
@@ -340,6 +333,11 @@
 	  								background: url('/img/Projects/visadocs/features/feature6.svg') no-repeat;
 	  							}
 	  						}
+	  					}
+
+	  					// Process
+	  					.blk_process .visual_process {
+	  						max-width: 1000px;	
 	  					}
 	  				}
 

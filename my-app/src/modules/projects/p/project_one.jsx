@@ -1,9 +1,11 @@
+// Functions
 import renderWithBold from "../../../functions/renderWithBold";
+// Assets
+const img_process = '/img/Projects/visadocs/visadocs_process.png';
 
 function ProjectOne({ project }) {
   return (
     <>
-
       {/*🎯 Objective*/}
       <div className="blk blk_objective">
         <div className="objective-title title_blk">
@@ -18,7 +20,6 @@ function ProjectOne({ project }) {
             </div>
           </div>
         </div>
-
         <div className="txt-blk">
           <p>{renderWithBold(project.objective_intro)}</p>
           <div className="features">
@@ -52,11 +53,46 @@ function ProjectOne({ project }) {
             </div>
           </div>
         </div>
+        <div className="txt-blk">
+          <img className="visual_process" src={img_process} alt="Visadocs Process" />
+        </div>
       </div>
 
-      <div className="blk blk_challenge">Challenge</div>
+      {/*🚧 Challenge*/}
+      <div className="blk blk_challenge">
+        <div className="challenge-title title_blk">
+          <span className="line" />
+          <div className="title-container">
+            <div className="title typ-title-sub">
+              <span className="icon">🚧</span>
+              The project’s biggest challenge
+            </div>
+            <div className="body typ-title-main">
+              {project.challenge_title}
+            </div>
+          </div>
+        </div>
+        <div className="txt-blk">
+        </div>
+      </div>
 
-      <div className="blk blk_delivery">Delivery</div>
+      {/*🚀 Delivery*/}
+      <div className="blk blk_delivery">
+        <div className="delivery-title title_blk">
+          <span className="line" />
+          <div className="title-container">
+            <div className="title typ-title-sub">
+              <span className="icon">🚀</span>
+              The delivery
+            </div>
+            <div className="body typ-title-main">
+              {project.delivery_title}
+            </div>
+          </div>
+        </div>
+        <div className="txt-blk">
+        </div>
+      </div>
     </>
   );
 }

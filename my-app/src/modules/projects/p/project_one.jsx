@@ -2,6 +2,7 @@
 import renderWithBold from "../../../functions/renderWithBold";
 // Assets
 const img_process = '/img/Projects/visadocs/visadocs_process.png';
+const img_itinerary = '/img/Projects/visadocs/visadocs_itinerary.svg';
 
 function ProjectOne({ project }) {
   return (
@@ -26,7 +27,7 @@ function ProjectOne({ project }) {
             {project.features.map((feature, index) => (
               <div 
                 key={index} 
-                className={`feature_blk ${feature.class}`}
+                className={`grey-box feature_blk ${feature.class}`}
               >
                 <div className="visual"></div>
                 <div className="body">
@@ -73,6 +74,41 @@ function ProjectOne({ project }) {
           </div>
         </div>
         <div className="txt-blk">
+          {project.challenge.map((item, index) => (
+              <div 
+                key={index}
+                className="challenge" 
+              >
+                <h3 className="main_title">{item.main_title}</h3>
+                <div className="challenge_intro">
+                  <div className="intro_left">
+                    <p>{renderWithBold(item.intro_part1)}</p>
+                    <p>{renderWithBold(item.intro_part2)}</p>
+                  </div>
+                  <img className="intro_visual" src={img_itinerary} alt="travel itinerary" />
+                </div>
+                <div className="challenge_blocks">
+                  <div className="blk blk_one grey-box">
+                    <h4>{item.blk1_intro}</h4>
+                    <div className="blk_content">
+                      <p>{renderWithBold(item.blk1_part1)}</p>
+                      <p>{renderWithBold(item.blk1_part2)}</p>
+                    </div>
+                  </div>
+                  <div className="blk blk_two grey-box">
+                    <h4>{item.blk2_intro}</h4>
+                    <div className="blk_content">
+                      <p>{renderWithBold(item.blk2_part1)}</p>
+                      <p>{renderWithBold(item.blk2_part2)}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="challenge_outro">
+                  <p className="outro_sm">{item.outro_small}</p>
+                  <p className="outro_lg">{item.outro_main}</p>
+                </div>
+              </div>
+            ))}
         </div>
       </div>
 

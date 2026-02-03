@@ -89,6 +89,13 @@
 		}
 	}
 
+	// 01-4 - Grey box (Used in Project view)
+	.project_renderer .grey-box {
+		background-color: core.$clr-green--lightest;
+		border: 1px solid core.$clr-green--border;
+		border-radius: 8px;
+	}
+
 // 02 - Typography
 
 	// 02-1 - Title level 2 (In Projects view)

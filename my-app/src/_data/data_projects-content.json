@@ -47,6 +47,21 @@
     ],
     "process_title": "POC → Low-fi design → Prototype & Tests → High-fi design → Final build",
     "challenge_title": "Where AI fell short. And why custom logic was needed.",
+    "challenge": [
+      {
+        "main_title": "🤖 Limits of AI automation",
+        "intro_part1": "When I started working on **visadocs.ai**, the idea was pretty clear in my mind. I would **leverage the power of AI to translate data from my front-end’s form into a well-constructed table.**",
+        "intro_part2": "That table would feature, for each day of the travel itinerary **all the key information necessary**, and would include accurate data (no placeholder values).",
+        "blk1_intro": "😱 Then reality struck",
+        "blk1_part1": "After some tests, I realised that itineraries **couldn’t be exported as PDFs**, nor could they **include real or accurate location data for the cities and hotels.**",
+        "blk1_part2": "**Why?** When calling an AI model API directly, only the model’s “basic” reasoning layer is available. Anything more advanced **require using external APIs and libraries.**",
+        "blk2_intro": "💪 The solution",
+        "blk2_part1": "**Building the logic came piece by piece:** Integrating powerful APIs like Google Places API and REST API or using libraries like pdf-lib to turn complex JSON into clean, readable PDFs, and manually refining itineraries for multilingual use.",
+        "blk2_part2": "The logic would have to be more complex and fragmented but also **more scalable and robust.**",
+        "outro_small": "After the countless hours spent, I realised",
+        "outro_main": "I took full ownership of the build, growing my skills with every step."
+      }
+    ],
     "delivery_title": "A scalable and robust system for quickly generating travel itineraries"
   },
   "project-02": {

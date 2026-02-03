@@ -75,7 +75,7 @@ function ProjectRenderer({
 							<p>{renderWithBold(project.intro_part2)}</p>
 							<p>{renderWithBold(project.intro_part3)}</p>
 	    			</div>
-	    			<div className="project-specs">
+	    			<div className="project-specs grey-box">
 	    				<div className="specs specs-type">
 	    					<span className="label">📚 TYPE</span>
 	    					{project.specs_type}

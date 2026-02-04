@@ -495,16 +495,52 @@
   			.push_blks .blk {
 
   				&_visadocs {
-
+  					.blk_hero {
+  						background: url("/img/Projects/visadocs/visadocs-hero.png") no-repeat;
+  						background-size: 100% auto;
+  					}
+  					.blk_info {
+  						.visual {
+  							background: url("/img/Projects/visadocs/visadocs_icon--medium.png") no-repeat;
+  							background-size: 100% 100%;
+  						}
+  					}
   				}
   				&_jmr {
-  					
+  					.blk_hero {
+  						background: url("/img/Projects/jmr-visas/jmr-hero.png") no-repeat;
+  						background-size: 100% auto;
+  					}
+  					.blk_info {
+  						.visual {
+  							background: url("/img/Projects/jmr-visas/jmr_icon--medium.png") no-repeat;
+  							background-size: 100% 100%;
+  						}
+  					}
   				}
   				&_phl-chat {
-  					
+  					.blk_hero {
+  						background: url("/img/Projects/phl-chat/phl-chat-hero.png") no-repeat;
+  						background-size: 100% auto;
+  					}
+  					.blk_info {
+  						.visual {
+  							background: url("/img/Projects/phl-chat/phl-chat_icon--medium.png") no-repeat;
+  							background-size: 100% 100%;
+  						}
+  					}
   				}
   				&_phl-react {
-  					
+  					.blk_hero {
+  						background: url("/img/Projects/phl-reactions/phl-reactions-hero.png") no-repeat;
+  						background-size: 100% auto;
+  					}
+  					.blk_info {
+  						.visual {
+  							background: url("/img/Projects/phl-reactions/phl-reactions_icon--medium.png") no-repeat;
+  							background-size: 100% 100%;
+  						}
+  					}
   				}
   			}
   		}

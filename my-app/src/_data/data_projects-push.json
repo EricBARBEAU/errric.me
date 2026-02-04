@@ -2,21 +2,29 @@
 	{
     "id": "project-01",
     "class": "blk_visadocs",
-    "title": "Building an AI-powered visa document generator to help travellers across the world."
+    "title": "Building an AI-powered visa document generator to help travellers across the world.",
+    "name": "visadocs.ai",
+    "year": "2025"
   },
   {
     "id": "project-02",
     "class": "blk_jmr",
-    "title": "Creating a new identity and a fresh website for a visa consultancy agency."
+    "title": "Creating a new identity and a fresh website for a visa consultancy agency.",
+    "name": "JMR Visa Services",
+    "year": "2024"
   },
   {
     "id": "project-03",
     "class": "blk_phl-chat",
-    "title": "Leading the design of a feature facilitating conversations during live events."
+    "title": "Leading the design of a feature facilitating conversations during live events.",
+    "name": "Pigeonhole Live ~ Chat",
+    "year": "2021"
   },
   {
     "id": "project-04",
     "class": "blk_phl-react",
-    "title": "Imagining and designing a feature that brings the event audience’s emotions to life."
+    "title": "Imagining and designing a feature that brings the event audience’s emotions to life.",
+    "name": "Pigeonhole Live ~ Reactions",
+    "year": "2020"
   }
 ]

@@ -97,11 +97,17 @@ function Projects() {
                 <div className="blk_title">
                   <h3>{item.title}</h3>
                 </div>
-                <div className="blk_visual">
-
-                </div>
+                <div className="blk_hero"></div>
                 <div className="blk_info">
-
+                  <div className="left">
+                    <div className="visual"></div>
+                    <div className="name_date">
+                      <p className="name">{item.name}</p>
+                      <span className="date">{item.year}</span>
+                    </div>
+                  </div>
+                  <div className="cta">
+                  </div>
                 </div>
               </div>
             ))}

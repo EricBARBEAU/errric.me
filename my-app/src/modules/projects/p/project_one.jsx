@@ -3,6 +3,7 @@ import renderWithBold from "../../../functions/renderWithBold";
 // Assets
 const img_process = '/img/Projects/visadocs/visadocs_process.png';
 const img_itinerary = '/img/Projects/visadocs/visadocs_itinerary.svg';
+const visadocs_logo = '/img/Projects/visadocs/visadocs_icon--small.png';
 
 function ProjectOne({ project }) {
   return (
@@ -39,6 +40,7 @@ function ProjectOne({ project }) {
           </div>
         </div>
       </div>
+      {/*🎯 Objective*/}
 
       {/*🗺️ Process*/}
       <div className="blk blk_process">
@@ -58,6 +60,7 @@ function ProjectOne({ project }) {
           <img className="visual_process" src={img_process} alt="Visadocs Process" />
         </div>
       </div>
+      {/*🗺️ Process*/}
 
       {/*🚧 Challenge*/}
       <div className="blk blk_challenge">
@@ -111,6 +114,7 @@ function ProjectOne({ project }) {
             ))}
         </div>
       </div>
+      {/*🚧 Challenge*/}
 
       {/*🚀 Delivery*/}
       <div className="blk blk_delivery">
@@ -133,7 +137,7 @@ function ProjectOne({ project }) {
             <p className="delivery_p">{renderWithBold(project.delivery_par3)}</p>
             <p className="delivery_outro">To 🏗 build and 🚀 ship web applications.</p>
           </div>
-          <div className="grey-box">
+          <div className="delivery_links grey-box">
             <div className="links">
               <h4>More about this project</h4>
               <a 
@@ -154,12 +158,19 @@ function ProjectOne({ project }) {
                 href="https://visadocs.ai" 
                 target="_blank"
               >
-                visadocs.ai
+                <img 
+                  src={visadocs_logo} 
+                  alt="visadocs icon"
+                  className="icon" 
+                />
+                 visadocs.ai
               </a>
             </div>
           </div>
         </div>
       </div>
+      {/*🚀 Delivery*/}
+
     </>
   );
 }

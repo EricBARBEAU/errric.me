@@ -96,6 +96,34 @@
 		border-radius: 8px;
 	}
 
+	// 01-5 - Project push (Used in Project view)
+	.view_projects .projects .projects_push {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		margin-top: 180px;
+		padding: 0px 16vw 20px 16vw;
+		width: calc(100% - 32vw);
+		gap: 20px;
+
+		.push_blks {
+
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+
+			.blk {
+
+				display: flex;
+				flex-direction: column;
+
+				// Hidden when on active project view
+				&.hidden {
+					display: none;
+				}
+			}
+		}
+	}
+
 // 02 - Typography
 
 	// 02-1 - Title level 2 (In Projects view)

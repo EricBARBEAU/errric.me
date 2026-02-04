@@ -1,0 +1,22 @@
+[
+	{
+    "id": "project-01",
+    "class": "blk_visadocs",
+    "title": "Building an AI-powered visa document generator to help travellers across the world."
+  },
+  {
+    "id": "project-02",
+    "class": "blk_jmr",
+    "title": "Creating a new identity and a fresh website for a visa consultancy agency."
+  },
+  {
+    "id": "project-03",
+    "class": "blk_phl-chat",
+    "title": "Leading the design of a feature facilitating conversations during live events."
+  },
+  {
+    "id": "project-04",
+    "class": "blk_phl-react",
+    "title": "Imagining and designing a feature that brings the event audience’s emotions to life."
+  }
+]

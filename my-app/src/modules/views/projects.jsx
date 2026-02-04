@@ -7,7 +7,8 @@ import ProjectRenderer from '../projects/project_renderer';
 // Assets
 const chevron_grey = '/img/graphics_chevron--grey.svg';
 // Data
-import data from "../../_data/data_projects-navigation.json";
+import dataNav from "../../_data/data_projects-navigation.json";
+import dataPush from "../../_data/data_projects-push.json";
 
 function Projects() {
 
@@ -40,7 +41,7 @@ function Projects() {
             along the way.
           </div>
           <div className="intro_grid">
-            {data.map((item, index) => (
+            {dataNav.map((item, index) => (
               <div
                 key={item.id} 
                 className={`project ${item.class} ${
@@ -81,7 +82,30 @@ function Projects() {
         </div>
         {/*Other projects CTAs*/}
         <div className="projects_push">
-          Element to be built for other projects CTAs
+          <div className="title typ-title-sub">
+            <span className="icon">📚</span>
+            Discover my other projects
+          </div>
+          <div className="push_blks">
+            {dataPush.map((item, index) => (
+              <div
+                key={item.id} 
+                className={`blk ${item.class} ${
+                  activeProject === item.id ? 'hidden' : ''
+                }`}
+              >
+                <div className="blk_title">
+                  <h3>{item.title}</h3>
+                </div>
+                <div className="blk_visual">
+
+                </div>
+                <div className="blk_info">
+
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
     	</div>
     </>

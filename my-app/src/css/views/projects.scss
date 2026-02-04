@@ -161,7 +161,7 @@
   				.project {
 						opacity: 0;
 						transform: translateY(-12px);
-						animation: projectDrop 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+						animation: projectDrop 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 						display: flex;
 						flex-direction: column;
 						gap: 40px;
@@ -247,6 +247,13 @@
 
 								.title-container .title.typ-title-sub {
 									margin-bottom: 12px;
+								}
+
+								// Delivery block
+								&_delivery .delivery_content {
+									display: grid;
+									grid-template-columns: 7fr 3fr;
+									gap: 20px;
 								}
 							}
 						}
@@ -393,6 +400,14 @@
 	  								font-size: core.$font-size-24;
 	  								font-weight: core.$f-weight-500;
 	  							}
+	  						}
+	  					}
+
+	  					// Delivery
+	  					.blk_delivery .delivery_content {
+	  						.delivery_outro {
+	  							font-size: core.$font-size-24;
+	  							font-weight: core.$f-weight-500;
 	  						}
 	  					}
 	  				}

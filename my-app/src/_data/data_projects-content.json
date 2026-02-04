@@ -62,7 +62,11 @@
         "outro_main": "I took full ownership of the build, growing my skills with every step."
       }
     ],
-    "delivery_title": "A scalable and robust system for quickly generating travel itineraries"
+    "delivery_title": "A scalable and robust system for quickly generating travel itineraries",
+    "delivery_par1": "When I finally merged the <release> branch onto <master>, and after spending 20 minutes double-checking everything and doing QA on production, I was able to **sit back and contemplate what I’ve been building for the past six months.**",
+    "delivery_par2": "This project went **beyond the scope of the usual job of a Product Designer**, I single-handedly built everything from scratch, from the very first scribble on a piece of paper to the last commit.",
+    "delivery_par3": "There were **challenges at every step**, from design and development to infrastructure, security and even marketing. Above all, this project made me better at what counts:",
+    "delivery_outro": "To 🏗 build and 🚀 ship web applications."
   },
   "project-02": {
     "class": "project-02",

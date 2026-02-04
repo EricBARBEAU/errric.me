@@ -126,7 +126,38 @@ function ProjectOne({ project }) {
             </div>
           </div>
         </div>
-        <div className="txt-blk">
+        <div className="delivery_content">
+          <div className="txt-blk">
+            <p className="delivery_p">{renderWithBold(project.delivery_par1)}</p>
+            <p className="delivery_p">{renderWithBold(project.delivery_par2)}</p>
+            <p className="delivery_p">{renderWithBold(project.delivery_par3)}</p>
+            <p className="delivery_outro">To 🏗 build and 🚀 ship web applications.</p>
+          </div>
+          <div className="grey-box">
+            <div className="links">
+              <h4>More about this project</h4>
+              <a 
+                href="" 
+                target="_blank"
+              >
+                Create your travel itinerary with visadocs.ai in 7 steps
+              </a>
+              <a 
+                href="" 
+                target="_blank"
+              >
+                Visadocs on Product Hunt
+              </a>
+            </div>
+            <div className="cta">
+              <a 
+                href="https://visadocs.ai" 
+                target="_blank"
+              >
+                visadocs.ai
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

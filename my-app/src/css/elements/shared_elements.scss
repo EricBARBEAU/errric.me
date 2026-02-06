@@ -101,8 +101,8 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		margin-top: 180px;
-		padding: 0px 16vw 20px 16vw;
+		margin: 180px auto 100px auto;
+		padding: 0px 16vw;
 		width: calc(100% - 32vw);
 		gap: 20px;
 
@@ -139,6 +139,11 @@
 				}
 				.blk_info {
 					padding: 0px 14px;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+
 					.left {
 
 						display: flex;
@@ -166,6 +171,21 @@
 							.date {
 								width: fit-content;
 							}
+						}
+					}
+					.cta_wrapper {
+						padding: 10px 13px;
+						border-radius: 30px;
+						height: 12px;
+						width: fit-content;
+						cursor: pointer;
+
+						.cta {
+							display: block;
+							content: '';
+							width: 6px;
+							height: 12px;
+							background-size: 100% 100%;
 						}
 					}
 				}

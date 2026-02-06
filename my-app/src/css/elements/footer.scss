@@ -1,0 +1,36 @@
+// Import core
+@use '../core/core_main' as core;
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: core.$clr-red--bg;
+	padding: 40px 16vw;
+	align-items: center;
+
+	.logo {
+		display: flex;
+		flex-direction: row;
+		gap: 14px;
+		align-items: center;
+
+		.name {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			color: core.$clr-grey--dark;
+
+			p {
+				font-family: core.$font-fcode;
+				font-size: core.$font-size-14;
+				font-weight: core.$f-weight-500;
+			}
+			span {
+				font-family: core.$font-fsans;
+				font-size: core.$font-size-12;
+				font-weight: core.$f-weight-300;
+			}
+		}
+	}
+}

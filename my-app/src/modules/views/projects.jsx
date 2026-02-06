@@ -106,7 +106,8 @@ function Projects() {
                       <span className="date">{item.year}</span>
                     </div>
                   </div>
-                  <div className="cta">
+                  <div className="cta_wrapper">
+                    <a className="cta" href="" ></a>
                   </div>
                 </div>
               </div>

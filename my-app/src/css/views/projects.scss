@@ -44,7 +44,7 @@
 	  	flex-direction: column;
 	  	align-items: flex-start;
 	  	width: 100%;
-	  	height: 100%;
+	  	height: fit-content;
 
   		// 01 Project Intro
   		&_intro {
@@ -491,6 +491,18 @@
   		&_push {
   			// Defined in shared_elements under Blocks
 
+  			&:after {
+					content: '';
+					background: url('/img/graphics_projects--greenblob.svg') no-repeat;
+					background-size: 100% 100%;
+					width: 84px;
+					height: 262px;
+					display: block;
+					position: absolute;
+					left: 0px;
+					bottom: 180px;
+				}
+
   			// Specific styles per project
   			.push_blks .blk {
 
@@ -504,6 +516,12 @@
   							background: url("/img/Projects/visadocs/visadocs_icon--medium.png") no-repeat;
   							background-size: 100% 100%;
   						}
+  						.cta_wrapper {
+  							background-color: core.$clr-visadocs--03;
+  							.cta {
+  								background: url("/img/Projects/visadocs/arrow.svg") no-repeat;
+  							}
+  						}
   					}
   				}
   				&_jmr {
@@ -515,6 +533,12 @@
   						.visual {
   							background: url("/img/Projects/jmr-visas/jmr_icon--medium.png") no-repeat;
   							background-size: 100% 100%;
+  						}
+  						.cta_wrapper {
+  							background-color: core.$clr-jmr--03;
+  							.cta {
+  								background: url("/img/Projects/jmr-visas/arrow.svg") no-repeat;
+  							}
   						}
   					}
   				}
@@ -528,6 +552,12 @@
   							background: url("/img/Projects/phl-chat/phl-chat_icon--medium.png") no-repeat;
   							background-size: 100% 100%;
   						}
+  						.cta_wrapper {
+  							background-color: core.$clr-phl-chat--03;
+  							.cta {
+	  							background: url("/img/Projects/phl-chat/arrow.svg") no-repeat;
+	  						}
+  						}
   					}
   				}
   				&_phl-react {
@@ -539,6 +569,12 @@
   						.visual {
   							background: url("/img/Projects/phl-reactions/phl-reactions_icon--medium.png") no-repeat;
   							background-size: 100% 100%;
+  						}
+  						.cta_wrapper {
+  							background-color: core.$clr-phl-react--03;
+  							.cta {
+  								background: url("/img/Projects/phl-reactions/arrow.svg") no-repeat;
+  							}
   						}
   					}
   				}

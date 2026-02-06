@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 // Elements
 import Nav from './elements/navbar';
+import Footer from './elements/footer';
 // Views
 import Home from './views/home';
 import Projects from './views/projects';
@@ -38,7 +39,7 @@ function Layout() {
             />
             <Projects />
 
-            {/*Footer here*/}
+            <Footer />
             
           </div>
         </div>

@@ -490,6 +490,9 @@
   		// 03 Project Push
   		&_push {
   			// Defined in shared_elements under Blocks
+  			background: url('/img/graphics_projects--bottom.svg') no-repeat;
+				background-position: bottom right;
+				background-size: auto 100%;
 
   			&:after {
 					content: '';
@@ -500,7 +503,7 @@
 					display: block;
 					position: absolute;
 					left: 0px;
-					bottom: 180px;
+					bottom: 240px;
 				}
 
   			// Specific styles per project

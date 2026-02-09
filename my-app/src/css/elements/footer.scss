@@ -33,4 +33,21 @@
 			}
 		}
 	}
+	.links {
+
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		align-items: center;
+
+		p {
+			font-size: core.$font-size-12;
+			font-weight: core.$f-weight-200;
+			letter-spacing: core.$l-spacing-plus-2;
+		}
+
+		.footer_link {
+			// Defined in elements/buttons
+		}
+	}
 }

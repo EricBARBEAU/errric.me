@@ -114,3 +114,20 @@
 	}
 
 }
+
+// 04 - Footer links
+.footer .links .footer_link {
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	background-color: core.$clr-white;
+	border: 1px solid core.$clr-red--border-2;
+	padding: 8px 12px 7px 12px;
+	border-radius: 4px;
+	color: core.$clr-grey--dark;
+	font-size: core.$font-size-13;
+	font-weight: core.$f-weight-400;
+}

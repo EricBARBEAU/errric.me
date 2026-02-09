@@ -512,7 +512,6 @@
   				&_visadocs {
   					.blk_hero {
   						background: url("/img/Projects/visadocs/visadocs-hero.png") no-repeat;
-  						background-size: 100% auto;
   					}
   					.blk_info {
   						.visual {
@@ -521,16 +520,22 @@
   						}
   						.cta_wrapper {
   							background-color: core.$clr-visadocs--03;
+
+  							&:hover {
+									background-color: core.$clr-visadocs--02;
+								}
   							.cta {
   								background: url("/img/Projects/visadocs/arrow.svg") no-repeat;
   							}
   						}
   					}
+  					&:hover {
+  						box-shadow: 0px 0px 0px 2px core.$clr-visadocs--02;
+  					}
   				}
   				&_jmr {
   					.blk_hero {
   						background: url("/img/Projects/jmr-visas/jmr-hero.png") no-repeat;
-  						background-size: 100% auto;
   					}
   					.blk_info {
   						.visual {
@@ -539,16 +544,21 @@
   						}
   						.cta_wrapper {
   							background-color: core.$clr-jmr--03;
+  							&:hover {
+									background-color: core.$clr-jmr--02;
+								}
   							.cta {
   								background: url("/img/Projects/jmr-visas/arrow.svg") no-repeat;
   							}
   						}
   					}
+  					&:hover {
+  						box-shadow: 0px 0px 0px 2px core.$clr-jmr--02;
+  					}
   				}
   				&_phl-chat {
   					.blk_hero {
   						background: url("/img/Projects/phl-chat/phl-chat-hero.png") no-repeat;
-  						background-size: 100% auto;
   					}
   					.blk_info {
   						.visual {
@@ -557,16 +567,21 @@
   						}
   						.cta_wrapper {
   							background-color: core.$clr-phl-chat--03;
+  							&:hover {
+									background-color: core.$clr-phl-chat--02;
+								}
   							.cta {
 	  							background: url("/img/Projects/phl-chat/arrow.svg") no-repeat;
 	  						}
   						}
   					}
+  					&:hover {
+  						box-shadow: 0px 0px 0px 2px core.$clr-phl-chat--02;
+  					}
   				}
   				&_phl-react {
   					.blk_hero {
   						background: url("/img/Projects/phl-reactions/phl-reactions-hero.png") no-repeat;
-  						background-size: 100% auto;
   					}
   					.blk_info {
   						.visual {
@@ -575,10 +590,16 @@
   						}
   						.cta_wrapper {
   							background-color: core.$clr-phl-react--03;
+  							&:hover {
+									background-color: core.$clr-phl-react--02;
+								}
   							.cta {
   								background: url("/img/Projects/phl-reactions/arrow.svg") no-repeat;
   							}
   						}
+  					}
+  					&:hover {
+  						box-shadow: 0px 0px 0px 2px core.$clr-phl-react--02;
   					}
   				}
   			}

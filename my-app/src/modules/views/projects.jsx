@@ -93,6 +93,7 @@ function Projects() {
                 className={`blk ${item.class} ${
                   activeProject === item.id ? 'hidden' : ''
                 }`}
+                onClick={() => toggleProjectView(item.id)}
               >
                 <div className="blk_title">
                   <h3>{item.title}</h3>
@@ -107,7 +108,15 @@ function Projects() {
                     </div>
                   </div>
                   <div className="cta_wrapper">
-                    <a className="cta" href="" ></a>
+                    <a 
+                      className="cta" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleProjectView(item.id);
+                      }}
+                    >
+                        
+                      </a>
                   </div>
                 </div>
               </div>

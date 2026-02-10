@@ -3,18 +3,28 @@ import { NavLink, useNavigate } from "react-router-dom";
 // Assets
 const logo_dark = '/img/errric-logo_dark.svg';
 const logo_white = '/img/errric-logo_white.svg';
+const icon_breadcrumb = 'img/breadcrumb.svg';
 
-function Nav({ isDark, isWhite }) {
+function Nav({ origin }) {
 
   const resume_url = "https://assets.errric.me/files/EricBARBEAU_Resume2025.pdf";
 
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo" alt="Home">
-        <img src={isDark ? logo_dark : isWhite ? logo_white : logo_dark} className="logo_img" alt="errric.me" />
+        <img src={origin == "home" ? logo_dark : origin == "projects" ? logo_white : logo_dark} className="logo_img" alt="errric.me" />
       </NavLink>
+      { origin == "projects" &&
+        <div className="breadcrumbs">
+          <NavLink to="/" className="backlink" href="https://errric.me/" alt="Home">HOME</NavLink>
+          <img src={icon_breadcrumb} alt="breadcrumb" />
+          <div className="active_page">
+            📚 PROJECTS
+          </div>
+        </div>
+      }
       <ul className="navbar_menu">
-        {isDark && 
+        {origin == "home" && 
           <li className="navbar_menu-item navbar_menu-item--projects" >
             <NavLink to="/projects" className="link" alt="Projects">📚 Projects</NavLink>
           </li>

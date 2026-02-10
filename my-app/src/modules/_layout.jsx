@@ -15,32 +15,21 @@ function Layout() {
   return (
     <div className="viewport">
       <div className="slide_container" >
+        
         {/* Home */}
-        <div 
-          className={`view view_home ${!isProjects ? "active" : ""}`}
-        >
+        <div className={`view view_home ${!isProjects ? "active" : ""}`}>
           <div className="container">
-            <Nav 
-              isDark={true}
-              isWhite={false}
-            />
+            <Nav origin="home"/>
             <Home /> 
           </div>
         </div>
 
         {/* Projects */}
-        <div 
-          className={`view view_projects ${isProjects ? "active" : ""}`}
-        >
+        <div className={`view view_projects ${isProjects ? "active" : ""}`}>
           <div className="container">
-            <Nav 
-              isDark={false}
-              isWhite={true}
-            />
+            <Nav origin="projects"/>
             <Projects />
-
             <Footer />
-            
           </div>
         </div>
 

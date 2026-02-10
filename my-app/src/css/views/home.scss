@@ -10,17 +10,20 @@
 
   	// Container
   	.container {
-			left: 10px !important;
-			top: 10px !important;
-  		padding: 0px;
-  		width: 80vw;
-			background-color: core.$clr-cream--light;
-			border-radius: 40px 80px 0px 0px;
-			box-shadow: 2px 0px 10px rgba(0,0,0,0.05);
+		left: 10px !important;
+		top: 10px !important;
+		padding: 0px;
+		width: 80vw;
+		background-color: core.$clr-cream--light;
+		border-radius: 40px 80px 0px 0px;
+		box-shadow: 2px 0px 10px rgba(0,0,0,0.05);
   	}
 
   	// Nav
   	.navbar {
+			display: flex;
+			flex-direction: row;
+			gap: 60px;
   		padding-left:60px;
   		padding-right:60px;
   		border-bottom: 1px solid core.$clr-green--light;

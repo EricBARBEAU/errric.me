@@ -31,9 +31,37 @@
 
 	// Nav
   	.navbar {
+			display: grid;
+			grid-template-columns: 52px auto 370px;
+			gap: 40px;
   		padding-left:60px;
   		padding-right:60px;
-  		justify-content: space-between;
+
+  		.breadcrumbs {
+  			display: flex;
+  			flex-direction: row;
+  			gap: 10px;
+  			align-items: center;
+
+  			.backlink {
+  				font-size: core.$font-size-14;
+	  			color: core.$clr-green--darker;
+	  			font-weight: core.$f-weight-400;
+
+	  			&:hover {
+	  				text-decoration: underline;
+	  			}
+  			}
+
+  			.active_page {
+  				background-color: core.$clr-white;
+  				padding: 9px 12px 8px 12px;
+  				border-radius: 25px;
+  				font-size: core.$font-size-13;
+  				font-weight: core.$f-weight-500;
+  				color: core.$clr-grey--dark;
+  			}
+  		}
   	}
 
   	// Page content

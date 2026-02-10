@@ -6,12 +6,9 @@
 	position: relative;
 	top: 0px; left: 0px; right: 0px;
 	background: transparent;
-	display: flex;
-	flex-direction: row;
 	align-items: center;
 	padding: 40px 0px;
 	z-index: 1000;
-	gap: 60px;
 
 	// Logo
 	.logo, .logo img {

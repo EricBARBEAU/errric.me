@@ -141,13 +141,13 @@ function ProjectOne({ project }) {
             <div className="links">
               <h4>More about this project</h4>
               <a 
-                href="" 
+                href="https://blog.visadocs.ai/articles/create-itinerary-visadocs/" 
                 target="_blank"
               >
                 Create your travel itinerary with visadocs.ai in 7 steps
               </a>
               <a 
-                href="" 
+                href="https://www.producthunt.com/products/visa-docs" 
                 target="_blank"
               >
                 Visadocs on Product Hunt

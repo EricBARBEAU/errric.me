@@ -79,7 +79,10 @@
     "specs_type": "Freelance, Self-launched product",
     "specs_role": "Designer, Developer",
     "specs_tools": "Figma, Github, Git, Cloudflare, EmailJS",
-    "specs_stack": "React Native, Cloudflare, Tailwind"
+    "specs_stack": "React Native, Cloudflare, Tailwind",
+    "objective_title": "Increase brand trust & convert visitors into qualified leads with a new website",
+    "objective_part1": "When Jill approached me to redesign the brand identity and website for JMR Visa Services, the primary objective was clear: **establish trust online.** Her core customer base is **located in the Philippines**, where **concerns about credibility and online scams strongly influence purchasing decisions**.",
+    "objective_part2": "Although **the brand had strong visibility across social platforms** such as Facebook, Instagram, and TikTok, **the website represented the main trust gap**. The project focused on creating **a professional, credibility-driven experience** that supported user confidence and improved conversion."
   },
   "project-03": {
     "class": "project-03",
@@ -89,10 +92,10 @@
     "intro_part1": "The **Chat feature** was **born from a global shift in the events and conference landscape** during the 2020 **COVID-19** outbreak. Physical events like conferences and town halls drastically declined, while **digital events and online meetings rapidly expanded.**",
     "intro_part2": "As a result, **many of Pigeonhole Live’s core features had to be adapted**, as they were originally built for in-person experiences. During this period, much of my focus was on **product improvements and third-party integrations** with platforms such as Zoom, MS Teams or Webex.",
     "intro_part3": "The lack of physical presence and live audience feedback meant that **engagement was harder to grasp for event organisers** (Pigeonhole Live’s primary users). This gap led to the creation of the **Chat feature**, providing audiences with **a way to connect with both speakers and fellow attendees during digital and hybrid events.**",
-    "specs_type": "Self-launched product",
-    "specs_role": "Founder, Designer, Developer",
-    "specs_tools": "Figma, OpenAI, Github, Git, Cloudflare, Brevo, EmailJS",
-    "specs_stack": "React+Vite, Cloudflare, OpenAI API, Google Places API, Stripe Payments"
+    "specs_type": "New Product Feature",
+    "specs_role": "Design Lead",
+    "specs_tools": "Figma, ",
+    "specs_stack": "Node JS"
   },
   "project-04": {
     "class": "project-04",

@@ -3,6 +3,7 @@ import renderWithBold from "../../../functions/renderWithBold";
 function ProjectTwo({ project }) {
   return (
     <>
+      {/*🎯 Objective*/}
       <div className="blk blk_objective">
         <div className="objective-title title_blk">
           <span className="line" />
@@ -16,11 +17,12 @@ function ProjectTwo({ project }) {
             </div>
           </div>
         </div>
-
         <div className="txt-blk">
-          Project number 2
+          <p>{renderWithBold(project.objective_part1)}</p>
+          <p>{renderWithBold(project.objective_part2)}</p>
         </div>
       </div>
+      {/*🎯 Objective*/}
 
       <div className="blk blk_process">Process</div>
       <div className="blk blk_challenge">Challenge</div>

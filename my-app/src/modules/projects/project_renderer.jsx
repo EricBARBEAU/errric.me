@@ -88,10 +88,19 @@ function ProjectRenderer({
 	    					<span className="label">🔨 TOOLS</span>
 	    					{project.specs_tools}
 	    				</div>
-	    				<div className="specs specs-stack">
-	    					<span className="label">⚙️ STACK</span>
-	    					{project.specs_stack}
-	    				</div>
+	    				{["project-01", "project-02"].includes(activeProject) ? (
+							  // Stack for project-01 and project-02
+							  <div className="specs specs-stack">
+		    					<span className="label">⚙️ STACK</span>
+		    					{project.specs_stack}
+		    				</div>
+							) : (
+							  // Team for project-03 and project-04
+								<div className="specs specs-team">
+		    					<span className="label">👥 TEAM</span>
+		    					{project.specs_team}
+		    				</div>
+							)}
 	    			</div>
 	    		</div>
 	    		<div className="project-hero">

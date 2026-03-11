@@ -248,6 +248,9 @@
 									&-stack {
 										padding-left: 2px;
 									}
+									&-team {
+										padding-left: 6px;
+									}
 								}
 							}
 						}
@@ -489,6 +492,33 @@
 	  					}
 	  					.line {
 	  						background-color: core.$clr-jmr--02;
+	  					}
+
+	  					// Challenge
+	  					.blk_challenge .txt-blk .challenge {
+	  						display: flex;
+	  						flex-direction: column;
+	  						gap: 32px;
+
+	  						// Title
+	  						.main_title {
+	  							font-size: core.$font-size-24;
+	  							font-weight: core.$f-weight-500;
+	  						}
+
+	  						.intro {
+	  							display: flex;
+	  							flex-direction: column;
+	  							gap: 20px;
+	  						}
+
+	  						// Outro
+	  						&_outro {
+	  							.outro_lg {
+	  								font-size: core.$font-size-24;
+	  								font-weight: core.$f-weight-500;
+	  							}
+	  						}
 	  					}
 	  				}
 
